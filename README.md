@@ -1,7 +1,7 @@
 # making360
 <b>a collection of solutions and illustrations for common problems with producing immersive video experiences</b>
 
-![alt tag](cover_m360_book.jpg)
+![alt tag](img/cover_m360_book.jpg)
 
 <h4>What is this book?</h4>
 
@@ -57,7 +57,7 @@ The team behind the book have used Sublime Text 3.0 with the additional package 
 
 Compiling the book
 =============================
-When you have setup your build environment, open the file "making360.tex", and compile it (press Command + B via Sublime). This file routes all the separate chapter files and builds the book. Whenever you make changes to the specific chapter files in "/chapters", do not try to compile the specific chapter you've edited. Instead, you need to compile "making360.tex".
+When you have setup your build environment, open the file "latex/making360.tex", and compile it (press Command + B via Sublime). This file routes all the separate chapter files and builds the book. Whenever you make changes to the specific chapter files in "latex/chapters/", do not try to compile the specific chapter you've edited. Instead, you need to compile "latex/making360.tex".
 
 
 Attribution and License

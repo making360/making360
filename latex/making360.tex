@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tufte-Style Book (Minimal Template)
+% LaTeX Template
+% Version 1.0 (5/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% IMPORTANT NOTE:
+% In addition to running BibTeX to compile the reference list from the .bib
+% file, you will need to run MakeIndex to compile the index at the end of the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[notoc]{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
+\usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+% \hypersetup{colorlinks}
+\usepackage{microtype} % Improves character and word spacing
+\usepackage{setspace} % for line spacing
+%\usepackage{booktabs} % Better horizontal rules in tables
+\usepackage{graphicx} % Needed to insert images into the document
+\usepackage{fancyvrb} % Allows customization of verbatim environments
+\usepackage{xspace} % Used for printing a trailing space better than using a tilde (~) using the \xspace command
+%code structuring
+\usepackage{listings}
+\usepackage{color}
+\usepackage{fancyhdr}
+
+\setcounter{tocdepth}{1} 
+\setcounter{secnumdepth}{-1}
+
+\fvset{fontsize=\normalsize} % The font size of all verbatim text can be changed here
+
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
+
+
+\newcommand{\hangp}[1]{\makebox[0pt][r]{(}#1\makebox[0pt][l]{)}} % New command to create parentheses around text in tables which take up no horizontal space - this improves column spacing
+\newcommand{\hangstar}{\makebox[0pt][l]{*}} % New command to create asterisks in tables which take up no horizontal space - this improves column spacing
+\newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
+\newcommand{\problem}{\textbf{\huge Problem:}}
+\newcommand{\solution}{\textbf{\huge Solution:}}
+\newcommand{\solutions}{\textbf{\huge Solutions:}}
+\newcommand{\blurb}[1]{\textmd{\huge #1}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	BOOK META-INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{making360} % Title of the book
+
+\author{} % Author is everyone!
+
+\publisher{} % Publisher
+
+%----------------------------------------------------------------------------------------
+
+%\fancyhf{} % clear all header and footers
+%\renewcommand{\headrulewidth}{0pt} % remove the header rule
+%\fancyfoot[LE,RO]{\thepage} % Left side on Even pages; Right side on Odd pages
+%\pagestyle{fancy}
+
+\begin{document}
+
+\setlength{\parskip}{0.8cm plus0.5mm minus0.5mm}
+\setlength{\parindent}{0pt}
+\let\cleardoublepage\clearpage
+
+\makeatletter
+\def\@makechapterhead#1{%
+  %%%%\vspace*{50\p@}% %%% removed!
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+        \huge\bfseries \@chapapp\space \thechapter
+        \par\nobreak
+        \vskip 20\p@
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip 20\p@
+  }}
+\makeatother
+
+
+\frontmatter
+
+
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title page
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+\begin{fullwidth}
+\thispagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+Copyright \copyright\ \the\year\ \thanklessauthor
+
+\par{Published by ZO, LLC}
+
+\par{press@making360.com}
+
+\par This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US}.\index{license}
+
+\par\textit{First printing, \monthyear}
+\end{fullwidth}
+
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Print the table of contents
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\input{./chapters/introduction}
+
+\mainmatter
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+
+\input{./chapters/problems-of-shooting}
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 2
+%----------------------------------------------------------------------------------------
+
+\input{./chapters/problems-of-stitching}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
