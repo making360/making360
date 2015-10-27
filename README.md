@@ -3,9 +3,7 @@
 
 ![alt tag](cover_m360_book.jpg)
 
-<h4>
-What is this book?
-</h4>
+<h4>What is this book?</h4>
 
 2 sections, 57 chapters, loads of fun.
 
@@ -24,18 +22,14 @@ the manual will be free. an open source version will be available for download i
 en francais: le contenu sera gratuit et "open source", aussi téléchargeable en format pdf. bien sur, nous imprimerons une certaine quantitée, en edition limitée, de copies conformes, pour ceux qui aiment apprendre de maniere analogue.
 
 
-<h4>
-Why?
-</h4>
+<h4>Why?</h4>
 
 we want to build a community by sharing everything we’ve learned about making professional 360 videos over the last 3 years. right now, there is very little documentation on the process, from start to finish, for creating narrative virtual reality films. by writing "making360" our goal is to help those who are excited about exploring new storytelling techniques by aiding in skipping the initial hazing process. by sharing our experiences, we will be able to speed up your learning curve. creating 360 videos is very intense and detailed so we’re here to walk you through it!
 
 en francais: nous pensons qu'il est important de partager tout ce que l'on a appris dans la production d'expériences virtuelles et de créer un collectif de professionnels. il y a tres peu de documentation expliquant les techniques utilisées afin de réaliser des films narratifs dans la réalité virtuelle. simplement dis, on voulais aider la majorité d'intéressés dans ces nouvelles méthodes narratives afin d'éviter nos erreurs de debutants. nous voila donc pret a montrer nos strategies créatives et détaillées dans un domaine tres interessant qu'est la création de vidéos en 360 degrée.
 
 
-<h4>
-Who is this book for?
-</h4>
+<h4>Who is this book for?</h4>
 
 artists, pioneers, adventurers, astronauts, cowboys and cowgirls; basically anyone who wants to start experimenting on this new medium can join us. we have paved a path and laid stepping stones across this great divide for you to cross the river and join us in exploring a new land! we are sharing every tip and trick we have painfully learned ourselves so you can skip right to having fun. we only ask that you remember to come back and share your findings with everyone so we can build a community!
 
@@ -45,18 +39,14 @@ artists, pioneers, adventurers, astronauts, cowboys and cowgirls; basically anyo
 Setting up your build environment
 =============================
 
-<h4>
-Mac
-</h4>
+<h4>Mac</h4>
 
 To compile the book on Mac OS X, it is recommended that you install MacTex from this link: https://tug.org/mactex/
 
 MacTex will come packaged with a LaTex editor that can be used to compile the book. The team behind the book have used Sublime Text 3.0 with the additional package named LaTexTools to compile the book directly from Sublime Text, a very beautiful text editor.
 
 
-<h4>
-Windows
-</h4>
+<h4>Windows</h4>
 
 To compile the book on Windows, it is recommended that you install TeX Live from this link: http://www.tug.org/texlive/acquire-netinstall.html
 
