@@ -1,72 +1,47 @@
 # making360
 =============================
-a collection of solutions and illustrations for common problems with producing immersive video experiences
-=============================
+
+<b>a collection of solutions and illustrations for common problems with producing immersive video experiences</b>
+
+![alt tag](cover_m360_book.jpg)
 
 <h4>
-Foreword
+What is this book?
 </h4>
 
-Between the artist and the tool are countless techniques and bits of know-how that contribute to the artist becoming more fluid and well-equipped for the challenges of production.
- 
-When I caught wind of Elburz' TouchDesigner book project, I thought, yes I'd like to know what he knows!
- 
-Elburz' deep storage of TouchDesigner wisdom was absorbed from multiple sources - helping and conversing with a myriad of users on the forums, red-lining on-the-job on time-critical projects, working with Derivative using beta builds of TouchDesigner, and his purely exploratory endeavors mixed with his side-life as a hip-hop trombonist and VJ.
- 
-The book is a good keyboard-side or bed-side companion that explores the concepts, techniques and methodology behind TouchDesigner - something I have not had the opportunity to personally present before and am very happy Elburz has presented here. So build your chops with these treats - It can be read end-to-end or by randomly flipping through pages, as I found myself doing - discovering gems of information and insights throughout.
- 
-Many thanks to Elburz for this initiative to enrich the TouchDesigner community. I'm sure it will trigger a great chain reaction.
+2 sections, 57 chapters, loads of fun.
 
-Greg Hermanovic, Founder, Derivative
+problems of shooting and problems of stitching.
+
+solutions to those problems.
+
+all the techniques to slay all your demons.
+
+the book can be read in any random order or end to end cover to cover.
+
+however you like.
+
+the manual will be free. an open source version will be available for download in pdf format. there will also be a limited edition batch of hardcopy books for those who like to learn the analog way.
+
+en francais: le contenu sera gratuit et "open source", aussi téléchargeable en format pdf. bien sur, nous imprimerons une certaine quantitée, en edition limitée, de copies conformes, pour ceux qui aiment apprendre de maniere analogue.
 
 
 <h4>
-Foreword by Author
+Why?
 </h4>
 
-The purpose of this book is two-fold:
+we want to build a community by sharing everything we’ve learned about making professional 360 videos over the last 3 years. right now, there is very little documentation on the process, from start to finish, for creating narrative virtual reality films. by writing "making360" our goal is to help those who are excited about exploring new storytelling techniques by aiding in skipping the initial hazing process. by sharing our experiences, we will be able to speed up your learning curve. creating 360 videos is very intense and detailed so we’re here to walk you through it!
 
-1) to teach the fundamentals of TouchDesigner 088, and 
-2) to create a community-driven resource for beginners
-
-
-The first purpose is straightforward. We will look at various UI elements, discuss Operators and Operator families, explore logical workflows, Network optimizations, performance interfaces, display management, and etc. TouchDesigner's core elements will be explained and demonstrated, and many common problems will be pre-emptively dealt with.
-
-After the written portion, we will learn how to approach solving a problem with example projects and video tutorials at the end of the book. These lessons will be practical in that we will assemble a few projects and useful modules from the ground up.
-
-The second purpose of this book is slightly more asking of the community. We really believe in the community, so instead of selling this book, we wanted everyone to be able to access it for free (text, video, and example files). We wanted to take this idea a step further, and not only allow free access to the book's contents, but also allow free access to the book's building blocks.
-
-What this means is that anyone can feel free to add, comment, change, mark up, delete, or increment upon the resources in this book. All of the book has been completely written using LaTeX, and the code to compile the book, project files, examples, diagrams, and videos, and whatever else ends up within it, will all be hosted on GitHub, and will be free (under a Creative Commons license) for anyone to download, share, and build upon.
-
-For quality control purposes, everyone will be able to branch the repository, but we will review all changes before integratating updates back into a main branch. Everyone who contributes will be thanked and added to the 'Credits' portion of the book. This way, a new user only has to look for a single PDF, or download link, to receive the communities most up-to-date knowledge.
-
-We really hope that the community engages with this and helps create the ultimate how-to resource for beginners!
-
-As of the initial writing, knowing what this book is will be as important as knowing what this book is not. This book is not an Operator reference manual. We will not cover every parameter or use of every Operator. This book is not meant to replace the Derivative Wiki as the main reference, we will only use and learn about what we need. This book is not meant to replace the forum's wealth of helpful users and components.
-
-In the end, this resource is a tribute to many TouchDesigner programmers and Derivative staff who, whether on the forum, or in real-life, have helped all of us get where we are. We hope that this tradition will continue as long as TouchDesigner does. 
+en francais: nous pensons qu'il est important de partager tout ce que l'on a appris dans la production d'expériences virtuelles et de créer un collectif de professionnels. il y a tres peu de documentation expliquant les techniques utilisées afin de réaliser des films narratifs dans la réalité virtuelle. simplement dis, on voulais aider la majorité d'intéressés dans ces nouvelles méthodes narratives afin d'éviter nos erreurs de debutants. nous voila donc pret a montrer nos strategies créatives et détaillées dans un domaine tres interessant qu'est la création de vidéos en 360 degrée.
 
 
+<h4>
+Who is this book for?
+</h4>
 
-Elburz Sorkhabi & nVoid Art-Tech Limited
+artists, pioneers, adventurers, astronauts, cowboys and cowgirls; basically anyone who wants to start experimenting on this new medium can join us. we have paved a path and laid stepping stones across this great divide for you to cross the river and join us in exploring a new land! we are sharing every tip and trick we have painfully learned ourselves so you can skip right to having fun. we only ask that you remember to come back and share your findings with everyone so we can build a community!
 
-
-
-
-Access
-=============================
-
-There are multiple ways to access an Introduction to TouchDesigner 088. The first is to download the package from our website, which includes a PDF of the book, all the example .toe files, and the project files that go along with the hours of HD video tutorials. The link for this is below:
-
-https://d31vryd1jmut49.cloudfront.net/Introduction_to_TouchDesigner.zip
-
-The hours of HD video tutorials are available in a single Vimeo channel. All the files can be downloaded from Vimeo for offline viewing. The link for this is below:
-
-https://vimeo.com/channels/845218
-
-You can also download the LaTeX source code from this GitHub and build it yourself. You are free to change, edit, add, delete, and modify the text by branching the source files. When you are finished, submit your changes and they will be reviewed by our administration, and merged into the main branch, at which point you will be added to the list of contributors in the Contributors chapter of the book, along with your contributions.
-
-For more general information about this resource, visit http://book.nvoid.com
+<b>en francais:</b> ce livre se destine a toute personne qui est intéressée par cette nouvelle technologie, et en particulier artistes, pionniers, aventureurs, astronautes, cowboys et cowgirls. nous avons déétaillé le procédé complet pour planifier, réaliser et finaliser vos future vidéos en 360. toutes nos erreurs sont devenus des problemes et leur solutions.
 
 
 Setting up your build environment
@@ -94,7 +69,7 @@ The team behind the book have used Sublime Text 3.0 with the additional package 
 
 Compiling the book
 =============================
-When you have setup your build environment, open the file "Introduction_to_TouchDesigner.tex" in the main "LaTex Source" folder, and compile it. This file is pull all the separate chapter files and builds the book. Whenever you make changes to the specific chapter files in "/LaTex Source/tex", do not try to compile the specific chapter you've edited. Instead, you need to compile "Introduction_to_TouchDesigner.tex".
+When you have setup your build environment, open the file "making360.tex", and compile it (press Command + B via Sublime). This file routes all the separate chapter files and builds the book. Whenever you make changes to the specific chapter files in "/chapters", do not try to compile the specific chapter you've edited. Instead, you need to compile "making360.tex".
 
 
 Attribution and License
@@ -103,7 +78,5 @@ Attribution and License
 This resource is licensed under Creative Commons - Attribution-NonCommercial-ShareAlike-4.0 International.
 
 Link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-
-We have used the Tufte-Style Book (Minimal Template) provided by http://www.LaTeXTemplates.com
 
 Thank you!
