@@ -23,14 +23,13 @@
 \documentclass[notoc]{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
 \usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
-% \hypersetup{colorlinks}
+\hypersetup{colorlinks}
 \usepackage{microtype} % Improves character and word spacing
 \usepackage{setspace} % for line spacing
 %\usepackage{booktabs} % Better horizontal rules in tables
 \usepackage{graphicx} % Needed to insert images into the document
 \usepackage{fancyvrb} % Allows customization of verbatim environments
 \usepackage{xspace} % Used for printing a trailing space better than using a tilde (~) using the \xspace command
-%code structuring
 \usepackage{listings}
 \usepackage{color}
 \usepackage{fancyhdr}
@@ -47,11 +46,15 @@
 \newcommand{\hangstar}{\makebox[0pt][l]{*}} % New command to create asterisks in tables which take up no horizontal space - this improves column spacing
 \newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
+
 \newcommand{\problem}{\textbf{\huge Problem:}}
 \newcommand{\solution}{\textbf{\huge Solution:}}
 \newcommand{\solutions}{\textbf{\huge Solutions:}}
+\newcommand{\tip}{\textbf{PROTIP: }}
 \newcommand{\blurb}[1]{\textmd{\huge #1}}
 
+\newcommand*{\pcr}{\fontfamily{pcr}\selectfont}
+\newcommand{\code}[1]{\textmd{\small\pcr\lstinline[breaklines=true]! #1 !}}
 
 
 %----------------------------------------------------------------------------------------

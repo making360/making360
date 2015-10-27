@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 OCT 2015 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 OCT 2015 23:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,6 +523,8 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
+Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks19
@@ -604,37 +606,37 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 (./making360.aux)
 \openout1 = `making360.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Try loading font information for T1+Roboto-LF on input line
- 74.
+ 77.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/roboto/T1Roboto-LF.fd
 File: T1Roboto-LF.fd 2015/04/16 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 74.
+(Font)              scaled to size 10.0pt on input line 77.
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring OFF on input line 74.
+Package hyperref Info: Link coloring ON on input line 77.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -644,16 +646,16 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
+LaTeX Info: Redefining \ref on input line 77.
+LaTeX Info: Redefining \pageref on input line 77.
+LaTeX Info: Redefining \nameref on input line 77.
 
 (./making360.out) (./making360.out)
 \@outlinefile=\write4
 \openout4 = `making360.out'.
 
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 74.
+LaTeX Info: Redefining \selectfont on input line 77.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -689,7 +691,7 @@ LaTeX Info: Redefining \selectfont on input line 74.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 74.
+LaTeX Info: Redefining \microtypecontext on input line 77.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -737,11 +739,11 @@ e
 ))
 \c@lstlisting=\count141
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 18.0pt on input line 101.
+(Font)              scaled to size 18.0pt on input line 104.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 36.0pt on input line 101.
+(Font)              scaled to size 36.0pt on input line 104.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 101.
+(Font)              scaled to size 14.0pt on input line 104.
 
 [1
 
@@ -749,30 +751,42 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Try loading font information for TS1+Roboto-LF on input lin
-e 112.
+e 115.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
 File: TS1Roboto-LF.fd 2015/04/16 (autoinst) Font definitions for TS1/Roboto-LF.
 
 )
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 112.
+(Font)              scaled to size 10.0pt on input line 115.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `Roboto-LF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 118.
 
+
+! Package xcolor Error: Undefined color `false'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 ...ons.org/licenses/by-nc-sa/4.0/deed.en_US}
+                                                  .\index{license}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 121.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 118.
+(Font)              scaled to size 8.50006pt on input line 121.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 118
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 121
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplx.fd
@@ -781,25 +795,25 @@ File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 118
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 121
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 118
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 121
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 118
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 121
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 118
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 121
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -810,22 +824,83 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 120.
+(Font)              scaled to size 10.0pt on input line 123.
  [2
 
 ]
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 24.0pt on input line 125.
+(Font)              scaled to size 24.0pt on input line 128.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 24.0pt on input line 125.
+(Font)              scaled to size 24.0pt on input line 128.
 
 (./making360.toc
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 1.
+
+
+! Package xcolor Error: Undefined color `false'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ...line {chapter}{Introduction}{4}{chapter*.2}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 7.
+(Font)              scaled to size 10.95pt on input line 2.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 7.
+(Font)              scaled to size 10.95pt on input line 2.
+
+! Package xcolor Error: Undefined color `false'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...space {1em}Problems of Shooting}{5}{part.1}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `false'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 ...line {chapter}{The Elements}{7}{chapter*.3}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `false'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 ...pace {1em}Problems of Stitching}{8}{part.2}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! Package xcolor Error: Undefined color `false'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...apter}{Dailies Quickstitch}{10}{chapter*.4}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 )
 \tf@toc=\write5
 \openout5 = `making360.toc'.
@@ -833,91 +908,126 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
  (./chapters/introduction.tex [3
 
 ]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 7.
-
-Underfull \vbox (badness 1412) has occurred while \output is active []
-
- [4
-
-]
 Overfull \hbox (0.18164pt too wide) in paragraph at lines 43--44
 \T1/Roboto-LF/m/n/10 (+2) experiences, we will be able to speed up your learnin
 g curve. creating 360 videos is very intense and detailed 
  []
 
-) [5] (./chapters/problems-of-shooting.tex
+) [4
+
+] (./chapters/problems-of-shooting.tex
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
 (Font)              scaled to size 20.74pt on input line 6.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
 (Font)              scaled to size 20.74pt on input line 6.
- [6
+ [5
 
 
 
-] [7]
+] [6]
 (./chapters/problems-of-shooting/the-elements.tex
-Overfull \hbox (0.225pt too wide) in paragraph at lines 9--10
+Overfull \hbox (0.225pt too wide) in paragraph at lines 12--13
 \T1/Roboto-LF/m/n/10 (+18) great what are the first steps to take you closer? W
 hat materials do you need to shoot, learn, and grow right 
  []
 
 
-Overfull \hbox (0.225pt too wide) in paragraph at lines 15--16
+Overfull \hbox (0.225pt too wide) in paragraph at lines 18--19
 \T1/Roboto-LF/m/n/10 (+18) great what are the first steps to take you closer? W
 hat materials do you need to shoot, learn, and grow right 
  []
 
-[8
+[7
 
-])) (./chapters/problems-of-stitching.tex [9
+])) (./chapters/problems-of-stitching.tex [8
 
 
 
-] [10]
+] [9]
 (./chapters/problems-of-stitching/dailies-quickstitch.tex
-Overfull \hbox (0.225pt too wide) in paragraph at lines 9--10
-\T1/Roboto-LF/m/n/10 (+18) great what are the first steps to take you closer? W
-hat materials do you need to shoot, learn, and grow right 
+Overfull \hbox (8.15704pt too wide) in paragraph at lines 8--9
+\T1/Roboto-LF/m/n/20.74 burnt in time-code for a re-view ses-sion but don't kno
+w 
  []
 
 
-Overfull \hbox (0.225pt too wide) in paragraph at lines 15--16
-\T1/Roboto-LF/m/n/10 (+18) great what are the first steps to take you closer? W
-hat materials do you need to shoot, learn, and grow right 
+Overfull \hbox (0.12614pt too wide) in paragraph at lines 10--11
+\T1/Roboto-LF/m/n/10 (+11) flow, re-view-ing your dailies can't hap-pen un-til 
+your footage is stitched to-gether. Stitch-ing two or more videos 
  []
 
-[11
+[10
 
-]))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+]
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 48.
+ [11]
+Overfull \hbox (0.15964pt too wide) in paragraph at lines 50--51
+[]\T1/Roboto-LF/m/n/10 (+12) Rendering is the last step in any workflow. Every 
+software you use to edit the picture or audio of a file will let 
+ []
+
+
+Overfull \hbox (0.19121pt too wide) in paragraph at lines 52--53
+[]\T1/Roboto-LF/m/n/10 (+16) Before you start rendering, double check that all 
+your default preferences are correct. Consider the right fps 
+ []
+
+
+Overfull \hbox (0.19803pt too wide) in paragraph at lines 56--57
+\T1/Roboto-LF/m/n/10 (+19) what resolution and frame rate the video will render
+ as. For the GearVR, render your videos at 3840x1920 or 
+ []
+
+[12]
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 79.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 79.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [13]
+Overfull \hbox (34.52922pt too wide) in paragraph at lines 101--102
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][] 
+ []
+
+[14]))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
  (./making360.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `making360.out' has not changed.
-(rerunfilecheck)             Checksum: B3C2B64BBD5AAC460006BA6C3703011D;1573.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
+(rerunfilecheck)             Checksum: 67BAFDA2235E8D475ADA2B690F999602;695.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
  ) 
 Here is how much of TeX's memory you used:
- 15536 strings out of 493089
- 232269 string characters out of 6134842
- 345409 words of memory out of 5000000
- 18709 multiletter control sequences out of 15000+600000
- 95206 words of font info for 76 fonts, out of 8000000 for 9000
+ 15659 strings out of 493089
+ 234813 string characters out of 6134842
+ 362535 words of memory out of 5000000
+ 18775 multiletter control sequences out of 15000+600000
+ 118366 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,51p,671b,456s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_idpkzy.enc}{/
-usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texli
-ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2
-015/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/google/roboto/Roboto-Italic.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb>
-Output written on making360.pdf (11 pages, 72092 bytes).
+ 45i,13n,51p,1004b,1153s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_v5svcm.enc}{/usr/local/texli
+ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_idpkzy.enc}{/usr/local/texlive/2
+015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2015/
+texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/google/roboto/Roboto-Italic.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on making360.pdf (14 pages, 109091 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 21073 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 34345 words of extra memory for PDF output out of 35830 (max. 10000000)
 

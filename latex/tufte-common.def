@@ -322,9 +322,9 @@
   \hypersetup{%
     pdfborder = {0 0 0},
     bookmarksdepth = section,
-    citecolor = DarkGreen,
-    linkcolor = DarkBlue,
-    urlcolor = DarkGreen,
+    citecolor = false,
+    linkcolor = false,
+    urlcolor = false,
   }%
 }
 
