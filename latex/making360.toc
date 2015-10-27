@@ -1,0 +1,11 @@
+\contentsline {chapter}{Introduction}{4}{chapter*.2}
+\contentsline {section}{What is this book?}{4}{section*.3}
+\contentsline {section}{Who is this book for?}{4}{section*.4}
+\contentsline {section}{How to use this book?}{4}{section*.5}
+\contentsline {section}{How this book is organized?}{5}{section*.6}
+\contentsline {section}{Why is this book needed}{5}{section*.7}
+\contentsline {part}{I\hspace {1em}Problems of Shooting}{6}{part.1}
+\contentsline {chapter}{The Elements}{8}{chapter*.8}
+\contentsline {part}{II\hspace {1em}Problems of Stitching}{9}{part.2}
+\contentsline {chapter}{Dailies Quickstitch}{11}{chapter*.9}
+\contentsfinish 
