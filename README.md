@@ -1,7 +1,7 @@
 # making360
 <b>a collection of solutions and illustrations for common problems with producing immersive video experiences</b>
 
-![alt tag](img/cover_m360_book.jpg)
+![alt tag](latex/book_cover.jpg)
 
 <h4>What is this book?</h4>
 
