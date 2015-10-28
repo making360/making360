@@ -1,0 +1,75 @@
+\chapter{Synchronization}
+\pagecolor{white}
+\label{chap:33}
+\begin{fullwidth}
+
+
+\problem
+
+{\large The cameras are out of sync, causing a bad stitch. \par}
+
+To stitch a moving or static shot with moving objects or people, you will encounter magic you didn’t expect, such as people disappearing randomly, or getting shrinked as they cross cameras, or you may think you’re seeing double. Few causes can explain these surprises. Usually it is a sync-related issue. If one or more camera starts shooting with a slight delay, you need to resync in post.
+
+\solutions
+
+{\large Use Autopano’s built in synchronization. \par}
+
+Synchronizing your videos is the first step before the footage is ready to stitch. After dragging your videos into AVP, use the built in synchronization. This feature only works if an audio or motion signal recorded at the start of the take during the shoot. Some situations there is no audio or visual signal for sync. For example, if you shot the camera angles at different times, the shooter forgot to Audio Slate, the audio on cameras got dropped, there was no speedlight for Motion Flash that day, etc. In these extreme cases, manually input the offsets of the videos needed to be stitched. Find a visual sync frame and use one camera as an anchor. Look for a frame with fast moving motion, such as leg’s running or hands clapping, and match the rest of the cameras.
+
+After dragging your videos into AVP, find the Synchronization tab and open it. Select the closest frame in your timeline to a “clap” or any high peak in the audio signal. 
+
+AVP lets you select the range in seconds for the auto detection to happen, 20 seconds being the good average. Select “Use Audio to synchronize” option and click Apply.
+
+The second option “Use Motion to synchronize” will only work if you used a motion flash or speedlight during production. Select the nearest frame and a range for AVP to auto-detect the flash in each of your videos.
+
+
+{\large Auto sync with Premiere’s multicam sequence. \par}
+
+Adobe Premiere’s auto sync function for multiple cameras is similar to RedGiant’s PluralEyes software, and very accurate. As opposed to AVP when Premiere can’t sync, it will warn you. Then you will know when you have to manually sync the videos.
+
+Instead of creating a new sequence, find or drag all your videos in Premiere’s project section, right click and select Create Multi-Camera Source Sequence. Then choose “Audio” as a synchronize point and “All Cameras” for the audio sequence settings.
+
+Your videos will be processed and placed into a bin. Rename the created sequence based on your log notes. Right click and Open the Multicam sequence in the timeline to see how the video tracks have been synced.
+
+If you are editing your First Assembly with Premiere, it may be a good idea to update the files/folder names between your quick stitches and your source cameras. Add a shortcode such as SYNC, QS for Quickstitch, FS for Fine Stitch, CC for Color Corrected. Rename the “Processed Clips” folder to the shot name and include all needed and related assets in the bin folder.
+
+{\large Manually sync in After Effects. \par}
+
+Bring the videos into AE and use the cursor line on the timeline to sync the audio streams of the different cameras.
+
+Open the “preferences” of AE, and set Import > “Sequence Footage” to your project FPS. Then File > Save as... your project to the location desired.
+
+Import all the cameras into AE and create a single composition with all the videos.
+
+Press “L” after selecting all layers to show the audio levels, then click on the triangle to open the waveform, one layer after another. 
+
+You can minimize your video area to focus on audio sync.
+
+Find a peak in the waveform and place your cursor just before that peak. You can use any other reference, but peaks are easier to detect and align to.
+
+The red line below your cursor will help you see how to move the video stream to the left or right (forward or backward in the timeline). 
+
+After aligning the layers based on the audio peak in the waveform, zoom in to the timeline for accuracy.
+
+Now you have two options: trim the videos and render only the footage in sync, or record the sync offset of each video track. Let’s trim in this case and render the new video stream now synched and ready for stitch.
+
+{\large Recording the offsets \par}
+
+The video track with the largest distance from frame 0 will be the origin. The offset for that video track is 0. The opposite and longest video track, usually untouched and start frame at 0, will need to be offsetted by the number of frames between its start frame and the start frame of the video track with largest offset. For this example, it is 176 frames.
+
+For all other video tracks, subtract the start frame of each video track by the largest offset. 
+
+For example: 
+
+Cam1: Start Frame = 0; Offset = 176 - 0 = 176
+Cam2: Start Frame = 106; Offset = 176 - 105 = 71
+Cam3: Start Frame = 64; Offset = 176 - 64 = 112
+Cam4: Start Frame = 176; Offset = 176 - 176 = 0
+
+Log the offset of each video track and input them in the Synchronization section of AVP.
+
+Syncing your videos is a basic required step before stitching. Make sure to double check the sync offsets or you may end up spending hours trying to fix a stitch when it was really a sync issue. AVP makes it easy to sync in the software, but it is best to manually check the sync offsets are spot on with an alternative solution.
+
+
+\clearpage
+\end{fullwidth}
