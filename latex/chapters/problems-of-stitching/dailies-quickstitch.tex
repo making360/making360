@@ -1,23 +1,32 @@
 \chapter{Dailies Quickstitch}
+\pagecolor{white}
 \label{chap:29}
 \begin{fullwidth}
 % \vspace{\baselineskip}
 
 \problem
 
-\blurb{You need to quickly stitch some source footage with burnt in timecode for a review session but don't know where to start.}
+{\large You need to quickly stitch some source footage with burnt in timecode for a review session but don't know where to start. \par}
 
 You've just finished ingesting your source footage onto a hard disk after shooting multiple takes for many scenes. It's now time to sort and label your files into bins. As opposed to traditional post-production workflow, reviewing your dailies can't happen until your footage is stitched together. Stitching two or more videos together will first require you to organize your files properly.
 
 \solution
 
-\blurb{Organizing a project folder}
+{\large Organizing a project folder \par}
 
 Each sd card corresponds to a certain camera angle. When you ingest video files from one sd card, you are uploading all the takes into one folder (ex. Camera 1, Camera 2). You will need to move the video from each camera folder into a new take folder (ex. Take 1).
 
 Here's a snapshot of how it looks before and after.
 
+
+\imga{29/folders}
+
 To quickly find which video files should be placed into a new take folder, open all your camera folders using the dropdown arrow. Start by highlighting the first mp4 in each camera folder, then look at the file size of each one. If it's the same or close in size for all highlighted files, the files are all from the same take. Drag them all into the new take folder. If you are unsure, you can always open the videos and view them.
+
+
+
+\imgb{29/blend}{29/blend}
+
 
 Renaming source files later can be tricky so organize before stitching. Is your project is stereoscopic or monoscopic? If you shot in stereo, you will have two of each camera angle, corresponding to left/right eye. Make sure to include if the video is Left eye or Right eye in the filename.
 
@@ -29,7 +38,7 @@ GOPR02355 would be T01\_HD\_C01\_GOPR02355.mp4 for a monoscopic project.
 
 GOPR01025 would be T07\_4K\_C03\_LE\_GOPR01025.mp4 for a stereoscopic project.
 
-\blurb{Quick stitching of takes}
+{\large Quick stitching of takes \par}
 
 To combine the individual videos into a single high resolution seamless panoramic video, you will have to "stitch" them together. Most video camera manufacturers are developing built-in functionality to ease the stitching/playback of 360 dailies. If you don't have a real-time stitching solution, you will have to stitch the videos yourself before previewing dailies. Thanks to Autopano Video Pro (AVP) from Kolor, it's just a few clicks away.
 
@@ -45,7 +54,7 @@ When stitched together, your panoramic video may need to be adjusted or rotated.
 
 Bravo, you have just completed your first quick stitch, now you are ready to render your work!
 
-\blurb{Rendering your work}
+{\large Rendering your work \par}
 
 Rendering is the last step in any workflow. Every software you use to edit the picture or audio of a file will let you export the changes by creating a new video or audio file with the render settings you selected.
 
@@ -61,15 +70,17 @@ When rendering your fine stitch, it is highly recommended to render output type 
 
 Every time you render, you are creating a new file. Stay organized so you know what version each render is. Add a prefix to every file. Use QS for Quickstitch, a version number \_v001 for your tests, and FS for Fine Stitch. When rendering frames, select an output folder with the suffix  \_tiff in the name.
 
-\blurb{Encoding a burnt-in timecode}
+{\large Encoding a burnt-in timecode \par}
 
 You can use After Effects, Premiere or any video editing software to encode a timecode or you can do it...the "hard" way aka not really, just geeky but in reality faster way! Hello FFMpeg! Don't let the terminal or command lines scare you!
 
 For Mac users, the "drawtext" filter of FFmpeg is only working with this FFmpeg library. Unzip the 7zip file using Keka, then place the ~30mb "ffmpeg" file in the directory where all the libraries live, usually /usr/local/bin/ffmpeg.
 
 Show/Hide Hidden Folders and Files on Mac:
-defaults write com.apple.finder AppleShowAllFiles YES
-defaults write com.apple.finder AppleShowAllFiles NO
+
+\code{defaults write com.apple.finder AppleShowAllFiles YES} \par
+\code{defaults write com.apple.finder AppleShowAllFiles NO}
+
 Open the Terminal app on Mac. Use the basic commands to access the directory where your stitched video is located.
 
 \tip If your Finder is opened with your video visible, drag the folder icon into the Terminal window AFTER typing "cd" (e.g. change directory).
