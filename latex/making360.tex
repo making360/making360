@@ -23,35 +23,47 @@
 \documentclass[notoc]{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
 \usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
-% \hypersetup{colorlinks}
+\hypersetup{colorlinks}
 \usepackage{microtype} % Improves character and word spacing
 \usepackage{setspace} % for line spacing
-%\usepackage{booktabs} % Better horizontal rules in tables
 \usepackage{graphicx} % Needed to insert images into the document
+\usepackage{wrapfig}
+\usepackage{subcaption}
 \usepackage{fancyvrb} % Allows customization of verbatim environments
-\usepackage{xspace} % Used for printing a trailing space better than using a tilde (~) using the \xspace command
-%code structuring
+\usepackage{xspace} % Used forb printing a trailing space better than using a tilde (~) using the \xspace command
 \usepackage{listings}
 \usepackage{color}
 \usepackage{fancyhdr}
+\graphicspath{ {./img/} }
+\usepackage[overlay,absolute]{textpos}
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
 
 \setcounter{tocdepth}{1} 
 \setcounter{secnumdepth}{-1}
 
-\fvset{fontsize=\normalsize} % The font size of all verbatim text can be changed here
+\fvset{fontsize=\tiny} % The font size of all verbatim text can be changed here
 
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
-
 
 \newcommand{\hangp}[1]{\makebox[0pt][r]{(}#1\makebox[0pt][l]{)}} % New command to create parentheses around text in tables which take up no horizontal space - this improves column spacing
 \newcommand{\hangstar}{\makebox[0pt][l]{*}} % New command to create asterisks in tables which take up no horizontal space - this improves column spacing
 \newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
-\newcommand{\problem}{\textbf{\huge Problem:}}
-\newcommand{\solution}{\textbf{\huge Solution:}}
-\newcommand{\solutions}{\textbf{\huge Solutions:}}
-\newcommand{\blurb}[1]{\textmd{\huge #1}}
 
+\newcommand{\problem}{\textbf{\large Problem:}}
+\newcommand{\solution}{\textbf{\large Solution:}}
+\newcommand{\solutions}{\textbf{\large Solutions:}}
+\newcommand{\tip}{\textbf{PROTIP: }}
+
+
+
+\newcommand*{\pcr}{\fontfamily{pcr}\selectfont}
+\newcommand{\code}[1]{\textmd{\small\pcr\lstinline[breaklines=true]! #1 !}}
+
+\newcommand{\imga}[1]{\begin{figure}\includegraphics[.7\textwidth]{#1}\end{figure}}
+\newcommand{\imgb}[2]{\begin{center}\begin{subfigure}{.7\textwidth}\includegraphics[width=.8\linewidth]{#1}\end{subfigure}
+\begin{subfigure}{.7\textwidth}\includegraphics[width=.8\linewidth]{#2}\end{subfigure}\end{center}}
 
 
 %----------------------------------------------------------------------------------------
@@ -73,7 +85,7 @@
 
 \begin{document}
 
-\setlength{\parskip}{0.8cm plus0.5mm minus0.5mm}
+\setlength{\parskip}{0.7cm plus0.5mm minus0.5mm}
 \setlength{\parindent}{0pt}
 \let\cleardoublepage\clearpage
 
@@ -98,7 +110,7 @@
 
 %----------------------------------------------------------------------------------------
 
-\maketitle % Print the title page
+\maketitlepage
 
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
@@ -124,14 +136,12 @@ Copyright \copyright\ \the\year\ \thanklessauthor
 
 \tableofcontents % Print the table of contents
 
-
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
-\input{./chapters/introduction}
 
-\mainmatter
+\input{./chapters/introduction}
 %----------------------------------------------------------------------------------------
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------

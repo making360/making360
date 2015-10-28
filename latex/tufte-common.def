@@ -322,9 +322,9 @@
   \hypersetup{%
     pdfborder = {0 0 0},
     bookmarksdepth = section,
-    citecolor = DarkGreen,
-    linkcolor = DarkBlue,
-    urlcolor = DarkGreen,
+    citecolor = false,
+    linkcolor = false,
+    urlcolor = false,
   }%
 }
 
@@ -340,16 +340,17 @@
 %%
 % Set the font sizes and baselines to match Tufte's books
 \renewcommand\normalsize{%
-   \@setfontsize\normalsize\@xpt{14}%
+   \@setfontsize\normalsize{13}{18}%
    \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
    \belowdisplayskip \abovedisplayskip
    \let\@listi\@listI}
-\normalbaselineskip=14pt
+
+\normalbaselineskip=18pt
 \normalsize
 \renewcommand\small{%
-   \@setfontsize\small\@ixpt{12}%
+   \@setfontsize\small{11}{14}%
    \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
    \abovedisplayshortskip \z@ \@plus2\p@
    \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
@@ -370,13 +371,14 @@
                \itemsep \parsep}%
    \belowdisplayskip \abovedisplayskip
 }
-\renewcommand\scriptsize{\@setfontsize\scriptsize\@viipt\@viiipt}
-\renewcommand\tiny{\@setfontsize\tiny\@vpt\@vipt}
-\renewcommand\large{\@setfontsize\large\@xipt{15}}
-\renewcommand\Large{\@setfontsize\Large\@xiipt{16}}
-\renewcommand\LARGE{\@setfontsize\LARGE\@xivpt{18}}
-\renewcommand\huge{\@setfontsize\huge\@xxpt{30}}
-\renewcommand\Huge{\@setfontsize\Huge{24}{36}}
+
+
+\renewcommand\scriptsize{\@setfontsize\scriptsize{7}{8}}
+\renewcommand\large{\@setfontsize\large{18}{24}}
+\renewcommand\Large{\@setfontsize\Large{18}{28}}
+\renewcommand\LARGE{\@setfontsize\LARGE{60}{80}}
+\renewcommand\huge{\@setfontsize\huge{28}{40}}
+\renewcommand\Huge{\@setfontsize\Huge{28}{40}}
 
 \setlength\leftmargini   {1pc}
 \setlength\leftmarginii  {1pc}
@@ -414,7 +416,7 @@
 %%
 % Set page layout geometry
 
-\RequirePackage[letterpaper,left=1in,top=1in,headsep=2\baselineskip,textwidth=26pc,marginparsep=2pc,marginparwidth=12pc,textheight=44\baselineskip,headheight=\baselineskip]{geometry}
+\RequirePackage[letterpaper,left=1in,top=1in,bottom=1in,headsep=2\baselineskip,textwidth=26pc,marginparsep=2pc,marginparwidth=12pc,textheight=44\baselineskip,headheight=\baselineskip]{geometry}
 
 \ifthenelse{\boolean{@tufte@afourpaper}}
   {\geometry{a4paper,left=24.8mm,top=27.4mm,headsep=2\baselineskip,textwidth=107mm,marginparsep=8.2mm,marginparwidth=49.4mm,textheight=49\baselineskip,headheight=\baselineskip}}
@@ -1376,29 +1378,27 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % The 'fancy' page style is the default style for all pages.
-\fancyhf{} % clear header and footer fields
-\ifthenelse{\boolean{@tufte@twoside}}
-  {\fancyhead[LE]{\thepage\quad\smallcaps{\newlinetospace{\plainauthor}}}%
-    \fancyhead[RO]{\smallcaps{\newlinetospace{\plaintitle}}\quad\thepage}}
-  {\fancyhead[RE,RO]{\smallcaps{\newlinetospace{\plaintitle}}\quad\thepage}}
+%\fancyhf{} % clear header and footer fields
+%\ifthenelse{\boolean{@tufte@twoside}}
+%  {\fancyhead[LE]{\thepage\quad\smallcaps{\newlinetospace{\plainauthor}}}%
+%    \fancyhead[RO]{\smallcaps{\newlinetospace{\plaintitle}}\quad\thepage}}
+%  {\fancyhead[RE,RO]{\smallcaps{\newlinetospace{\plaintitle}}\quad\thepage}}
 
 
 % The `plain' page style is used on chapter opening pages.
 % In Tufte's /Beautiful Evidence/ he never puts page numbers at the
 % bottom of pages -- the folios are unexpressed.
 \fancypagestyle{plain}{
-  \fancyhf{} % clear header and footer fields
-  % Uncomment the following five lines of code if you want the opening page
-  % of the chapter to express the folio in the lower outside corner.
-  \ifthenelse{\boolean{@tufte@twoside}}
-    {\fancyfoot[LE,RO]{\thepage}}
-    %{\fancyfoot[RE,RO]{\thepage}}
+    \renewcommand{\headrulewidth}{0pt}%
+    \fancyhf{}%
+    \fancyfoot[LE,RO]{\thepage}
 }
 
 % The `empty' page style suppresses all headers and footers.
 % It's used on title pages and `intentionally blank' pages.
 \fancypagestyle{empty}{
-  \fancyhf{} % clear header and footer fields
+  \fancyhf{}%
+
 }
 
 
@@ -1457,13 +1457,11 @@
   \cleardoublepage%
   {%
   \sffamily%
-  \begin{fullwidth}%
-  \fontsize{18}{20}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklessauthor}}%
-  \vspace{11.5pc}%
-  \fontsize{36}{40}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklesstitle}}%
-  \vfill%
-  \fontsize{14}{16}\selectfont\par\noindent\allcaps{\thanklesspublisher}%
-  \end{fullwidth}%
+  \begin{fullwidth}
+    \begin{center}
+    \includegraphics[width=13cm]{./cover}
+    \end{center}
+  \end{fullwidth}
   }
   \thispagestyle{empty}%
   \clearpage%
@@ -1521,15 +1519,21 @@
 
 %%
 % Make Tuftian-style section headings and TOC formatting
+\newcommand*{\justifyheading}{\raggedleft}
+\titleformat{\part}%
+  {\sffamily\LARGE\bfseries\justifyheading}% format applied to label+text
+  {}% label
+  {0em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
 
 \titleformat{\chapter}%
   [display]% shape
   {\relax\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\begin{fullwidth}}{}}% format applied to label+text
-  {\itshape\Huge\thechapter}% label
+  {\huge\thechapter}% label
   {0pt}% horizontal separation between label and title body
-  {\Huge\sffamily\bfseries}% before the title body
+  {\huge\sffamily\bfseries}% before the title body
   [\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\end{fullwidth}}{}]% after the title body
-
 
 \titleformat{\section}%
   [hang]% shape
@@ -1540,10 +1544,9 @@
   []% after the title body
 
 \titleformat{\subsection}%
-  [hang]% shape
-  {\normalfont\large\itshape}% format applied to label+text
+  {\normalfont\large}% format applied to label+text
   {\thesubsection}% label
-  {1em}% horizontal separation between label and title body
+  {0em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
 
@@ -1555,7 +1558,7 @@
   {}% before the title body
   []% after the title body
 
-\titlespacing*{\chapter}{0pt}{20pt}{0pt}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
 \titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
 \titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus.2ex}
   
@@ -1587,18 +1590,20 @@
 \ifthenelse{\boolean{@tufte@toc}}{%
   \titlecontents{part}% FIXME
     [0em] % distance from left margin
-    {\vspace{1.5\baselineskip}\begin{fullwidth}\LARGE\rmfamily\itshape} % above (global formatting of entry)
-    {\contentslabel{2em}} % before w/label (label = ``II'')
+    {\begin{fullwidth}\LARGE} % above (global formatting of entry)
+    {} % before w/label (label = ``II'')
     {} % before w/o label
-    {\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    {} % filler + page (leaders and page num)
     [\end{fullwidth}] % after
+
   \titlecontents{chapter}%
     [0em] % distance from left margin
-    {\vspace{1.5\baselineskip}\begin{fullwidth}\LARGE\rmfamily\itshape} % above (global formatting of entry)
-    {\hspace*{0em}\contentslabel{2em}} % before w/label (label = ``2'')
-    {\hspace*{0em}} % before w/o label
-    {\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    {\begin{fullwidth}\large\rmfamily\itshape} % above (global formatting of entry)
+    {} % before w/label (label = ``2'')
+    {} % before w/o label
+    {} % filler + page (leaders and page num)
     [\end{fullwidth}] % after
+
   \titlecontents{section}% FIXME
     [0em] % distance from left margin
     {\vspace{0\baselineskip}\begin{fullwidth}\Large\rmfamily\itshape} % above (global formatting of entry)
