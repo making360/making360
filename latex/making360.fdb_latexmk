@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1446003985 "making360.tex" "making360.pdf" "making360" 1446003986
+["pdflatex"] 1446004302 "making360.tex" "making360.pdf" "making360" 1446004303
   "./chapters/introduction.tex" 1446003522 2544 644a9c2b29e5f5d14e08346a0ca50d20 ""
   "./chapters/problems-of-shooting.tex" 1446001975 496 a03f1bbdb79d500e15139c7333da26b2 ""
   "./chapters/problems-of-shooting/the-elements.tex" 1445992476 1448 f2d8ba90d0a7de6b6993e128500db37b ""
@@ -98,15 +98,15 @@
   "/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
   "/usr/local/texlive/2015/texmf-dist/tex/latex/xifthen/xifthen.sty" 1240073024 5650 b146a211772e4cfd4ca29af3aac8c3fc ""
   "/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1417732693 4962 9c1069474ff71dbc47d5006555e352d3 ""
-  "making360.aux" 1446003986 1543 9c46ccedf54fd8c48556852b0df0bf1e ""
-  "making360.out" 1446003986 695 67bafda2235e8d475ada2b690f999602 ""
+  "making360.aux" 1446004303 1543 9c46ccedf54fd8c48556852b0df0bf1e ""
+  "making360.out" 1446004303 695 67bafda2235e8d475ada2b690f999602 ""
   "making360.tex" 1446003588 5978 1aa11a9834ba1b4cf734a35324056af5 ""
-  "making360.toc" 1446003986 321 46cd8098af8a70645c5fdde6d5ee6732 ""
+  "making360.toc" 1446004303 321 46cd8098af8a70645c5fdde6d5ee6732 ""
   "tufte-book.cls" 1446002959 1770 d6b97ca94d139dbd93880791025d654b ""
-  "tufte-common.def" 1446003983 66301 5d608a917210f6e494cc6cdd1565952f ""
+  "tufte-common.def" 1446004299 66299 bc2b0423764e3921424ce13117c12396 ""
   (generated)
-  "making360.log"
-  "making360.out"
+  "making360.aux"
   "making360.pdf"
   "making360.toc"
-  "making360.aux"
+  "making360.out"
+  "making360.log"

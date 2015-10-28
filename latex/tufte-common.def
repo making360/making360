@@ -340,7 +340,7 @@
 %%
 % Set the font sizes and baselines to match Tufte's books
 \renewcommand\normalsize{%
-   \@setfontsize\normalsize{14}{18}%
+   \@setfontsize\normalsize{13}{18}%
    \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
@@ -350,7 +350,7 @@
 \normalbaselineskip=18pt
 \normalsize
 \renewcommand\small{%
-   \@setfontsize\small\@ixpt{12}%
+   \@setfontsize\small{11}{14}%
    \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
    \abovedisplayshortskip \z@ \@plus2\p@
    \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@

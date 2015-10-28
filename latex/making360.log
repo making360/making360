@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 OCT 2015 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 OCT 2015 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,6 +209,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip48
 )
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 351.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
@@ -326,8 +330,12 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty
+)
+
+LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <13> not available
+(Font)              size <12> substituted on input line 105.
+
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -698,7 +706,7 @@ LaTeX Font Info:    Try loading font information for T1+Roboto-LF on input line
 File: T1Roboto-LF.fd 2015/04/16 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 86.
+(Font)              scaled to size 13.0pt on input line 86.
 \AtBeginShipoutBox=\box62
 Package hyperref Info: Link coloring ON on input line 86.
 
@@ -852,7 +860,7 @@ File: TS1Roboto-LF.fd 2015/04/16 (autoinst) Font definitions for TS1/Roboto-LF.
 
 )
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 124.
+(Font)              scaled to size 13.0pt on input line 124.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `Roboto-LF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -875,12 +883,12 @@ LaTeX Font Info:    Try loading font information for T1+fvm on input line 130.
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 11.90009pt on input line 130.
+(Font)              scaled to size 11.05008pt on input line 130.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 130.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 130.
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 130
 .
 
@@ -918,25 +926,18 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (0.37318pt too wide) in paragraph at lines 130--131
-[]\T1/Roboto-LF/m/n/14 (-20) This work is li-censed un-der the Cre-ative Com-mo
-ns Attribution-NonCommercial- 
- []
-
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' will be
-(Font)              scaled to size 14.0pt on input line 132.
-[2
+(Font)              scaled to size 13.0pt on input line 132.
+ [2
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
 (Font)              scaled to size 28.0pt on input line 137.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
 (Font)              scaled to size 28.0pt on input line 137.
-
-(./making360.toc
+ (./making360.toc
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 14.0pt on input line 1.
+(Font)              scaled to size 13.0pt on input line 1.
 
 
 ! Package xcolor Error: Undefined color `false'.
@@ -1009,9 +1010,9 @@ If that doesn't work, type  X <return>  to quit.
  (./chapters/introduction.tex [3
 
 ]
-Overfull \hbox (0.19737pt too wide) in paragraph at lines 45--46
-\T1/Roboto-LF/m/n/14 (+16) your learning curve. creating 360 videos is very int
-ense and detailed so we're 
+Overfull \hbox (0.13763pt too wide) in paragraph at lines 27--28
+\T1/Roboto-LF/m/n/13 (+5) painfully learned ourselves so you can skip right to 
+having fun. we only ask that you 
  []
 
 [4
@@ -1069,7 +1070,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (38.29596pt too wide) in paragraph at lines 5--5
+Overfull \hbox (35.53198pt too wide) in paragraph at lines 5--5
 [][]  
  []
 
@@ -1105,15 +1106,15 @@ LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
 
 
 ]
-Overfull \hbox (0.11641pt too wide) in paragraph at lines 13--14
-[]\T1/Roboto-LF/m/n/14 (+13) You want to cre-ate au-dio-vi-sual im-mer-sive ex-
-pe-ri-ences. Ex-pand cin-ema, com- 
+Overfull \hbox (0.19801pt too wide) in paragraph at lines 13--14
+\T1/Roboto-LF/m/n/13 (+3) naut! That's great what are the first steps to take y
+ou closer? What ma-te-ri-als do you 
  []
 
 
-Overfull \hbox (0.11641pt too wide) in paragraph at lines 19--20
-[]\T1/Roboto-LF/m/n/14 (+13) You want to cre-ate au-dio-vi-sual im-mer-sive ex-
-pe-ri-ences. Ex-pand cin-ema, com- 
+Overfull \hbox (0.19801pt too wide) in paragraph at lines 19--20
+\T1/Roboto-LF/m/n/13 (+3) naut! That's great what are the first steps to take y
+ou closer? What ma-te-ri-als do you 
  []
 
 [7
@@ -1171,7 +1172,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (38.29596pt too wide) in paragraph at lines 5--5
+Overfull \hbox (35.53198pt too wide) in paragraph at lines 5--5
 [][]  
  []
 
@@ -1232,6 +1233,11 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 
 ]
+Overfull \hbox (0.17754pt too wide) in paragraph at lines 11--12
+\T1/Roboto-LF/m/n/13 (+2) As op-posed to tra-di-tional post-production work-flo
+w, re-view-ing your dailies can't hap- 
+ []
+
 ! Missing \endcsname inserted.
 <to be read again> 
                    \textwidth 
@@ -1252,13 +1258,19 @@ l.22 \imga{29/folders}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<./img/29/folders.jpg, id=73, 1255.69125pt x 466.74374pt>
+<./img/29/folders.jpg, id=74, 1255.69125pt x 466.74374pt>
 File: ./img/29/folders.jpg Graphic file (type jpg)
 
 <use ./img/29/folders.jpg>
 Package pdftex.def Info: ./img/29/folders.jpg used on input line 22.
 (pdftex.def)             Requested size: 311.98685pt x 115.96632pt.
- [9
+
+Overfull \hbox (0.1577pt too wide) in paragraph at lines 24--25
+\T1/Roboto-LF/m/n/13 (+10) in each camera folder, then look at the file size of
+ each one. If it's the same or close 
+ []
+
+[9
 
  <./img/29/folders.jpg>]
 
@@ -1276,7 +1288,7 @@ section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<./img/29/blend.jpg, id=78, 602.25pt x 499.8675pt>
+<./img/29/blend.jpg, id=79, 602.25pt x 499.8675pt>
 File: ./img/29/blend.jpg Graphic file (type jpg)
  <use ./img/29/blend.jpg>
 Package pdftex.def Info: ./img/29/blend.jpg used on input line 28.
@@ -1302,22 +1314,49 @@ File: ./img/29/blend.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./img/29/blend.jpg used on input line 28.
 (pdftex.def)             Requested size: 174.72154pt x 145.01888pt.
 
-Underfull \vbox (badness 2735) has occurred while \output is active []
+Overfull \hbox (0.1431pt too wide) in paragraph at lines 33--34
+\T1/Roboto-LF/m/n/13 (+7) plies to 360 video edit-ing. Re-mem-ber you are edit-
+ing the amount of take files times 
+ []
 
- [10 <./img/29/blend.jpg>] [11]
-Overfull \hbox (0.10455pt too wide) in paragraph at lines 61--62
-\T1/Roboto-LF/m/n/14 (+15) are correct. Consider the right fps for the playback
- solution of your choosing. 
+
+Overfull \hbox (0.14471pt too wide) in paragraph at lines 43--44
+[]\T1/Roboto-LF/m/n/13 (+17) To combine the individual videos into a single hig
+h resolution seamless panoramic 
+ []
+
+
+Overfull \hbox (0.19441pt too wide) in paragraph at lines 43--44
+\T1/Roboto-LF/m/n/13 (+8) developing built-in functionality to ease the stitchi
+ng/playback of 360 dailies. If you 
+ []
+
+[10 <./img/29/blend.jpg>] [11]
+Overfull \hbox (0.25285pt too wide) in paragraph at lines 65--66
+\T1/Roboto-LF/m/n/13 (+19) the res-o-lu-tion achieved from your 360 cam-era rig
+. De-pend-ing on the rig you chose, 
+ []
+
+
+Overfull \hbox (0.11397pt too wide) in paragraph at lines 67--68
+\T1/Roboto-LF/m/n/13 (+18) footage will be running through many processes down 
+the pipeline. From stitching 
  []
 
 [12]
-Overfull \hbox (0.20457pt too wide) in paragraph at lines 71--72
-[]\T1/Roboto-LF/m/n/14 (+3) Every time you render, you are creating a new file.
- Stay organized so you know 
+Overfull \hbox (0.12712pt too wide) in paragraph at lines 71--72
+[]\T1/Roboto-LF/m/n/13 (+8) Every time you render, you are creating a new file.
+ Stay organized so you know what 
+ []
+
+
+Overfull \hbox (0.14032pt too wide) in paragraph at lines 71--72
+\T1/Roboto-LF/m/n/13 (+20) number _v001 for your tests, and FS for Fine Stitch.
+ When rendering frames, select 
  []
 
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 81.
+(Font)              scaled to size 11.0pt on input line 81.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 81.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -1326,19 +1365,20 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [13]
-Overfull \hbox (0.21642pt too wide) in paragraph at lines 96--97
-\T1/Roboto-LF/m/n/14 (+9) sion of the out-put file-name to .mov, FFm-peg will o
-p-er-ate a con-ver-sion of your 
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 90.
+
+Overfull \hbox (0.12617pt too wide) in paragraph at lines 92--93
+[]\T1/Roboto-LF/m/n/13 (+7) Run FFmpeg by simply the typing "ffmpeg" in the ter
+minal. FFmpeg takes a video in 
  []
 
-
-Overfull \hbox (34.52922pt too wide) in paragraph at lines 112--113
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][] 
+[13]
+Overfull \hbox (0.15263pt too wide) in paragraph at lines 96--97
+\T1/Roboto-LF/m/n/13 (+17) action besides renaming the output file. If you want
+ to change the extension of the 
  []
 
-[14] [15]))
+[14]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./making360.aux)
@@ -1346,16 +1386,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `making360.out' has not changed.
 (rerunfilecheck)             Checksum: 67BAFDA2235E8D475ADA2B690F999602;695.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 16843 strings out of 493089
- 255499 string characters out of 6134842
- 394972 words of memory out of 5000000
- 19942 multiletter control sequences out of 15000+600000
- 78929 words of font info for 117 fonts, out of 8000000 for 9000
+ 16845 strings out of 493089
+ 255653 string characters out of 6134842
+ 392990 words of memory out of 5000000
+ 19943 multiletter control sequences out of 15000+600000
+ 79162 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,94p,1004b,1147s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,94p,1004b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_idpkzy.enc}{/usr/local/texli
 ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2
@@ -1365,10 +1410,10 @@ ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on making360.pdf (15 pages, 277253 bytes).
+Output written on making360.pdf (14 pages, 276742 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
+ 136 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
  25144 words of extra memory for PDF output out of 29859 (max. 10000000)
 
