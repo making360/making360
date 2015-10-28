@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  26 OCT 2015 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 OCT 2015 20:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -244,7 +244,16 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layouthoffset=\dimen121
 \Gm@layoutvoffset=\dimen122
 \Gm@dimlist=\toks17
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (792.0pt) is ignored.
+
 )
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (792.0pt) is ignored.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count105
@@ -563,80 +572,135 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 \Gin@req@height=\dimen134
 \Gin@req@width=\dimen135
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen136
+\WF@size=\dimen137
+\c@WF@wrappedlines=\count121
+\WF@box=\box56
+\WF@everypar=\toks20
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen138
+\captionmargin@=\dimen139
+\captionwidth=\dimen140
+\caption@tempdima=\dimen141
+\caption@indent=\dimen142
+\caption@parindent=\dimen143
+\caption@hangindent=\dimen144
+)
+\c@ContinuedFloat=\count122
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\c@subfigure=\count123
+\c@subtable=\count124
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count121
+\FV@CodeLineNo=\count125
 \FV@InFile=\read1
-\FV@TabBox=\box56
-\c@FancyVerbLine=\count122
-\FV@StepNumber=\count123
+\FV@TabBox=\box57
+\c@FancyVerbLine=\count126
+\FV@StepNumber=\count127
 \FV@OutFile=\write3
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count124
-\lst@gtempboxa=\box57
-\lst@token=\toks20
-\lst@length=\count125
-\lst@currlwidth=\dimen136
-\lst@column=\count126
-\lst@pos=\count127
-\lst@lostspace=\dimen137
-\lst@width=\dimen138
-\lst@newlines=\count128
-\lst@lineno=\count129
-\lst@maxwidth=\dimen139
+\lst@mode=\count128
+\lst@gtempboxa=\box58
+\lst@token=\toks21
+\lst@length=\count129
+\lst@currlwidth=\dimen145
+\lst@column=\count130
+\lst@pos=\count131
+\lst@lostspace=\dimen146
+\lst@width=\dimen147
+\lst@newlines=\count132
+\lst@lineno=\count133
+\lst@maxwidth=\dimen148
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count130
-\lst@skipnumbers=\count131
-\lst@framebox=\box58
+\c@lstnumber=\count134
+\lst@skipnumbers=\count135
+\lst@framebox=\box59
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-(./making360.aux)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/textpos/textpos.sty
+Package: textpos 2014/01/03 v1.7j
+
+Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)
+\TP@textbox=\box60
+\TP@holdbox=\box61
+\TPHorizModule=\dimen149
+\TPVertModule=\dimen150
+\TP@margin=\dimen151
+\TP@absmargin=\dimen152
+
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
+\TPboxrulesize=\dimen153
+\TP@ox=\dimen154
+\TP@oy=\dimen155
+\TP@tbargs=\toks22
+\TP@prevdepth=\dimen156
+TextBlockOrigin set to 0pt x 0pt
+) (./making360.aux)
 \openout1 = `making360.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 86.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Try loading font information for T1+Roboto-LF on input line
- 77.
+ 86.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/roboto/T1Roboto-LF.fd
 File: T1Roboto-LF.fd 2015/04/16 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 77.
-\AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 77.
+(Font)              scaled to size 14.0pt on input line 86.
+\AtBeginShipoutBox=\box62
+Package hyperref Info: Link coloring ON on input line 86.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -644,18 +708,18 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
 
 (./making360.out) (./making360.out)
 \@outlinefile=\write4
 \openout4 = `making360.out'.
 
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 77.
+LaTeX Info: Redefining \selectfont on input line 86.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -666,16 +730,16 @@ LaTeX Info: Redefining \selectfont on input line 77.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside asymmetric 
 * h-part:(L,W,R)=(72.26999pt, 312.0pt, 230.02501pt)
-* v-part:(T,H,B)=(72.26999pt, 616.0pt, 106.7pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=312.0pt
-* \textheight=616.0pt
+* \textheight=650.43001pt
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
-* \topmargin=-42.0pt
-* \headheight=14.0pt
-* \headsep=28.0pt
+* \topmargin=-54.0pt
+* \headheight=18.0pt
+* \headsep=36.0pt
 * \topskip=10.0pt
 * \footskip=25.29494pt
 * \marginparwidth=144.0pt
@@ -691,7 +755,7 @@ LaTeX Info: Redefining \selectfont on input line 77.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 77.
+LaTeX Info: Redefining \microtypecontext on input line 86.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -705,23 +769,23 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `Roboto-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\big@size=\dimen140
+\big@size=\dimen157
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count133
-\scratchdimen=\dimen141
-\scratchbox=\box60
-\nofMPsegments=\count134
-\nofMParguments=\count135
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count136
-\MPscratchDim=\dimen142
-\MPnumerator=\count137
-\makeMPintoPDFobject=\count138
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count137
+\scratchdimen=\dimen158
+\scratchbox=\box63
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen159
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks24
 )
-\c@mv@tabular=\count139
-\c@mv@boldtabular=\count140
+\c@mv@tabular=\count143
+\c@mv@boldtabular=\count144
  (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -737,28 +801,58 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count141
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 18.0pt on input line 104.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 36.0pt on input line 104.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 14.0pt on input line 104.
-
-[1
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \@caption).
+(caption)             \@caption = \long macro:#1[#2]#3->\par \addcontentsline {
+\csname ext@#1\endcsname }{#1}{\protect \numberline {\csname the#1\endcsname }{
+\ignorespaces #2}}\begingroup \@parboxrestore \if@minipage \@setminipage \fi \@
+tufte@caption@font \@tufte@caption@justification \noindent \csname fnum@#1\endc
+sname : \ignorespaces #3\par \endgroup .
 
 
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package caption Info: listings package is loaded.
+
+! Package caption Error: The `subcaption' package does not work correctly
+(caption)                in compatibility mode.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \begin{document}
+                     
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count145
+ABD: EveryShipout initializing macros
+<./cover.png, id=24, 912.40875pt x 900.36375pt>
+File: ./cover.png Graphic file (type png)
+ <use ./cover.png>
+Package pdftex.def Info: ./cover.png used on input line 113.
+(pdftex.def)             Requested size: 369.8855pt x 365.00252pt.
+ [1
+
+
+
+ <./cover.png>]
 LaTeX Font Info:    Try loading font information for TS1+Roboto-LF on input lin
-e 115.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
+e 124.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
 File: TS1Roboto-LF.fd 2015/04/16 (autoinst) Font definitions for TS1/Roboto-LF.
 
 )
 LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 115.
+(Font)              scaled to size 14.0pt on input line 124.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `Roboto-LF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
@@ -771,22 +865,23 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.121 ...ons.org/licenses/by-nc-sa/4.0/deed.en_US}
+l.130 ...ons.org/licenses/by-nc-sa/4.0/deed.en_US}
                                                   .\index{license}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 121.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 130.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 121.
+(Font)              scaled to size 11.90009pt on input line 130.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 121
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 130.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 130
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplx.fd
@@ -795,25 +890,25 @@ File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 121
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 130
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 121
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 130
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 121
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 130
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 121
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 130
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -823,19 +918,25 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 123.
- [2
 
-]
+Overfull \hbox (0.37318pt too wide) in paragraph at lines 130--131
+[]\T1/Roboto-LF/m/n/14 (-20) This work is li-censed un-der the Cre-ative Com-mo
+ns Attribution-NonCommercial- 
+ []
+
+LaTeX Font Info:    Font shape `T1/Roboto-LF/m/it' will be
+(Font)              scaled to size 14.0pt on input line 132.
+[2
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 24.0pt on input line 128.
+(Font)              scaled to size 28.0pt on input line 137.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 24.0pt on input line 128.
+(Font)              scaled to size 28.0pt on input line 137.
 
 (./making360.toc
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
+(Font)              scaled to size 14.0pt on input line 1.
 
 
 ! Package xcolor Error: Undefined color `false'.
@@ -850,9 +951,9 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 2.
+(Font)              scaled to size 18.0pt on input line 2.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 2.
+(Font)              scaled to size 18.0pt on input line 2.
 
 ! Package xcolor Error: Undefined color `false'.
 
@@ -860,7 +961,7 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2 ...space {1em}Problems of Shooting}{5}{part.1}
+l.2 ...space {1em}Problems of Shooting}{6}{part.1}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -896,7 +997,7 @@ See the xcolor package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.5 ...apter}{Dailies Quickstitch}{10}{chapter*.4}
+l.5 ...hapter}{Dailies Quickstitch}{9}{chapter*.4}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -908,82 +1009,317 @@ If that doesn't work, type  X <return>  to quit.
  (./chapters/introduction.tex [3
 
 ]
-Overfull \hbox (0.18164pt too wide) in paragraph at lines 43--44
-\T1/Roboto-LF/m/n/10 (+2) experiences, we will be able to speed up your learnin
-g curve. creating 360 videos is very intense and detailed 
+Overfull \hbox (0.19737pt too wide) in paragraph at lines 45--46
+\T1/Roboto-LF/m/n/14 (+16) your learning curve. creating 360 videos is very int
+ense and detailed so we're 
  []
 
-) [4
+[4
 
-] (./chapters/problems-of-shooting.tex
+] [5]) (./chapters/problems-of-shooting.tex
+! Missing } inserted.
+<inserted text> 
+                }
+l.5 \cleardoublepage
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! You can't use `\hrule' here except with leaders.
+\frame ...h #1\vrule \@width \@wholewidth }\hrule 
+                                                  \@height \@wholewidth \vsk...
+l.5 \cleardoublepage
+                    
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.5 \cleardoublepage
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.5 \cleardoublepage
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.5 \cleardoublepage
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (38.29596pt too wide) in paragraph at lines 5--5
+[][]  
+ []
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.5 \cleardoublepage
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.5 \cleardoublepage
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+\GPT@outputbox=\box64
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 6.
+(Font)              scaled to size 60.0pt on input line 11.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 6.
- [5
+(Font)              scaled to size 60.0pt on input line 11.
+(./chapters/problems-of-shooting/the-elements.tex [6
 
 
 
-] [6]
-(./chapters/problems-of-shooting/the-elements.tex
-Overfull \hbox (0.225pt too wide) in paragraph at lines 12--13
-\T1/Roboto-LF/m/n/10 (+18) great what are the first steps to take you closer? W
-hat materials do you need to shoot, learn, and grow right 
+]
+Overfull \hbox (0.11641pt too wide) in paragraph at lines 13--14
+[]\T1/Roboto-LF/m/n/14 (+13) You want to cre-ate au-dio-vi-sual im-mer-sive ex-
+pe-ri-ences. Ex-pand cin-ema, com- 
  []
 
 
-Overfull \hbox (0.225pt too wide) in paragraph at lines 18--19
-\T1/Roboto-LF/m/n/10 (+18) great what are the first steps to take you closer? W
-hat materials do you need to shoot, learn, and grow right 
+Overfull \hbox (0.11641pt too wide) in paragraph at lines 19--20
+[]\T1/Roboto-LF/m/n/14 (+13) You want to cre-ate au-dio-vi-sual im-mer-sive ex-
+pe-ri-ences. Ex-pand cin-ema, com- 
  []
 
 [7
 
-])) (./chapters/problems-of-stitching.tex [8
+])) (./chapters/problems-of-stitching.tex
+! Missing } inserted.
+<inserted text> 
+                }
+l.5 \cleardoublepage
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! You can't use `\hrule' here except with leaders.
+\frame ...h #1\vrule \@width \@wholewidth }\hrule 
+                                                  \@height \@wholewidth \vsk...
+l.5 \cleardoublepage
+                    
+To put a horizontal rule in an hbox or an alignment,
+you should use \leaders or \hrulefill (see The TeXbook).
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.5 \cleardoublepage
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.5 \cleardoublepage
+                    
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.5 \cleardoublepage
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
-
-] [9]
-(./chapters/problems-of-stitching/dailies-quickstitch.tex
-Overfull \hbox (8.15704pt too wide) in paragraph at lines 8--9
-\T1/Roboto-LF/m/n/20.74 burnt in time-code for a re-view ses-sion but don't kno
-w 
+Overfull \hbox (38.29596pt too wide) in paragraph at lines 5--5
+[][]  
  []
 
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.5 \cleardoublepage
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-Overfull \hbox (0.12614pt too wide) in paragraph at lines 10--11
-\T1/Roboto-LF/m/n/10 (+11) flow, re-view-ing your dailies can't hap-pen un-til 
-your footage is stitched to-gether. Stitch-ing two or more videos 
- []
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.5 \cleardoublepage
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-[10
+! Undefined control sequence.
+l.12 \visible
+             {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   s
+l.15 	}
+       }
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   s
+l.15 	}
+       }
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+(./chapters/problems-of-stitching/dailies-quickstitch.tex [8
+
+
 
 ]
-LaTeX Font Info:    Font shape `T1/Roboto-LF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 48.
- [11]
-Overfull \hbox (0.15964pt too wide) in paragraph at lines 50--51
-[]\T1/Roboto-LF/m/n/10 (+12) Rendering is the last step in any workflow. Every 
-software you use to edit the picture or audio of a file will let 
- []
+! Missing \endcsname inserted.
+<to be read again> 
+                   \textwidth 
+l.22 \imga{29/folders}
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
 
-Overfull \hbox (0.19121pt too wide) in paragraph at lines 52--53
-[]\T1/Roboto-LF/m/n/10 (+16) Before you start rendering, double check that all 
-your default preferences are correct. Consider the right fps 
- []
+! Package xkeyval Error: `.7\textwidth ' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \imga{29/folders}
+                      
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/folders.jpg, id=73, 1255.69125pt x 466.74374pt>
+File: ./img/29/folders.jpg Graphic file (type jpg)
+
+<use ./img/29/folders.jpg>
+Package pdftex.def Info: ./img/29/folders.jpg used on input line 22.
+(pdftex.def)             Requested size: 311.98685pt x 115.96632pt.
+ [9
+
+ <./img/29/folders.jpg>]
+
+! Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \imgb{29/blend}{29/blend}
+                              
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/blend.jpg, id=78, 602.25pt x 499.8675pt>
+File: ./img/29/blend.jpg Graphic file (type jpg)
+ <use ./img/29/blend.jpg>
+Package pdftex.def Info: ./img/29/blend.jpg used on input line 28.
+(pdftex.def)             Requested size: 174.72154pt x 145.01888pt.
 
 
-Overfull \hbox (0.19803pt too wide) in paragraph at lines 56--57
-\T1/Roboto-LF/m/n/10 (+19) what resolution and frame rate the video will render
- as. For the GearVR, render your videos at 3840x1920 or 
+! Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \imgb{29/blend}{29/blend}
+                              
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+File: ./img/29/blend.jpg Graphic file (type jpg)
+<use ./img/29/blend.jpg>
+Package pdftex.def Info: ./img/29/blend.jpg used on input line 28.
+(pdftex.def)             Requested size: 174.72154pt x 145.01888pt.
+
+Underfull \vbox (badness 2735) has occurred while \output is active []
+
+ [10 <./img/29/blend.jpg>] [11]
+Overfull \hbox (0.10455pt too wide) in paragraph at lines 61--62
+\T1/Roboto-LF/m/n/14 (+15) are correct. Consider the right fps for the playback
+ solution of your choosing. 
  []
 
 [12]
+Overfull \hbox (0.20457pt too wide) in paragraph at lines 71--72
+[]\T1/Roboto-LF/m/n/14 (+3) Every time you render, you are creating a new file.
+ Stay organized so you know 
+ []
+
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 79.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 79.
- (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
+(Font)              scaled to size 9.0pt on input line 81.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 81.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 Package microtype Info: Loading generic settings for font family
@@ -991,43 +1327,48 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [13]
-Overfull \hbox (34.52922pt too wide) in paragraph at lines 101--102
+Overfull \hbox (0.21642pt too wide) in paragraph at lines 96--97
+\T1/Roboto-LF/m/n/14 (+9) sion of the out-put file-name to .mov, FFm-peg will o
+p-er-ate a con-ver-sion of your 
+ []
+
+
+Overfull \hbox (34.52922pt too wide) in paragraph at lines 112--113
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][] 
  []
 
-[14]))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+[14] [15]))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./making360.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 160.
 Package rerunfilecheck Info: File `making360.out' has not changed.
 (rerunfilecheck)             Checksum: 67BAFDA2235E8D475ADA2B690F999602;695.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 15659 strings out of 493089
- 234813 string characters out of 6134842
- 362535 words of memory out of 5000000
- 18775 multiletter control sequences out of 15000+600000
- 118366 words of font info for 127 fonts, out of 8000000 for 9000
+ 16843 strings out of 493089
+ 255499 string characters out of 6134842
+ 394972 words of memory out of 5000000
+ 19942 multiletter control sequences out of 15000+600000
+ 78929 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,13n,51p,1004b,1153s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,94p,1004b,1147s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
-exlive/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_v5svcm.enc}{/usr/local/texli
-ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_idpkzy.enc}{/usr/local/texlive/2
-015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2015/
-texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/google/roboto/Roboto-Italic.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on making360.pdf (14 pages, 109091 bytes).
+exlive/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_idpkzy.enc}{/usr/local/texli
+ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2
+015/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/google/roboto/Roboto-Italic.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on making360.pdf (15 pages, 277253 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
+ 139 PDF objects out of 1000 (max. 8388607)
  110 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 34345 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 22 named destinations out of 1000 (max. 500000)
+ 25144 words of extra memory for PDF output out of 29859 (max. 10000000)
 
