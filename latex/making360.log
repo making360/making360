@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 OCT 2015 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 OCT 2015 00:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -580,11 +580,51 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 \Gin@req@height=\dimen134
 \Gin@req@width=\dimen135
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box56
+)
+\tc@llx=\dimen136
+\tc@lly=\dimen137
+\tc@urx=\dimen138
+\tc@ury=\dimen139
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen140
+\adjbox@Height=\dimen141
+\adjbox@Depth=\dimen142
+\adjbox@Totalheight=\dimen143
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count121
+LaTeX Info: Redefining \checkoddpage on input line 25.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box57
+\sift@deathcycles=\count122
+\@vwid@loff=\dimen144
+\@vwid@roff=\dimen145
+))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen136
-\WF@size=\dimen137
-\c@WF@wrappedlines=\count121
-\WF@box=\box56
+\wrapoverhang=\dimen146
+\WF@size=\dimen147
+\c@WF@wrappedlines=\count123
+\WF@box=\box58
 \WF@everypar=\toks20
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -597,55 +637,55 @@ Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen138
-\captionmargin@=\dimen139
-\captionwidth=\dimen140
-\caption@tempdima=\dimen141
-\caption@indent=\dimen142
-\caption@parindent=\dimen143
-\caption@hangindent=\dimen144
+\captionmargin=\dimen148
+\captionmargin@=\dimen149
+\captionwidth=\dimen150
+\caption@tempdima=\dimen151
+\caption@indent=\dimen152
+\caption@parindent=\dimen153
+\caption@hangindent=\dimen154
 )
-\c@ContinuedFloat=\count122
+\c@ContinuedFloat=\count124
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@subfigure=\count123
-\c@subtable=\count124
+\c@subfigure=\count125
+\c@subtable=\count126
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count125
+\FV@CodeLineNo=\count127
 \FV@InFile=\read1
-\FV@TabBox=\box57
-\c@FancyVerbLine=\count126
-\FV@StepNumber=\count127
+\FV@TabBox=\box59
+\c@FancyVerbLine=\count128
+\FV@StepNumber=\count129
 \FV@OutFile=\write3
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count128
-\lst@gtempboxa=\box58
+\lst@mode=\count130
+\lst@gtempboxa=\box60
 \lst@token=\toks21
-\lst@length=\count129
-\lst@currlwidth=\dimen145
-\lst@column=\count130
-\lst@pos=\count131
-\lst@lostspace=\dimen146
-\lst@width=\dimen147
-\lst@newlines=\count132
-\lst@lineno=\count133
-\lst@maxwidth=\dimen148
+\lst@length=\count131
+\lst@currlwidth=\dimen155
+\lst@column=\count132
+\lst@pos=\count133
+\lst@lostspace=\dimen156
+\lst@width=\dimen157
+\lst@newlines=\count134
+\lst@lineno=\count135
+\lst@maxwidth=\dimen158
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count134
-\lst@skipnumbers=\count135
-\lst@framebox=\box59
+\c@lstnumber=\count136
+\lst@skipnumbers=\count137
+\lst@framebox=\box61
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
@@ -659,19 +699,19 @@ Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
-\TP@textbox=\box60
-\TP@holdbox=\box61
-\TPHorizModule=\dimen149
-\TPVertModule=\dimen150
-\TP@margin=\dimen151
-\TP@absmargin=\dimen152
+\TP@textbox=\box62
+\TP@holdbox=\box63
+\TPHorizModule=\dimen159
+\TPVertModule=\dimen160
+\TP@margin=\dimen161
+\TP@absmargin=\dimen162
 
 Grid set 16 x 16 = 38.39343pt x 49.68562pt
-\TPboxrulesize=\dimen153
-\TP@ox=\dimen154
-\TP@oy=\dimen155
+\TPboxrulesize=\dimen163
+\TP@ox=\dimen164
+\TP@oy=\dimen165
 \TP@tbargs=\toks22
-\TP@prevdepth=\dimen156
+\TP@prevdepth=\dimen166
 TextBlockOrigin set to 0pt x 0pt
 ) (./making360.aux)
 \openout1 = `making360.aux'.
@@ -707,7 +747,7 @@ File: T1Roboto-LF.fd 2015/04/16 (autoinst) Font definitions for T1/Roboto-LF.
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
 (Font)              scaled to size 13.0pt on input line 86.
-\AtBeginShipoutBox=\box62
+\AtBeginShipoutBox=\box64
 Package hyperref Info: Link coloring ON on input line 86.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -716,7 +756,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count138
 )
 LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
@@ -777,23 +817,23 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `Roboto-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\big@size=\dimen157
+\big@size=\dimen167
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
-\scratchdimen=\dimen158
-\scratchbox=\box63
-\nofMPsegments=\count138
-\nofMParguments=\count139
+\scratchcounter=\count139
+\scratchdimen=\dimen168
+\scratchbox=\box65
+\nofMPsegments=\count140
+\nofMParguments=\count141
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count140
-\MPscratchDim=\dimen159
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen169
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
 \everyMPtoPDFconversion=\toks24
 )
-\c@mv@tabular=\count143
-\c@mv@boldtabular=\count144
+\c@mv@tabular=\count145
+\c@mv@boldtabular=\count146
  (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -841,7 +881,7 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count145
+\c@lstlisting=\count147
 ABD: EveryShipout initializing macros
 <./cover.png, id=24, 912.40875pt x 900.36375pt>
 File: ./cover.png Graphic file (type png)
@@ -1096,7 +1136,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-\GPT@outputbox=\box64
+\GPT@outputbox=\box66
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
 (Font)              scaled to size 60.0pt on input line 11.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' will be
@@ -1238,34 +1278,14 @@ Overfull \hbox (0.17754pt too wide) in paragraph at lines 11--12
 w, re-view-ing your dailies can't hap- 
  []
 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \textwidth 
-l.22 \imga{29/folders}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-! Package xkeyval Error: `.7\textwidth ' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 \imga{29/folders}
-                      
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 <./img/29/folders.jpg, id=74, 1255.69125pt x 466.74374pt>
 File: ./img/29/folders.jpg Graphic file (type jpg)
 
 <use ./img/29/folders.jpg>
-Package pdftex.def Info: ./img/29/folders.jpg used on input line 22.
-(pdftex.def)             Requested size: 311.98685pt x 115.96632pt.
+Package pdftex.def Info: ./img/29/folders.jpg used on input line 19.
+(pdftex.def)             Requested size: 467.98987pt x 173.95305pt.
 
-Overfull \hbox (0.1577pt too wide) in paragraph at lines 24--25
+Overfull \hbox (0.1577pt too wide) in paragraph at lines 21--22
 \T1/Roboto-LF/m/n/13 (+10) in each camera folder, then look at the file size of
  each one. If it's the same or close 
  []
@@ -1273,6 +1293,23 @@ Overfull \hbox (0.1577pt too wide) in paragraph at lines 24--25
 [9
 
  <./img/29/folders.jpg>]
+Overfull \hbox (0.1431pt too wide) in paragraph at lines 25--26
+\T1/Roboto-LF/m/n/13 (+7) plies to 360 video edit-ing. Re-mem-ber you are edit-
+ing the amount of take files times 
+ []
+
+
+Overfull \hbox (0.14471pt too wide) in paragraph at lines 35--36
+[]\T1/Roboto-LF/m/n/13 (+17) To combine the individual videos into a single hig
+h resolution seamless panoramic 
+ []
+
+
+Overfull \hbox (0.19441pt too wide) in paragraph at lines 35--36
+\T1/Roboto-LF/m/n/13 (+8) developing built-in functionality to ease the stitchi
+ng/playback of 360 dailies. If you 
+ []
+
 
 ! Package caption Error: \setcaptionsubtype outside float.
 
@@ -1280,8 +1317,8 @@ See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \imgb{29/blend}{29/blend}
-                              
+l.39 \imgB{.75}{29/blend}{29/rendersettings}
+                                            
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
 section about errors.
@@ -1291,8 +1328,8 @@ If that doesn't work, type  X <return>  to quit.
 <./img/29/blend.jpg, id=79, 602.25pt x 499.8675pt>
 File: ./img/29/blend.jpg Graphic file (type jpg)
  <use ./img/29/blend.jpg>
-Package pdftex.def Info: ./img/29/blend.jpg used on input line 28.
-(pdftex.def)             Requested size: 174.72154pt x 145.01888pt.
+Package pdftex.def Info: ./img/29/blend.jpg used on input line 39.
+(pdftex.def)             Requested size: 234.00354pt x 194.22293pt.
 
 
 ! Package caption Error: \setcaptionsubtype outside float.
@@ -1301,63 +1338,211 @@ See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \imgb{29/blend}{29/blend}
-                              
+l.39 \imgB{.75}{29/blend}{29/rendersettings}
+                                            
 If you do not understand this error, please take a closer look
 at the documentation of the `caption' package, especially the
 section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-File: ./img/29/blend.jpg Graphic file (type jpg)
-<use ./img/29/blend.jpg>
-Package pdftex.def Info: ./img/29/blend.jpg used on input line 28.
-(pdftex.def)             Requested size: 174.72154pt x 145.01888pt.
+<./img/29/rendersettings.jpg, id=80, 602.25pt x 499.8675pt>
+File: ./img/29/rendersettings.jpg Graphic file (type jpg)
 
-Overfull \hbox (0.1431pt too wide) in paragraph at lines 33--34
-\T1/Roboto-LF/m/n/13 (+7) plies to 360 video edit-ing. Re-mem-ber you are edit-
-ing the amount of take files times 
- []
+<use ./img/29/rendersettings.jpg>
+Package pdftex.def Info: ./img/29/rendersettings.jpg used on input line 39.
+(pdftex.def)             Requested size: 234.00354pt x 194.22293pt.
+
+Underfull \vbox (badness 1803) has occurred while \output is active []
+
+ [10]
+<./img/29/drag_videos.jpg, id=85, 2007.5pt x 637.38126pt>
+File: ./img/29/drag_videos.jpg Graphic file (type jpg)
+
+<use ./img/29/drag_videos.jpg>
+Package pdftex.def Info: ./img/29/drag_videos.jpg used on input line 43.
+(pdftex.def)             Requested size: 477.33759pt x 151.55467pt.
+
+<./img/29/rangeselection.png, id=86, 1284.8pt x 165.61874pt>
+File: ./img/29/rangeselection.png Graphic file (type png)
+
+<use ./img/29/rangeselection.png>
+Package pdftex.def Info: ./img/29/rangeselection.png used on input line 47.
+(pdftex.def)             Requested size: 477.34862pt x 61.5332pt.
+ [11 <./img/29/blend.jpg> <./img/29/rendersettings.jpg> <./img/29/drag_videos.j
+pg> <./img/29/rangeselection.png>]
+
+! Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...B{.75}{29/lensmodel}{29/lens_model_inputs}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/lensmodel.png, id=92, 769.87625pt x 358.33875pt>
+File: ./img/29/lensmodel.png Graphic file (type png)
+
+<use ./img/29/lensmodel.png>
+Package pdftex.def Info: ./img/29/lensmodel.png used on input line 51.
+(pdftex.def)             Requested size: 233.99547pt x 108.91315pt.
 
 
-Overfull \hbox (0.14471pt too wide) in paragraph at lines 43--44
-[]\T1/Roboto-LF/m/n/13 (+17) To combine the individual videos into a single hig
-h resolution seamless panoramic 
- []
+! Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 ...B{.75}{29/lensmodel}{29/lens_model_inputs}
+                                                  
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/lens_model_inputs.png, id=93, 769.87625pt x 358.33875pt>
+File: ./img/29/lens_model_inputs.png Graphic file (type png)
+
+<use ./img/29/lens_model_inputs.png>
+Package pdftex.def Info: ./img/29/lens_model_inputs.png used on input line 51.
+(pdftex.def)             Requested size: 233.99547pt x 108.91315pt.
 
 
-Overfull \hbox (0.19441pt too wide) in paragraph at lines 43--44
-\T1/Roboto-LF/m/n/13 (+8) developing built-in functionality to ease the stitchi
-ng/playback of 360 dailies. If you 
- []
+! Package caption Error: \setcaptionsubtype outside float.
 
-[10 <./img/29/blend.jpg>] [11]
-Overfull \hbox (0.25285pt too wide) in paragraph at lines 65--66
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \imgB{.75}{29/panotomove}{29/panomoved}
+                                            
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/panotomove.png, id=94, 917.4275pt x 510.90875pt>
+File: ./img/29/panotomove.png Graphic file (type png)
+
+<use ./img/29/panotomove.png>
+Package pdftex.def Info: ./img/29/panotomove.png used on input line 55.
+(pdftex.def)             Requested size: 233.98991pt x 130.30728pt.
+
+
+! Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \imgB{.75}{29/panotomove}{29/panomoved}
+                                            
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/panomoved.png, id=95, 917.4275pt x 511.9125pt>
+File: ./img/29/panomoved.png Graphic file (type png)
+
+<use ./img/29/panomoved.png>
+Package pdftex.def Info: ./img/29/panomoved.png used on input line 55.
+(pdftex.def)             Requested size: 233.98991pt x 130.5633pt.
+ [12 <./img/29/lensmodel.png (PNG copy)> <./img/29/lens_model_inputs.png (PNG c
+opy)> <./img/29/panotomove.png> <./img/29/panomoved.png>]
+
+! Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \imgB{.75}{29/fps25}{29/fpsoriginal}
+                                         
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/fps25.png, id=102, 987.69pt x 676.5275pt>
+File: ./img/29/fps25.png Graphic file (type png)
+ <use ./img/29/fps25.png>
+Package pdftex.def Info: ./img/29/fps25.png used on input line 68.
+(pdftex.def)             Requested size: 233.99104pt x 160.27435pt.
+
+
+! Package caption Error: \setcaptionsubtype outside float.
+
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \imgB{.75}{29/fps25}{29/fpsoriginal}
+                                         
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<./img/29/fpsoriginal.png, id=103, 987.69pt x 676.5275pt>
+File: ./img/29/fpsoriginal.png Graphic file (type png)
+
+<use ./img/29/fpsoriginal.png>
+Package pdftex.def Info: ./img/29/fpsoriginal.png used on input line 68.
+(pdftex.def)             Requested size: 233.99104pt x 160.27435pt.
+
+Overfull \hbox (0.25285pt too wide) in paragraph at lines 70--71
 \T1/Roboto-LF/m/n/13 (+19) the res-o-lu-tion achieved from your 360 cam-era rig
 . De-pend-ing on the rig you chose, 
  []
 
 
-Overfull \hbox (0.11397pt too wide) in paragraph at lines 67--68
+Overfull \hbox (0.11397pt too wide) in paragraph at lines 72--73
 \T1/Roboto-LF/m/n/13 (+18) footage will be running through many processes down 
 the pipeline. From stitching 
  []
 
-[12]
-Overfull \hbox (0.12712pt too wide) in paragraph at lines 71--72
+<./img/29/exportingtiffs.png, id=104, 490.83376pt x 589.20125pt>
+File: ./img/29/exportingtiffs.png Graphic file (type png)
+
+<use ./img/29/exportingtiffs.png>
+Package pdftex.def Info: ./img/29/exportingtiffs.png used on input line 74.
+(pdftex.def)             Requested size: 312.00551pt x 374.53421pt.
+ [13 <./img/29/fps25.png (PNG copy)> <./img/29/fpsoriginal.png (PNG copy)>]
+Overfull \hbox (0.12712pt too wide) in paragraph at lines 78--79
 []\T1/Roboto-LF/m/n/13 (+8) Every time you render, you are creating a new file.
  Stay organized so you know what 
  []
 
 
-Overfull \hbox (0.14032pt too wide) in paragraph at lines 71--72
+Overfull \hbox (0.14032pt too wide) in paragraph at lines 78--79
 \T1/Roboto-LF/m/n/13 (+20) number _v001 for your tests, and FS for Fine Stitch.
  When rendering frames, select 
  []
 
+[14 <./img/29/exportingtiffs.png>]
+<./img/29/terminal.png, id=115, 622.325pt x 174.6525pt>
+File: ./img/29/terminal.png Graphic file (type png)
+
+<use ./img/29/terminal.png>
+Package pdftex.def Info: ./img/29/terminal.png used on input line 83.
+(pdftex.def)             Requested size: 477.35901pt x 133.96849pt.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' will be
-(Font)              scaled to size 11.0pt on input line 81.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 81.
+(Font)              scaled to size 11.0pt on input line 91.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 91.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -1365,20 +1550,22 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 90.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 100.
 
-Overfull \hbox (0.12617pt too wide) in paragraph at lines 92--93
+Overfull \hbox (0.12617pt too wide) in paragraph at lines 102--103
 []\T1/Roboto-LF/m/n/13 (+7) Run FFmpeg by simply the typing "ffmpeg" in the ter
 minal. FFmpeg takes a video in 
  []
 
-[13]
-Overfull \hbox (0.15263pt too wide) in paragraph at lines 96--97
+[15
+
+ <./img/29/terminal.png>]
+Overfull \hbox (0.15263pt too wide) in paragraph at lines 106--107
 \T1/Roboto-LF/m/n/13 (+17) action besides renaming the output file. If you want
  to change the extension of the 
  []
 
-[14]))
+[16]))
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
  (./making360.aux)
@@ -1394,13 +1581,13 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 16845 strings out of 493089
- 255653 string characters out of 6134842
- 392990 words of memory out of 5000000
- 19943 multiletter control sequences out of 15000+600000
+ 17416 strings out of 493089
+ 265725 string characters out of 6134842
+ 401957 words of memory out of 5000000
+ 20477 multiletter control sequences out of 15000+600000
  79162 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,94p,1004b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,94p,1004b,1158s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
 exlive/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_idpkzy.enc}{/usr/local/texli
 ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2
@@ -1410,10 +1597,10 @@ ve/2015/texmf-dist/fonts/enc/dvips/roboto/rbto_bergpl.enc}</usr/local/texlive/2
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2015/tex
 mf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on making360.pdf (14 pages, 276742 bytes).
+Output written on making360.pdf (16 pages, 5350827 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 25144 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 160 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 25199 words of extra memory for PDF output out of 29859 (max. 10000000)
 
