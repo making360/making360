@@ -27,6 +27,7 @@
 \usepackage{microtype} % Improves character and word spacing
 \usepackage{setspace} % for line spacing
 \usepackage{graphicx} % Needed to insert images into the document
+\usepackage[export]{adjustbox}
 \usepackage{wrapfig}
 \usepackage{subcaption}
 \usepackage{fancyvrb} % Allows customization of verbatim environments
@@ -55,15 +56,14 @@
 \newcommand{\solution}{\textbf{\large Solution:}}
 \newcommand{\solutions}{\textbf{\large Solutions:}}
 \newcommand{\tip}{\textbf{PROTIP: }}
-
-
-
 \newcommand*{\pcr}{\fontfamily{pcr}\selectfont}
 \newcommand{\code}[1]{\textmd{\small\pcr\lstinline[breaklines=true]! #1 !}}
 
-\newcommand{\imga}[1]{\begin{figure}\includegraphics[.7\textwidth]{#1}\end{figure}}
-\newcommand{\imgb}[2]{\begin{center}\begin{subfigure}{.7\textwidth}\includegraphics[width=.8\linewidth]{#1}\end{subfigure}
-\begin{subfigure}{.7\textwidth}\includegraphics[width=.8\linewidth]{#2}\end{subfigure}\end{center}}
+\newcommand{\imgA}[2]{\includegraphics[width=#1\textwidth, center]{#2}}
+
+\newcommand{\imgB}[3]{
+\begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, left]{#2}\end{subfigure}
+\begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, right]{#3}\end{subfigure}}
 
 
 %----------------------------------------------------------------------------------------
@@ -85,7 +85,7 @@
 
 \begin{document}
 
-\setlength{\parskip}{0.7cm plus0.5mm minus0.5mm}
+\setlength{\parskip}{0.6cm plus0.5mm minus0.5mm}
 \setlength{\parindent}{0pt}
 \let\cleardoublepage\clearpage
 
