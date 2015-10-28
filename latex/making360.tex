@@ -58,15 +58,20 @@
 \newcommand{\solution}{\textbf{\large Solution:}}
 \newcommand{\solutions}{\textbf{\large Solutions:}}
 \newcommand{\tip}{\textbf{PROTIP: }}
-\newcommand*{\pcr}{\fontfamily{pcr}\selectfont}
 \newcommand{\code}[1]{\textmd{\small\pcr\lstinline[breaklines=true]! #1 !}}
-
 \newcommand{\imgA}[2]{\includegraphics[width=#1\textwidth, center]{#2}}
-
 \newcommand{\imgB}[3]{
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, left]{#2}\end{subfigure}
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, right]{#3}\end{subfigure}}
 
+%\vspace{\baselineskip} %for skipping a line
+%\textbf{\nameref{chap:1}} %for hyperlinks
+%{\itshape\bfseries{text} %to add a quotation
+%{\large text \par} %to add a subsection title
+%\tip %to add the word PROTIP bold
+%\code{any coding language} %to add develoment code, not special characters
+%\img{size}{img} %to add 1 image centered, ignore the extension, images are placed in img folder
+%\imgB{.75}{img1}{img2} %to add 2 images at left and right
 
 %----------------------------------------------------------------------------------------
 %	BOOK META-INFORMATION
