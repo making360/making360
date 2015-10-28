@@ -1,6 +1,6 @@
 \chapter{Dailies Quickstitch}
 \pagecolor{white}
-\label{chap:29}
+\label{chap:30}
 \begin{fullwidth}
 % \vspace{\baselineskip}
 
@@ -16,7 +16,7 @@ You've just finished ingesting your source footage onto a hard disk after shooti
 
 Each sd card corresponds to a certain camera angle. When you ingest video files from one sd card, you are uploading all the takes into one folder (ex. Camera 1, Camera 2). You will need to move the video from each camera folder into a new take folder (ex. Take 1). Here's a snapshot of how it looks before and after.
 
-\imgA{1.5}{29/folders}
+\imgA{1.5}{30/folders}
 
 To quickly find which video files should be placed into a new take folder, open all your camera folders using the dropdown arrow. Start by highlighting the first mp4 in each camera folder, then look at the file size of each one. If it's the same or close in size for all highlighted files, the files are all from the same take. Drag them all into the new take folder. If you are unsure, you can always open the videos and view them.
 
@@ -36,23 +36,23 @@ To combine the individual videos into a single high resolution seamless panorami
 
 Open the "preferences" of AVP (or command + ,). Under Blend > set Blending Level to 0, Weighting to ISO Cutting, and Render settings FPS as original video.
 
-\imgB{.75}{29/blend}{29/rendersettings}
+\imgB{.75}{30/blend}{30/rendersettings}
 
 Drag your videos into AVP. All videos must have the same length, same format (mp4 or mov) and same frames per second (fps). The accuracy of the visual sync between cameras may vary depending on the equipment used, or your set and settings. Ensure all cameras are perfectly synchronized before stitching (e.g. Apply "Use Audio to Synchronize" under Synchronization menu).
 
-\imgA{1.53}{29/drag_videos}
+\imgA{1.53}{30/drag_videos}
 
 Before jumping onto the stitch tab (fourth icon in the AVP header bar), select a range of frames by trimming your timeline at beginning and end using the blue range selector. Then click on the exact frame you want for the calibration. Don't leave it on the beginning frames. You don't want to confuse AVP by trying to stitch the DP's fingers or face. Save that for later during the fine stitch. 
 
-\imgA{1.53}{29/rangeselection}
+\imgA{1.53}{30/rangeselection}
 
 Select a stitching preset using the dropdown. The default preset will auto stitch as GoPro. If you are using different camera lens, check "Lens model" and input the focal length and lens type. For example, enter in 8mm for your focal length and fisheye for type of lens. Press "OK" and then click "Stitch" and let AVP do the rest!
 
-\imgB{.75}{29/lensmodel}{29/lens_model_inputs}
+\imgB{.75}{30/lensmodel}{30/lens_model_inputs}
 
 When stitched together, your panoramic video may need to be adjusted or rotated. Hold your cursor on the preview area and drag until the horizon is aligned. Don't forget to apply your changes.
 
-\imgB{.75}{29/panotomove}{29/panomoved}
+\imgB{.75}{30/panotomove}{30/panomoved}
 
 Bravo, you have just completed your first quick stitch, now you are ready to render your work!
 
@@ -65,13 +65,13 @@ Before you start rendering, double check that all your default preferences are c
 
 For example, if you want to upload your 360 video to youtube or facebook, the current allowed fps is 24, 25 or 30. For quick stitches, I generally like to set my FPS to be same "as original video" under the Render settings. Setting the default preferences will make it easier to batch render.
 
-\imgB{.75}{29/fps25}{29/fpsoriginal}
+\imgB{.75}{30/fps25}{30/fpsoriginal}
 
 When you are ready to hit the "render" icon, AVP will bring a pop up some presets to choose from and show the maximum output size. The maximum output size is the resolution achieved from your 360 camera rig. Depending on the rig you chose, the final resolution after stitching can range from 4k to 8k. Presets are very valuable during stitching and you will want to get familiar with all the choices. When you want to render small files quickly to test and find seams to fix, you can output at a lower resolution such as 2k. Remember to change the settings back for your final render. You can always check at the bottom of the pop up window what resolution and frame rate the video will render as. For the GearVR, render your videos at 3840x1920 or 4096x2048 when shooting 4k (1920x960 is SD).
 
 When rendering your fine stitch, it is highly recommended to render output type as frames, a sequence of uncompressed tiff images at 16 bit color depth. You will want to render frames to keep the highest resolution of your panorama and the maximum size allowed. There are limitations when you render videos. The bit depth will be between 8 to 10 bit, including the AVI uncompressed option, and there are size limits (for example: h264 mp4 maximum height at 2304px). Rendering tiff sequences will allow you to keep the maximum output resolution and quality. Your footage will be running through many processes down the pipeline. From stitching to vfx to editing to color grading, pixels will get distorted down the line. You will want to work and keep the files with at highest resolution and quality, starting with AVP. Output TIFF Frames at 16 bit, and No compression in AVP.
 
-\imgA{1}{29/exportingtiffs}
+\imgA{1}{30/exportingtiffs}
 
 \tip Removing alpha channel when exporting tiffs will reduce the size of each tiff. Recommended for large sequences.
 
@@ -80,7 +80,7 @@ Every time you render, you are creating a new file. Stay organized so you know w
 \clearpage
 {\large Encoding a burnt-in timecode \par}
 
-\imgA{1.53}{29/terminal}
+\imgA{1.53}{30/terminal}
 
 You can use After Effects, Premiere or any video editing software to encode a timecode or you can do it...the "hard" way aka not really, just geeky but in reality faster way! Hello FFMpeg! Don't let the terminal or command lines scare you!
 
