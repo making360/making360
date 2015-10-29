@@ -1,0 +1,30 @@
+\chapter{Surreal Bodies}
+\pagecolor{white}
+\label{chap:39}
+\begin{fullwidth}
+
+
+\problem
+
+{\large When a subject is close between two cameras you see strange shapes suddenly appearing. \par}
+
+Unless you are trying to create a surreal dreamscape scene with unconscious bodies, most of the time you will want the stitch to be closest to reality. While the unexpected is always a beautiful mystery, you are looking for a logical solution to this odd problem.  
+
+\solutions
+
+{\large Foreground by subtracting layers. \par}
+
+This technique applies specifically to camera rig solutions that use 3 or 4 modified fisheye lens.
+
+With modified fisheye lenses, subjects can get closer to the cameras because the fov for each camera is even wider. The subject will be able to get close to camera without breaking a seamline. There is also more overlap between each camera, IMAGE allowing you to move the seams with masking markers or rotoscoping. With the extra overlap, there is always more than enough information for you to fill in or fix pixels. The 4 camera rig with modified fisheye lens almost creates a full 360 video with just two of the cameras, giving you two extra cameras of information. When subjects get too close, you can uncheck either the odd or even cameras (layers 1 and 3, or 2 and 4). 
+
+There are many advantages with using a fisheye lens, such as wider fov. However, there will be higher distortion when a subject moves closer towards the camera. When subjects move between seams, there will also be more parallax because there is more chromatic aberration towards the edge of fisheye lens. This will create a more obvious popping effect when masking or rotoscoping.
+
+Check and uncheck some of your cameras in APG by using the group layers at the bottom of the window. IMAGE When shooting with 185 fisheye lens there should still be a full seamless stitch even if you hide two of the cameras.  This is similar to the iZugar Z2X rig, a 2 camera rig with modified fisheye lens. With 4 cameras, there is extra pixel information for patching or replacing any problem areas. 
+
+Render the best stitch of the two cameras. The panorama may be perfect, or close to perfect with just some missing pixels in the overlap. AVP fills the holes with black. 
+To fill the holes, use the information from the other two cameras. Select the camera layers of the other two hidden cameras camera. IMAGE Use the red ‘remove’ markers to delete extra information you don’t need.
+
+
+\clearpage
+\end{fullwidth}
