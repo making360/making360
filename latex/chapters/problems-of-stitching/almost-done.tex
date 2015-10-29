@@ -1,0 +1,40 @@
+\chapter{Almost Done!}
+\pagecolor{white}
+\label{chap:57}
+\begin{fullwidth}
+
+\problem
+
+{\large You are testing playback of the final delivery and it is not playing or too large for the device. \par}
+
+There are many platforms and devices your experience can be distributed on - Oculus Rift, Samsung Gear VR, Google Cardboard, etc. Decide which platform(s) you want to release on so you can output different formats at the optimal settings for each. Compression settings depend on the exact device. Perform multiple compression tests to gauge the best settings for each device. If you want to release on Android, there will be many different devices to test. Google Cardboard is the cheapest solution to try VR and you will most likely want to render a version for it as well. 
+
+\solutions
+
+{\large Know your hard(wear). \par}
+
+The Oculus Rift headset is catered more towards gamers and most consumers will be less hardcore. The most accessible way to watch 360 video experience then is with a smartphone, which everyone already has in their pocket. A headset like the Samsung Gear VR will still need to be purchased. Viewers can then mount their Note 4 or Galaxy S6 phone to the headset and use it as a display. Another option is to build a viewfinder out of cardboard! The Google Cardboard can convert any phone including iPhone and other android devices.  
+ 
+Most phones cannot handle video files over 500 megabytes. Keep your video at the highest quality without overheating a phone or taking days to download. 
+
+Currently, users are downloading every experience onto their internal and external phone disk space. For those who love taking photos and videos, there may not be enough space to store the 360 experiences on the same device. Find a solution to deliver the experience in a reasonable file size without completely degrading the quality.
+
+Check playback of every file on every device you will be releasing the experience on. Make sure to watch the video all the way through. For example, if you are testing a 7 minute video, it might playback smoothly in the beginning. However, the phone cannot handle playback 3 minutes in. There is no way to catch this unless you watched the video start to finish. Do multiple solid tests for sake of the amount of time and effort spent on the production.
+
+\tip Your render may be jittery or not play back on the Gear VR or Google Cardboard if the resolution exceeds 4096x2048. Gear VR currently cannot handle more than 30fps as well.
+
+{\large Bitrate Analysis. \par}
+
+There are many ways to optimize the size of the final file with optimal compression. 
+
+The software from Winhoros.de analyses h264 encoded mp4s. This tool is a free bitrate viewer for PC users only. Mac users can potentially use the Codecian software. Choose your file and let the analyzer run over the length of the video, frame by frame. After the run through, the analyzer will show the average bitrate of the video and a graph over time. 
+
+Use this tool to preview which sections of your final file exceed the average bitrate. The file exceeds the average bitrate when there is an above average amount of color depth, resulting in a larger file size. To reduce your file size while keeping overall quality high, compress only the range of frames that exceeds the average bitrate. You can cut your file size in half by even recompressing just 100 frames in a 10,000 frame sequence.
+
+With the bitrate viewer data, you can easily re-encode your final tiff sequence in sections. For example, using FFmpeg, compress sequences of frames around the average bitrate with the -crf option lower and a -maxrate capped at the average bitrate. For sequences of frames exceeding the average bitrate from the analysis, compress them with a higher -crf to lower the quality while keeping your max rate capped at the same average bitrate.
+
+The result will be multiple mp4s compressed with the best settings. Now all that is left is to concatenate the files. Analyze the bitrate of the very final mp4 to confirm the average bitrate remains the same.
+
+
+\clearpage
+\end{fullwidth}
