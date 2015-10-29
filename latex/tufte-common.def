@@ -431,6 +431,11 @@
   {\geometry{asymmetric}}% forces internal LaTeX `twoside'
 
 
+%\geometry{paperwidth=8.125in,paperheight=10.25in,left=0.625in,top=0.625in, bottom=0.625in, right=0.625in,textwidth=3in,marginparsep=1.33mm,marginparwidth=6.66mm,textheight=38\baselineskip,includehead}
+%  {}
+
+
+
 %%
 % Separation marginpars by a line's worth of space.
 
