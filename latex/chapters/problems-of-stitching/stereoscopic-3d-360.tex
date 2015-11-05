@@ -1,0 +1,51 @@
+\chapter{Stereoscopic 3D 360 WIP}
+\pagecolor{white}
+\label{chap:42}
+\begin{fullwidth}
+
+\problem
+
+{\large Stitching in stereo mode, similar workflow squared. \par}
+
+You decided to shoot your scene stereo either on an 8, 12 or maybe 14 camera rig. It will definitely impress viewers by adding depth to your 360 videos, maybe even compete with some computer generated experiences! Stereo 360 video experiences however loses half of the potential resolution as you will need to render your left eye monoscopic video on top of your right eye monoscopic video, thus creating an Over Under, generally 2300 x 2300, for playback in a vr headset. You know how to stitch a mono panorama, and wonder if stereo stitching is similar but with two videos?
+
+\solution
+
+Most of the critical work to render a stunning stereo experience should happen during pre-production and production. When you are filming in stereo, the distance between cameras, their alignments, how subjects were instructed in relation to the space are all things which can’t be corrected in post without a tremendous amount of work, doubling and sometimes tripling your original budget. 
+
+{\large AVP Stereo Mode. \par}
+
+Autopano has the ability to assign cameras files for left or right eye, therefore you can stitch and render both left and right monoscopic videos using the same stitch template. Make sure that all your videos are in the same take folder and not separated in 2 folders, such as a left eye folder and right eye folder. The stitch template is saved and used for both eyes. 
+
+What are the real issues to stereo stitching? Cameras not in sync, seams will show. Color not matching, seams will show. Subjects too close, seams will show and sometimes unfixable. Subjects crossing between cameras, seams will show. If your subjects are crossing far from camera, seams are fixable but depth isn’t as impressive questioning the need for stereo. Before you even stitch anything, you should reduce all the risks involved with stitching in stereo. Synchronize and Color match all your cameras outside of Autopano.
+
+With all your cameras in one take folder, file names reflecting Left eye (LE) or Right eye (RE) camera, so handle Synchronization manually with After Effects, you will be able to sync based on the audio waveforms as well as any flash or motion signal. From experience, I would trim all my cameras to only have the available footage in all cameras perfectly synced by the frame. At the same time as I would synchronize my cameras, I handled my Color Matching step. Just correcting slightly the mid gamma level on the needed cameras, never all of them since you will need one as reference. Re-export all your cameras as mov lossless files.
+
+You’ve reduced the risks of a bad stitch with these 2 steps. Import your videos to Autopano, with same length, same fps, same format, synced, color matched. First, check the stereo tab, turn on the stereo mode and assign your cameras to whichever eye. That’s why renaming your files with LE or RE as prefixes can be handy. Go to your stitch tab, input your lens and focal length, you are ready to stitch. 
+
+Once in Autopano, I start by creating a new group layer located at the lower area of APG. Then drag all your right eye cameras in the new layer. That way you can easily switch between left and right eye while stitching.
+
+Finally, you are ready to stitch. Here’s the catch with stereo stitching, it’s not double amount of work but more like squared! Why? Because, every time you fix a seam, you will need to ensure the seam is fixed the same way on the opposite eye, if not fixed, you may need to go back and fix it differently. Autopano stitch templates holds great amount of information except when computer crashes, thus save a lot and save all the different versions of your stitch template to easily go back to a preferred stitch version. 
+
+My last tips regarding stereo stitching are to A/B test different ways to fix a seam and to prioritize only the actions with the most amount of depth, usually in the foreground. Even as viewer, you may not notice a small seam in the background, but you will be impress by an amazingly stitched 3d movement coming at you.
+
+{\large Over Under vs Side by Side. \par}
+
+To A/B test stereo videos you will need to render separately from Autopano your left and right eye videos. In AVP, click the Render icon and select your render settings, then at bottom choose the eye to render. If both left and right are visible in the preview area, like a bad blending, then you may want to uncheck the group layer containing the videos of the eye you’re not rendering. You will then have to switch eye and render the other.
+
+Once you have both left and right monoscopic panoramic videos, you can either combine them within After Effects or with FFMpeg. Use FFMpeg to save time while testing, and to control compression for final renders. If you’re not familiar with this tool, check our chapter Hello FFmpeg. 
+
+The maximum resolution of video a headset like Oculus Rift can handle is 3840x1920, pushing it to 3840x2160. This means if you are rendering a stereo video, you will need to combine both left and right videos to fit within these dimensions. Some player may handle a larger width and combining side by side would be ideal to keep same amount of pixels for both eyes. It all depends on the player specs your stereo video will play on. 
+
+If you need to combine your videos as an over under, left eye on top of the right eye, here’s the one line to enter in your Terminal after changing the filenames to match yours:
+
+\code {ffmpeg -i left.mp4 -vf "[in] pad=iw:2*ih [left]; movie=right.mp4 [right];[left][right] overlay=0:main_h/2 [out]" output.mp4}
+
+If you need to combine your videos side by side, left eye at left and right eye on the right, here’s the one line to enter in your Terminal after changing the filenames to match yours:
+
+\code {ffmpeg -i left.mp4 -vf "[in] pad=2*iw:ih [left]; movie=right.mp4 [right];[left][right] overlay=main_w/2:0 [out]" output.mp4}
+
+
+
+\clearpage
+\end{fullwidth}
