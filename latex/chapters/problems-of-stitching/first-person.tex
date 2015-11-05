@@ -1,0 +1,69 @@
+\chapter{First Person}
+\pagecolor{white}
+\label{chap:44}
+\begin{fullwidth}
+
+\problem
+
+{\large You need to stitch a first person POV mode. \par}
+
+The best first person POVs can be experienced through few proven programs such as combat training for the military, flight simulations for the Air Force, virtual driving simulations for tank drivers and firemen, surgery simulations for medical personnel, etc... 
+
+First person experiences are truly powerful and will contribute to the future success of VR. Why recreate reality if you could make your audience dream on demand? or put themselves in a dangerous situation? in surrealism? What if our schools taught history by recreating the past in vr? What if you could talk to Napoleon? Hitler? Roosevelt? Einstein? Virtual Reality lets you make the impossible possible. “The only limit is your imagination”...and the treatment of looking down.
+
+\solution
+
+{\large The treatment of down. \par}
+
+Should you have a body in a first person experience? VR makers are all struggling with the concept of looking “down” in a 360 video. In VR games, this is less problematic since you can model a body and script interactions with body and arms in a game engine like Unity. In VR, disembodiment is one of the reasons viewers get the motion sickness you may have heard of or personally experienced. If you are considering making a first person experience, what can you possibly display where your viewers are looking down? 
+\clearpage
+{\bfseries Less is more}
+\\
+As explained in Patching Nadir, replacing your equipment or tripod by clone-stamping patterns in order to recreate a floor provides a great result, without distraction from the content. For moving shots like Dolly Shots, consider Shooting a Plate at the exact same speed as the recorded motion. For stereo experiences, shoot your plate in stereo, or the transition from stereo to mono floor may disturb your viewers, taking the focus away from your content. You can think of the tripod or nadir hole as a limit of technology or instead as a creative challenge! Think of unusual ways to treat the problem. For example, a way to embody your viewer in another body without anything when looking down, could be to composite a plate of your actor facing a mirror as an intro shot.
+
+\imgA{1.5}{44/notripod}
+
+{\bfseries Offset the Camera}
+\\
+The “selfie” generation is gonna love this one! Take your stick out (wink) or over a bridge and all your fans, scared of looking down, will be forced to look at you. The use of a monopod or selfie stick works especially for showing different world perspectives or impossible viewpoints. Both the bottom and top of your 360 recording are included. However, you may encounter problems removing the stick which will show in front of its holder. This technique is highly recommended for a Third Person experience.
+
+\imgA{1.5}{44/offset}
+
+{\bfseries Logos are Lame, Art is Cooler}
+\\
+No logo will bring any interest to your 360 piece. At the least, don’t use the simple black circle with logo centered in it. Try embedding your logo creatively. The logo is a great quick way to hide the tripod but try designing interesting graphic art to hide the tripod. Some have tried the mirror effect, gradient to black, distorting... 
+
+\imgA{1.5}{44/art}
+\clearpage
+{\bfseries Camera in the Air}
+\\
+Hanging the camera on a wire or fishing line results in very natural camera viewpoint and eases the stitching process. Drone and Helicopter viewpoints are also very captivating, and interestingly, you can easily mask the sky. In many cases, this is ideal. However, you will need multiple wires to help stabilize the camera and enough time to prep this type of set.
+
+\imgA{1.5}{44/inair}
+
+{\bfseries Pre-rendered 3d Model}
+\\
+Kite & Lightning’s Insurgent VR pre-rendered a static headless, neck-down 3d man model and then composited him later on a live-rendered 360 video. This approach seem pretty complex to achieve but with the use of the DomeMaster in Maya and Blender built-in LatLong renderer, any 3d artists could quickly buy a 3d model, render its latlong mono or stereo to text the AE comping with your video. 
+
+\imgA{1.5}{44/kite}
+
+{\bfseries Head Mounted Cameras}
+\\
+Experiment placing the 360 rig was on a chair with the subject’s head leaning backward or sideways if body was laying on a floor or table. In these cases, stitching can get tricky but you will see the actual body of the subject to embody.
+
+\imgA{1.5}{44/body}
+
+\imgA{1.5}{44/hat}
+
+{\large Foreground Stitching. \par}
+
+First you should find the frame with the most amount of body parts in the foreground, even if arms are just static on a chair. Edit the frame using a foreground approach.
+
+Looking at the seams and the control points already detected, start by cleaning bad points then remove all points off the background. Once you removed the points on background, find new points on the body parts for each pair of camera.
+
+Click on the Optimize button when the clean up of the control points has been done. To improve the stitch as it probably won’t be fixed, you should adjust the optimization of the lens distortion since you are stitching a complex parallax problem. The sensor of the cameras is not perfectly aligned/centered with the lens and because of that each camera has its own lens distortion model. 
+
+Under the advanced optimization settings, at Scopes, try setting Distortion to Optimize 3rd order and scope to Image. Then Optimize. Stitching should be much better. Recreate the leftovers of bad blending, frame by frame, with Comping or Rotoscoping techniques, to attain perfection.
+
+\clearpage
+\end{fullwidth}
