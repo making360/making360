@@ -11,7 +11,6 @@ The optimizer engine of Autopano is by default really smart as it’s what quick
 
 The optimization settings you may decide to adjust will then affect the stitch quality, its seams as well as the RMS value. Often we think optimizing will solve our problem when in fact it can create additional problems.
 
-
 \solution
 
 {\large The RMS Value. \par}
@@ -20,21 +19,31 @@ RMS stands for Root Mean Square which in statistics is the square root mean of t
 
 The lower your RMS value is, the better your stitch should be!
 
+\imgA{1.5}{35/rms}
+
 For the optimizer to calculate the rms while improving your stitch, it needs a curve model and the data, the matched control points coming from the detector. Some points are good points but never perfectly accurate, some are completely wrong. 
 
 The optimizer will then perform a series of steps to first fit at best all control points, add a threshold for cleaning bad points, re-estimating the model parameters and then computing the final RMS calculation. The final RMS value is the mean size of these error segments, but it is not the quality of the visually stitched panorama.
 
+\imgA{1.5}{35/fullopt}
+\clearpage
 {\large Optimization for 360 Rigs. \par}
 
 The optimizer’s job is to find two main parameter which are the position of each image (yaw, pitch, roll) and the calibration of their focal length, lens distortion coefficients and centering of the optical axis. 
 
-Let’s imagine you have a 360 rig with 4 GoPros, and dragged all videos in AVP. My preferred settings are as follow:
+\imgA{1.5}{35/linkrms}
 
-You selected “stitch as GoPro” which will auto detect your focal length and distortion. Then in click Edit to bring up APG. Under the Control Points tab, you will then check Advanced to see all Optimization settings affecting your control points.
+Let’s imagine you have a 360 rig with 4 GoPros, and dragged all videos in AVP. Under the Control Points tab, you will then check Advanced to see all Optimization settings affecting your control points.
 
-First under Scopes, I usually set both Distortion and Offset to “Images” scope but keep Focal to “Pano” scope as all focal length are identical for all cameras.
+\imgA{1.5}{35/advanced}
+
+First under Scopes, set both Distortion and Offset to “Images” scope but keep Focal to “Pano” scope as all focal length are identical for all cameras. For background stitching approach, set Distortion to Optimize 2nd Order from the dropdown and 3rd order for foreground stitching.
+
+\imgA{1.5}{35/scopes}
 
 When stitching, my process is very mechanical regarding optimization: I detected or add/remove control points couple times before I select “Quick Optimize”. I usually repeat this step after finding enough control points. When satisfied, I then check clean “bad points” in order to fully optimize and move to the next pair of images.
+
+\imgA{1.5}{35/quickopt}
 
 {\large Too Much Optimization. \par}
 
