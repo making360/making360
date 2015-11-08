@@ -45,7 +45,7 @@ Now let’s convert a tiff sequence into an .mp4 file. You will first need to re
 
 When recording video with the GoPro HERO4 Black, notice the files are cut off anytime after 3.8 GB. Depending on the video mode, this could be 8-11 minutes. The take will be split into chunks. This is because the micro SD cards are formatted FAT32 which limits up to 4 GB. If you are using a 64 GB card, it will be formatted exFAT which normally allows larger file sizes. However, the GoPros will still limit the file size to 4GB. You can shoot a take as long as you want until the cards fill up or the battery dies. The individual segments will need to be concatenated into one file before stitching.
 
-Use FFmpeg to concatenate your sequences. It will be much faster than using a video software’s rendering engine, like importing into AE and rendering.
+Use FFmpeg to concatenate your sequences. It will be much faster than using a video software’s rendering engine, like importing into AE and exporting.
 
 Create a file mylist.txt with all the files you want to have concatenated in the following form (lines starting with a # are ignored):
 
