@@ -20,9 +20,15 @@ Autopano has a difficult time generating an automatic stitch when all the pixels
 
 When stitching videos that are filled with mostly the same color, Autopano will generate a distorted stitch. Some of the cameras may detect control points, while others may twist and warp in the wrong way. The auto detection might overlay images on top of each other, treating the similar colors as control points. You know the exact rig you shot with, so apply a template from a different shot.
 
+\imgA{1.5}{40/savetemplate2}
+
 Before applying a template, select a smaller range on the AVP timeline for the auto calibration. Look for a section where there are more objects and colors for Autopano to detect control points. If the stitch does not improve, then choose a previous template from another scene that was shot with the same rig and camera configurations. 
 
+\imgA{1.5}{40/usetemplate}
+
 After applying the template, you should see your videos stitched into a nice panorama. However, there will be no control points or links. Under the control points tab, select Geometry Analysis. APG may detect some color points now that you have at least applied the warping and underlying geometry of the camera rig. Remember to optimize any new points found.
+
+\imgA{1.5}{40/geometry}
 
 {\large One step at a time. \par}
 
@@ -30,9 +36,16 @@ The optimal workflow for stitching 360 videos is ingest > synchronization > rend
 
 Color matching all the cameras will improve auto detection of control points. The anti ghost algorithm won’t focus on the unbalanced color issues, improving the masking markers. 
 
+\imgA{1.5}{40/colormatching}
+
 When using templates for stitching, positioning your cameras will also affect the detection algorithm. Check the links for any cameras that were linked incorrectly. Unlink all the cameras and use the move tool > move by camera and place each individual camera into the correct position.
 
+\imgA{1.5}{40/moving}
+
+\clearpage
 To link one camera to another, use the Geometry Analysis  or right click on the number. In the CP Editor, detect and add new control points by drawing a rectangle over the overlapping regions. Add one matching control point at a time manually with the add points tool. Switch to another pair of cameras by selecting two cameras from the list and find new control points to link them. You are right on track again for creating a great stitch!
+
+\imgA{1.5}{40/linking}
 
 
 \clearpage

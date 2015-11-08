@@ -1,4 +1,4 @@
-\chapter{Dolly Shots}
+\chapter{Dolly Shots WIP}
 \pagecolor{white}
 \label{chap:45}
 \begin{fullwidth}
@@ -15,15 +15,31 @@ Until research and development for galvanic vestibular systems for virtual reali
 
 When stitching your moving shot, the seams are more visible from motion.
 
+\clearpage
 \solution
 
 After synchronizing and color matching your cameras, start by setting the blending in your Autopano project to ISO. Smart cutting disables certain tool analyses to stitch a moving shot. 
 
+\imgA{1.5}{45/iso}
+
 First stabilize the shot. Autopano has a built in motion stabilization tool that can be applied to any moving shot. The motion stabilization tool may take awhile to process the entire shot, so select only the in/out range you want based on your First Assembly. Make yourself a cocktail while you wait.
 
-Second, fix the horizon. The stabilization will help smooth the shaking but will lose the horizon. Correct the horizon after performing the motion analysis. Use the cutting cursor to edit the horizon, section by section. Update the timeline with changes from APG to AVP. IMAGE
+\imgA{1.5}{45/stabilize}
+\clearpage
+Second, fix the horizon. The stabilization will help smooth the shaking but will lose the horizon. Correct the horizon after performing the motion analysis. Use the cutting cursor to edit the horizon, from your In point to your Out point. Then apply your horizon changes section by section.
 
-The third step is running RMS Analysis. Whether you used a head mounted camera rig, monopod, or expensive motorized dolly, always use the RMS analysis on any type of moving shot. Click RMS, located to the left of Stitch in the AVP timeline, to start the analysis. Use the cutting cursor to separate the timeline into sections that are similar visually and in terms of RMS. For example, if there is an area where the RMS values are high, cut it into a section. IMAGE Now re-stitch and optimize each each section by selecting its state. Restart the RMS analysis to see the improvements in updated values.
+\imgA{1.5}{45/horizon}
+
+\imgA{1.5}{45/adjusthorizon}
+
+\imgA{1.5}{45/horizon2}
+
+\imgA{1.5}{45/adjusthorizon2}
+
+\clearpage
+The third step is running RMS Analysis. Whether you used a head mounted camera rig, monopod, or expensive motorized dolly, always use the RMS analysis on any type of moving shot. Click RMS, located to the left of Stitch in the AVP timeline, to start the analysis. Use the cutting cursor to separate the timeline into sections that are similar visually and in terms of RMS. For example, if there is an area where the RMS values are high, cut it into a section. Now re-stitch and optimize each each section by selecting its state. Restart the RMS analysis to see the improvements in updated values.
+
+\imgA{1.5}{45/rms}
 
 Lastly, Patch the nadir for large dollies that covered the ground floor. Expensive motorized dollies are a great luxury but comes with complex compositing work. A plate that was shot at the exact speed, lighting, and camera position is needed to cover the dolly. Otherwise, you may have to track and recreate the floor.
 
