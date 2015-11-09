@@ -36,8 +36,17 @@ artists, pioneers, adventurers, astronauts, cowboys and cowgirls; basically anyo
 <b>en francais:</b> ce livre se destine a toute personne qui est intéressée par cette nouvelle technologie, et en particulier artistes, pionniers, aventureurs, astronautes, cowboys et cowgirls. nous avons déétaillé le procédé complet pour planifier, réaliser et finaliser vos future vidéos en 360. toutes nos erreurs sont devenus des problemes et leur solutions.
 
 
+HipChat Room
+=============================
+
+This chat room is dedicated to questions/answers regarding the making of 360 content, feel free to use this chat room to give and receive advice from each other. This is not a chat room for self-promotion, thank you!
+
+https://www.hipchat.com/gzlQY96Oc
+
+
 Setting up your build environment
 =============================
+
 
 <h4>Mac</h4>
 
