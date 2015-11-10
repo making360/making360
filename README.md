@@ -51,6 +51,8 @@ To quickly contribute to this open source guide, create a <a href="https://githu
 
 For advanced contributors who would like to join us in improving the knowledge shared in this guide, it's not required to know LaTex nor how to code. You will only need to download these recommended tools and watch the video to show you how to set it up on Mac.
 
+Watch the Video: <a href="http://bit.ly/1NIGW3q">How to Setup LaTex/Github + Compile making360</a>
+
 For Mac Users:
 
 <a href="https://tug.org/mactex/mactex-download.html">MacTex</a>
