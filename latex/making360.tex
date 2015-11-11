@@ -20,12 +20,10 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-
-\documentclass[notoc, justified]{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
-\usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
+\documentclass[notoc, justified]{tufte-book}
+\usepackage[sfdefault]{roboto}
 \usepackage[T1]{fontenc}
 \usepackage[margin=0.625in, paperwidth=6in, paperheight=9in, textwidth=4.75in]{geometry}
-
 \hypersetup{colorlinks}
 \usepackage{microtype} % Improves character and word spacing
 \usepackage{setspace} % for line spacing
@@ -34,9 +32,8 @@
 \usepackage{wrapfig}
 \usepackage{subcaption}
 \usepackage{fancyvrb} % Allows customization of verbatim environments
-\usepackage{xspace} % Used forb printing a trailing space better than using a tilde (~) using the \xspace command
+\usepackage{xspace}
 \usepackage{listings}
-\usepackage{color}
 \usepackage{CJKutf8}
 \AtBeginDvi{\input{zhwinfonts}}
 \usepackage{fancyhdr}
@@ -44,21 +41,13 @@
 \usepackage[overlay,absolute]{textpos}
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
-
-%\usepackage[paperwidth=6in,paperheight=10in]{geometry}
-
 \setcounter{tocdepth}{1} 
 \setcounter{secnumdepth}{-1}
 
 \fvset{fontsize=\tiny} % The font size of all verbatim text can be changed here
-
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
-
-\newcommand{\hangp}[1]{\makebox[0pt][r]{(}#1\makebox[0pt][l]{)}} % New command to create parentheses around text in tables which take up no horizontal space - this improves column spacing
-\newcommand{\hangstar}{\makebox[0pt][l]{*}} % New command to create asterisks in tables which take up no horizontal space - this improves column spacing
 \newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
-
 \newcommand{\problem}{\textbf{\large Problem:}}
 \newcommand{\solution}{\textbf{\large Solution:}}
 \newcommand{\solutions}{\textbf{\large Solutions:}}
@@ -68,15 +57,6 @@
 \newcommand{\imgB}[3]{
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, left]{#2}\end{subfigure}
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, right]{#3}\end{subfigure}}
-
-%\vspace{\baselineskip} %for skipping a line
-%\textbf{\nameref{chap:1}} %for hyperlinks
-%{\itshape\bfseries{text} %to add a quotation
-%{\large text \par} %to add a subsection title
-%\tip %to add the word PROTIP bold
-%\code{any coding language} %to add develoment code, not special characters
-%\imgA{size}{img} %to add 1 image centered, ignore the extension, images are placed in img folder
-%\imgB{.5}{img1}{img2} %to add 2 images at left and right
 
 %----------------------------------------------------------------------------------------
 %	BOOK META-INFORMATION
@@ -90,11 +70,6 @@
 
 %----------------------------------------------------------------------------------------
 
-%\fancyhf{} % clear all header and footers
-%\renewcommand{\headrulewidth}{0pt} % remove the header rule
-%\fancyfoot[LE,RO]{\thepage} % Left side on Even pages; Right side on Odd pages
-%\pagestyle{fancy}
-
 \begin{document}
 
 \setlength{\parskip}{12pt}
@@ -103,7 +78,6 @@
 
 \makeatletter
 \def\@makechapterhead#1{%
-  %%%%\vspace*{50\p@}% %%% removed!
   {\parindent \z@ \raggedright \normalfont
     \ifnum \c@secnumdepth >\m@ne
         \huge\bfseries \@chapapp\space \thechapter
@@ -147,9 +121,7 @@ Krystin Gilstrap}
 \\
 Fabien Soudiere}
 
-\par{Thanks to our Kickstarter Backers (in alphabetical order):
-\\
-}
+\par{Thanks to our Kickstarter Backers (in alphabetical order):}
 
 \par{hi@making360.com}
 
@@ -161,7 +133,6 @@ Fabien Soudiere}
 %----------------------------------------------------------------------------------------
 
 \tableofcontents % Print the table of contents
-
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
