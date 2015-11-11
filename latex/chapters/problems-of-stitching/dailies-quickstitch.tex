@@ -80,20 +80,15 @@ Every time you render, you are creating a new file. Stay organized so you know w
 \clearpage
 {\large Encoding a burnt-in timecode \par}
 
-You can use After Effects, Premiere or any video editing software to encode a timecode or you can do it...the "hard" way aka not really, just geeky but in reality faster way! \textbf{\nameref{chap:56}} Don't let the terminal or command lines scare you!
+You can use After Effects, Premiere or any video editing software to encode a timecode or you can do it...the "hard" way aka not really, just geeky but in reality faster way! \textbf{\nameref{chap:56}}! Don't let the terminal or command lines scare you!
 
-For Mac users, the "drawtext" filter of FFmpeg is only working with this FFmpeg library. Unzip the 7zip file using Keka, then place the ~30mb "ffmpeg" file in the directory where all the libraries live, usually /usr/local/bin/ffmpeg.
+For Mac users, the "drawtext" filter of FFmpeg is only working with a specific FFmpeg binary. Refer to \textbf{\nameref{chap:56}} to install the right binary.
 
-Show/Hide Hidden Folders and Files on Mac:
-
-\code{defaults write com.apple.finder AppleShowAllFiles YES} \par
-\code{defaults write com.apple.finder AppleShowAllFiles NO}
-
-Open the Terminal app on Mac. Use the basic commands to access the directory where your stitched video is located.
+Open the Terminal app on Mac, Command Prompt on PC. Use the basic commands to access the directory where your stitched video is located.
 
 \imgA{1.53}{30/terminal}
 
-\tip If your Finder is opened with your video visible, drag the folder icon into the Terminal window AFTER typing "cd" (e.g. change directory).
+\tip On Mac, If your Finder is opened with your video visible, drag the folder icon into the Terminal window AFTER typing "cd" (e.g. change directory). On PC, click the folder icon to reveal the path, and paste it in your Command prompt after "cd".
 
 Type the exact FFmpeg script for the action you want to perform on the video: embedding a timecode in center of video, at the same framerate as video.
 
