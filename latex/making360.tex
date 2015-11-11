@@ -21,9 +21,11 @@
 %----------------------------------------------------------------------------------------
 
 
-\documentclass[notoc]{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
+\documentclass[notoc, justified]{tufte-book} % Use the tufte-book class which in turn uses the tufte-common class
 \usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
 \usepackage[T1]{fontenc}
+\usepackage[margin=0.625in, paperwidth=6in, paperheight=9in, textwidth=4.75in]{geometry}
+
 \hypersetup{colorlinks}
 \usepackage{microtype} % Improves character and word spacing
 \usepackage{setspace} % for line spacing
@@ -74,7 +76,7 @@
 %\tip %to add the word PROTIP bold
 %\code{any coding language} %to add develoment code, not special characters
 %\imgA{size}{img} %to add 1 image centered, ignore the extension, images are placed in img folder
-%\imgB{.75}{img1}{img2} %to add 2 images at left and right
+%\imgB{.5}{img1}{img2} %to add 2 images at left and right
 
 %----------------------------------------------------------------------------------------
 %	BOOK META-INFORMATION
@@ -95,7 +97,7 @@
 
 \begin{document}
 
-\setlength{\parskip}{0.6cm plus0.5mm minus0.5mm}
+\setlength{\parskip}{12pt}
 \setlength{\parindent}{0pt}
 \let\cleardoublepage\clearpage
 
@@ -133,11 +135,25 @@
 \setlength{\parskip}{\baselineskip}
 Copyright \copyright\ \the\year\ \thanklessauthor
 
-\par{Published by ZO, LLC}
+\par{Contributors (in alphabetical order):
+\\
+Andrew Hazelden, Vicki Huang, Fabien Soudiere}
 
-\par{press@making360.com}
+\par{Proofread and Edited by:
+\\
+Krystin Gilstrap}
 
-\par This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US}.\index{license}
+\par{Design and Illustrated by: 
+\\
+Fabien Soudiere}
+
+\par{Thanks to our Kickstarter Backers (in alphabetical order):
+\\
+}
+
+\par{hi@making360.com}
+
+\par This work is licensed under the Creative Commons Attribution - NonCommercial - ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US}.\index{license}
 
 \par\textit{First printing, \monthyear}
 \end{fullwidth}

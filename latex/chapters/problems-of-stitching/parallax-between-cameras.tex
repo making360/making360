@@ -9,7 +9,7 @@
 
 When you look at an object from two different points of view, nearby objects appear to shift more than distant ones. This is called parallax, and is a concept that has been used to measure astronomical distances since 1672.
 
-\imgA{1.2}{37/parallax}
+\imgA{.85}{37/parallax}
 
 Two eyes are better than one because they give you two different views of the world. By combining these two views, your brain can estimate distances to nearby objects. Try pointing your finger in front of an object. With your left eye open, align your finger with the reference object in the distant background. Now open your left eye and close the right one. You will notice that your finger is not aligned anymore with your reference object. This is the infamous finger experiment to explain parallax. How does this apply to 360 video? How do you control and fix parallax issues in Autopano?
 
@@ -33,19 +33,19 @@ In AVP, play back the subject crossing from one camera to the next and find the 
 
 To the right of the timelines are your cursors, one arrow and one razor icon. The razor icon is the cutting cursor. Use the cutting cursor to create a keyframe or cut in the “Mask” timeline at the exact frame you selected. Make sure your cursor is in the section where State is highlighted and select Edit.
 
-\imgA{1.5}{37/state1}
+\imgA{1}{37/state1}
 
 In APG, select a green “keep” marker under masker markers. What do you want the marker to keep? The person’s body? From which camera? Do you have enough overlap? Add a keep marker on the camera that contains most of the person’s body before it crosses. Click on the small preview icon, at bottom left of panorama, to use the seam’s visualization. Position the marker at the right place. The less amount of markers, the better.
 
-\imgA{1.5}{37/mask1}
+\imgA{1}{37/mask1}
 
 Head back to AVP and select a frame a few frames after the previous one, then click Edit again. 
 
-\imgA{1.5}{37/state2}
+\imgA{1}{37/state2}
 
 In APG, repeat the previous actions but adding a “keep” marker on the other camera. Remove the previously placed marker. Don’t forget to always apply your changes with the green check icon, and save your stitch template for each edited keyframe.
 
-\imgA{1.5}{37/mask2}
+\imgA{1}{37/mask2}
 
 Preview the masking marker changes in AVP. The masks should have solved the parallax issue of the subject crossing between one camera to the other.
 
@@ -53,7 +53,7 @@ This technique works in many cases but not all. You will experience some strange
 
 \tip You may be able to smooth the popping by extending your transition from state 1 to state 2, and adding one of the curve transitions.
 
-\imgA{1.5}{37/edit}
+\imgA{1}{37/edit}
 
 For cases where the subject crossed between cameras at too close a distance, the masking markers may not help and the popping will be too obvious. The parallax is even more obvious when the subject is close to the rig and crosses between two cameras. The chromatic aberration towards the edges of the lens is also greater, so try to keep the subjects in Safety Zones and stay within a camera view.
 
