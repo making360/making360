@@ -17,15 +17,15 @@ Autopano will not only recalculate and adjust your lens distortion, but will als
 
 There’s a catch though. Autopano can’t import only one video because it is a stitching software, and needs at least two videos to stitch together. Export a black video from After Effects with the same configuration as your video (same fps, size, and length) to defish. Another method is to duplicate your video and import both together.
 
-\imgA{1.5}{52/duplicate}
+\imgA{1}{52/duplicate}
 
 Autopano will map any video you import onto spherical geometry. Import your black and original videos and select the focal length and distortion before stitching. Stitch and click Edit to open APG. Inside APG, uncheck the layer with the black video or duplicate of your video. AVP will usually blend your video with the black video, causing the overall lighting to get darker. Under the Preview tab, set all blending and weighting to None, then Update. Lastly, launch the Image properties window from the Layers panel if your video looks too scaled down. Use the circular crop tab to adjust the area. This should help scale up your video to the 360 space.
 
-\imgA{1.5}{52/layers}
+\imgA{1}{52/layers}
 
-\imgB{.75}{52/crop1}{52/map1}
+\imgB{.5}{52/crop1}{52/map1}
 
-\imgB{.75}{52/crop2}{52/map2}
+\imgB{.5}{52/crop2}{52/map2}
 
 Good news! If you are unfamiliar with 3d software like Maya or Blender, you can create a 3d title in AE and render it out as a lossless mov with a duplicate or black video. Try doing the same with your title in Autopano to get the best warping for viewing your title in a VR Headset. You can render a tiff sequence of this title from AVP and add it to your AE assembly without warping.
 

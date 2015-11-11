@@ -9,7 +9,7 @@
 
 Sometimes Control Points and Masking Points aren’t enough, and you need an alternative to deliver a perfectly stitched panorama. If you are not familiar with Mocha and Rotoscoping, now is the time. Rotoscoping is a technique where a subject — either live or animated — is traced over, frame by frame, to create a matte so it may be composited over a different background or environment. Good news, all versions of AE come with a free version of Mocha, the tool for rotoscoping! 
 
-\imgA{1.5}{50/closesubject}
+\imgA{1}{50/closesubject}
 \clearpage
 \solution
 
@@ -17,49 +17,49 @@ Sometimes Control Points and Masking Points aren’t enough, and you need an alt
 
 The process for rotoscoping over a stitched panorama starts with rendering a few different panoramas from Autopano. First, render your base panorama, the one with the best possible blending and least amount of seams in the background, as a 16 bit tiff sequence. 
 
-\imgA{1.5}{50/base}
+\imgA{1}{50/base}
 
 Then render only one camera using the same stitch template but without any blending. In APG, uncheck all layers/cameras, turn blending off, and check the one with the subject/object to roto. Render it at the same size as an mp4 and as tiff sequence.
 
-\imgA{1.5}{50/cam3pano}
+\imgA{1}{50/cam3pano}
 
 In AE, import both sequences under their take folder and create a new composition from the base tiff sequence, using the same fps and dimensions. In the same composition, add the mp4 that contains only the object to roto on top of the base layer. Under Animation menu, choose Track in Mocha AE. Save your new project to the take folder location to easily access it later. 
 
-\imgA{1.5}{50/trackinmocha}
+\imgA{1}{50/trackinmocha}
 
 Before tracking our object, ensure you are working on the least amount of frames to speed up the work. Choose the start and end frame of the roto area that will be composited to mask the seam on your base panorama. In Mocha, go to the starting frame and click the “Set In Point” button located on the left of the timeline controls. Do the same for the Out point with your end frame. Select “Zoom timeline to In/Out points” under Movie menu or from the same controls.
 
-\imgA{1.5}{50/zoomtimeline}
+\imgA{1}{50/zoomtimeline}
 
 Now that you are ready to track motion with Mocha, press Command + L to use the X-Spline tool or Command + B for the Bezier tool. Go to the end frame of the work area and select a few points around the outline of the object you want to roto. There’s no need for a detailed shape yet. In the lower part of Mocha, locate the Motion parameters and select only the tracking data of Translation, Scale and Rotation. Press Shift + < key to track backwards. Adjust the X-Spline points from the starting frame, then Shift + > to track forward.
 
-\imgA{1.5}{50/simpletrack}
+\imgA{1}{50/simpletrack}
 
-\imgA{1.5}{50/trackback}
+\imgA{1}{50/trackback}
 
 After the tracking is done, rename this roto layer under the Layer controls (left area) to “track” and hide it by unchecking the eye icon. Press Command + L or B to start a new roto which will be the detailed roto mask. Take your time with selecting some of the points and try rounding the shape with the blue splines. When satisfied with the mask, uncheck the “process” icon next to the eye icon of the Layer controls for the layer you just created. Then find the “Link to Track” dropdown under Layer Properties and select the previous layer renamed “track”. You just linked your detailed shape to the tracked motion of your previous layer. Use the playback controls to check and verify the motion.
 \clearpage
-\imgA{1.5}{50/linktrack}
+\imgA{1}{50/linktrack}
 
 This is the bare minimum to understand how tracking and rotoscoping with Mocha works. When rotoscoping a moving subject with multiple movements happening simultaneously such as head rotation, arms bouncing around, or legs walking, consider all movements separately. Following the same steps, create a quick mask with X-splines, track backward, adjust your points, track forward, and then create your detailed mask to later link to the tracked layer. The more points the more time Mocha will take to track.
 
-\imgA{1.5}{50/complex}
+\imgA{1}{50/complex}
 
 {\large Paste Mocha Shape. \par}
 
 After tracking your object in motion and creating a detailed mask linked to the tracked motion, you can easily transfer the data over from the free version of Mocha to AE. Select the detailed layer(s) from the Layer controls and in the lower part of Mocha, choose “Export Shape Data..”. In the popup, make sure the selected layer is the one you want to paste, then Copy to Clipboard.
 
-\imgA{1.5}{50/aeexport}
+\imgA{1}{50/aeexport}
 
-\imgA{1.5}{50/copy}
+\imgA{1}{50/copy}
 
 Back in AE, select your footage layer and place the cursor to the starting frame, or press I to go to Frame 0. Then under the Edit menu, select Paste Mocha Shape. AE will create a custom Mask based on the tracked mocha shape. 
 
-\imgA{1.5}{50/paste}
+\imgA{1}{50/paste}
 
 Go to the frame that has the first keyframe of the tracked roto and press M to show the Mask options. Each spline can also be readjusted frame by frame in AE. After rotoscoping and exporting the object onto your base panorama, follow the instructions in AE Comping to blend this roto.
 
-\imgA{1.5}{50/keyframe}
+\imgA{1}{50/keyframe}
 
 \clearpage
 \end{fullwidth}

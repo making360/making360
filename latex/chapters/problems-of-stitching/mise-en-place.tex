@@ -15,25 +15,25 @@ After rendering your stitched panorama(s), there is still work to be done! You h
 
 Every step along the pipeline will process and distort your colors, decreasing the potential for highest quality picture. Your eyes may not be able to see, look at the changes in unique number of colors and rgb histograms via Gimp. They will be drastically affected depending on your setup and plugins for effects and color grading.
 
-\imgB{.75}{47/16bit}{47/8bit}
+\imgB{.5}{47/16bit}{47/8bit}
 
 Working with 16 bit tiffs in an 8 bit AE project will reduce the color information by half at render time, increasing the risks of introducing banding. Banding in a VR headset is more visible than any other medium. Unless you are exploring banding as an effect, setting your preferences of AE the correct way before working on final master files is highly recommended. 
 
 Open AE and locate the Project Settings under File. Set the color bit depth to 16 bits per channel. Then under the Import Preferences, don't forget to change the default framerate (fps) to match the framerate or your source footage. To output a different framerate, set the desired fps under your composition settings, and perform a timeremap to match that new framerate.
 
-\imgA{1.5}{47/aesettings}
+\imgA{1}{47/aesettings}
 
 Import the tiff sequences rendered from Autopano and rename with the scene and take of the sequence. Create folders matching the names of your scenes and place the stitched tiffs into the corresponding folders. Keep the digital workspace clean and comprehensible, implementing a system with your team. Organize every project with folders separating the source files from output files. Add a working folder between any step that includes the work from a specific software. Separate renders from the work folders into the main Render folder. 
 
-\imgA{1.5}{47/import}
+\imgA{1}{47/import}
 \clearpage
 Organize your AE or Premiere project with scene or take folders that include the stitched mp4 (not final as it is compressed) and the tiff sequence (uncompressed). 
 
-\imgA{1.5}{47/organize}
+\imgA{1}{47/organize}
 
 After you mask the tripod using the Patching Nadir method in Photoshop, import the psd file into AE. This allows you to edit and update any work in Photoshop back into AE. The same applies to Rotoscoping with Mocha and editing Audio using Audition. Keep all your work organized in the same take folder in AE.
 
-\imgA{1.5}{47/psd}
+\imgA{1}{47/psd}
 \clearpage
 {\large Pre-Comps and Shortcuts. \par}
 
@@ -41,21 +41,21 @@ When preparing your master composition in AE for 360 editing, consider the poten
 
 The stitched panoramas will render out of Autopano in equirectangular format. The center of the equirectangular stitch will be the starting orientation of the viewer in the headset. The director may want to change this position so the viewer enters the scene or experience facing a different angle. Instead of re-rendering your tiffs with a different panorama position, you can handle this right in AE. Precomp all your tiff sequences, matching their original dimensions and fps. Rename the first precomp as Take or Scene name and add \_Main as the step. This Main comp will become the finalized panorama that includes changes like Patching the nadir and fixing seams via Rotoscoping or Masking. 
 
-\imgA{1.5}{47/main}
+\imgA{1}{47/main}
 \clearpage
 Let’s precomp the layer and name it “Plate”. In this precomp, add your photoshop layer to patch the nadir and any work to fix seams. 
 
-\imgA{1.5}{47/precomp}
+\imgA{1}{47/precomp}
 
-\imgA{1.5}{47/plate}
+\imgA{1}{47/plate}
 
 Select the “Plate” precomp from the \_Main comp, using Command + D to duplicate the precomp, then P to change the X axis of the precomp on top. Add the width of your composition to the x value (ex: 1920 x value + 3840 comp width). Select both precomps together and move them horizontally to change the center of the viewpoint.
 \clearpage
-\imgA{1.5}{47/move}
+\imgA{1}{47/move}
 
 You may need to precomp in AE a lot more to fix some seams, recreate elements in the background, or add green screen footage. All this work should be done under the “Plate” pre-comp. Sstart a new composition or copy the \_Main one and rename it the next step. For example, rename \_Main\_CC for Color Correction. Mute audio on all layers and handle the audio at end in the \_Final composition, so there is only one video comp and one audio comp. After the first assembly is approved, import the EDL or Premiere sequence into AE to reassemble with the take comps.
 
-\imgA{1.5}{47/final}
+\imgA{1}{47/final}
 \clearpage
 Here are some short codes in AE:
 
@@ -65,7 +65,6 @@ Here are some short codes in AE:
 \item Command + Left/Right arrows to move timeline cursor frame by frame.
 \item Command + Click over timecode to switch with frames.
 \item Command + Option + F to Fit to Screen your layer with the comp width/height.
-\item Select all comps + Render made my life easier than Menu>Composition>Render for each comp, especially when you have 100 comps to render.
 \item Layer selected + B to start Work area at the frame your cursor is on.
 \item Layer selected + N to end Work area at the frame your cursor is on.
 \item Layer selected + I to go to the In point of your composition.

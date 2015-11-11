@@ -15,20 +15,20 @@ Creating VFX that is warped correctly in 360 space can be time intensive work. Y
 
 Basic green screen footage needs to be comped in your 360 panorama. The footage can be filmed with any camera like the RED or with the same 360 rig. Shooting with the same 360 rig makes the job a lot easier. With any green screen footage, use AVP to unwarp and reproject onto a sphere. 
 
-\imgA{1.5}{53/avplion}
+\imgA{1}{53/avplion}
 
 Import your footage and click Edit to open APG. Uncheck the unnecessary video layers to render only the green screen with the right warping for a latlong 360x180. If shot with a fisheye lens, use the Circular Crop to scale your video up. You can also set the yaw and pitch of your green screen layer to 0 to center it and change the FOV value, which should help scale your footage in the 360x180 projection. Render this as a 16 bit uncompressed tiff sequence.
 
-\imgA{1.5}{53/layers}
+\imgA{1}{53/layers}
 
 Import into AE and add the Keylight 1.2 plugin onto the green screen tiff sequence. If your green screen was perfectly handled during production, use the “Screen colour” color selector to key out the green in your video. Otherwise, play around with the Screen Matte parameters to adjust the green keying. You can also increase the greens of your screen by using the selective color effect.
 
-\imgA{1.5}{53/avptokey}
-\imgA{1.5}{53/keyed}
+\imgA{1}{53/avptokey}
+\imgA{1}{53/keyed}
 \clearpage
 If your keyed object was not properly warped, it's safe to place it on the center horizon of your panorama. Scale it down to fit between the first row up and down on the proportional grid to minimize the potential for distortion.
 
-\imgA{1.5}{53/safearea}
+\imgA{1}{53/safearea}
 \clearpage
 {\large Skybox is your friend! \par}
 
@@ -36,29 +36,29 @@ You want to animate your object and have it come from the top of your panorama t
 
 In AE, open your plate composition, download the plugin Skybox from Mettle. Under scripts in File, select Skybox Extractor, then choose the plate comp to extract and run the script.
 
-\imgA{1.5}{53/script}
-\imgA{1.5}{53/extract}
+\imgA{1}{53/script}
+\imgA{1}{53/extract}
 \clearpage
 3 compositions will automatically be created. One comp is your Output, one your Edit comp and one for Previewing using the Camera cursor.
 
-\imgA{1.5}{53/skyboxcomps}
-\imgA{1.5}{53/camera}
+\imgA{1}{53/skyboxcomps}
+\imgA{1}{53/camera}
 
 To animate any 2d, 3d or green screen elements, head over to your plate composition where you can add your layers to animate. For example, this eagle has been keyed out and place on top of the base panorama. The warping is incorrect when previewing it via the Preview comp. 
 
-\imgA{1.5}{53/skybox_unwarp}
+\imgA{1}{53/skybox_unwarp}
 
 You need to convert the warping by applying the mettle skybox converter, located in your ae effects. Drag the effect on top of any layer and Skybox will convert and unwarp the right way for you to start animating. 
 
-\imgA{1.5}{53/skyboxwarped}
+\imgA{1}{53/skyboxwarped}
 
 All elements have been converted, you can start keyframing and animating just like you would with any other AE project. Use the Preview comp to check the warping and adjust your animations when necessary. 
 
-\imgA{1.5}{53/animate}
+\imgA{1}{53/animate}
 
 You can also use Skybox to convert text elements and create title animations for a latlong 360x180 projected output.
 
-\imgA{1.5}{53/skybox_title2}
+\imgA{1}{53/skybox_title2}
 
 \clearpage
 \end{fullwidth}
