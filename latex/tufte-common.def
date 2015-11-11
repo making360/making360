@@ -340,17 +340,17 @@
 %%
 % Set the font sizes and baselines to match Tufte's books
 \renewcommand\normalsize{%
-   \@setfontsize\normalsize{13}{18}%
+   \@setfontsize\normalsize{11}{15}%
    \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
    \belowdisplayskip \abovedisplayskip
    \let\@listi\@listI}
 
-\normalbaselineskip=18pt
+\normalbaselineskip=15pt
 \normalsize
 \renewcommand\small{%
-   \@setfontsize\small{11}{13}%
+   \@setfontsize\small{9}{11}%
    \abovedisplayskip 8.5\p@ \@plus3\p@ \@minus4\p@
    \abovedisplayshortskip \z@ \@plus2\p@
    \belowdisplayshortskip 4\p@ \@plus2\p@ \@minus2\p@
@@ -374,11 +374,11 @@
 
 
 \renewcommand\scriptsize{\@setfontsize\scriptsize{7}{8}}
-\renewcommand\large{\@setfontsize\large{18}{24}}
-\renewcommand\Large{\@setfontsize\Large{18}{28}}
-\renewcommand\LARGE{\@setfontsize\LARGE{60}{80}}
-\renewcommand\huge{\@setfontsize\huge{28}{40}}
-\renewcommand\Huge{\@setfontsize\Huge{28}{40}}
+\renewcommand\large{\@setfontsize\large{16}{20}}
+\renewcommand\Large{\@setfontsize\Large{16}{20}}
+\renewcommand\LARGE{\@setfontsize\LARGE{48}{54}}
+\renewcommand\huge{\@setfontsize\huge{26}{36}}
+\renewcommand\Huge{\@setfontsize\Huge{26}{36}}
 
 \setlength\leftmargini   {1pc}
 \setlength\leftmarginii  {1pc}
@@ -415,21 +415,6 @@
 
 %%
 % Set page layout geometry
-
-\RequirePackage[letterpaper,left=1in,top=1in,bottom=1in,headsep=2\baselineskip,textwidth=26pc,marginparsep=2pc,marginparwidth=12pc,textheight=44\baselineskip,headheight=\baselineskip]{geometry}
-
-\ifthenelse{\boolean{@tufte@afourpaper}}
-  {\geometry{a4paper,left=24.8mm,top=27.4mm,headsep=2\baselineskip,textwidth=107mm,marginparsep=8.2mm,marginparwidth=49.4mm,textheight=49\baselineskip,headheight=\baselineskip}}
-  {}
-
-\ifthenelse{\boolean{@tufte@bfivepaper}}
-  {\geometry{paperwidth=176mm,paperheight=250mm,left=14.66mm,top=13.88mm,textwidth=102.66mm,marginparsep=7.33mm,marginparwidth=36.66mm,textheight=38\baselineskip,includehead}}
-  {}
-
-\ifthenelse{\boolean{@tufte@symmetric}}
-  {}
-  {\geometry{asymmetric}}% forces internal LaTeX `twoside'
-
 
 %\geometry{paperwidth=8.125in,paperheight=10.25in,left=0.625in,top=0.625in, bottom=0.625in, right=0.625in,textwidth=3in,marginparsep=1.33mm,marginparwidth=6.66mm,textheight=38\baselineskip,includehead}
 %  {}
@@ -520,15 +505,15 @@
 \newlength{\@tufte@caption@fill}
 
 \newcommand{\TufteRecalculate}{%
-  \setlength{\@tufte@overhang}{\marginparwidth}
-  \addtolength{\@tufte@overhang}{\marginparsep}
+%  \setlength{\@tufte@overhang}{\marginparwidth}
+%  \addtolength{\@tufte@overhang}{\marginparsep}
 
   \setlength{\@tufte@fullwidth}{\textwidth}
-  \addtolength{\@tufte@fullwidth}{\marginparsep}
-  \addtolength{\@tufte@fullwidth}{\marginparwidth}
+%  \addtolength{\@tufte@fullwidth}{\marginparsep}
+%  \addtolength{\@tufte@fullwidth}{\marginparwidth}
 
   \setlength{\@tufte@caption@fill}{\textwidth}
-  \addtolength{\@tufte@caption@fill}{\marginparsep}
+%  \addtolength{\@tufte@caption@fill}{\marginparsep}
 }
 
 \AtBeginDocument{\TufteRecalculate}
@@ -1459,12 +1444,11 @@
 % Produces a full title page
 
 \newcommand{\maketitlepage}[0]{%
-  \cleardoublepage%
   {%
   \sffamily%
   \begin{fullwidth}
     \begin{center}
-    \includegraphics[width=13cm]{./cover}
+    \includegraphics{./cover.jpg}
     \end{center}
   \end{fullwidth}
   }
@@ -1603,7 +1587,7 @@
 
   \titlecontents{chapter}%
     [0em] % distance from left margin
-    {\begin{fullwidth}\large\rmfamily\itshape} % above (global formatting of entry)
+    {\vspace{0\baselineskip}\begin{fullwidth}\large} % above (global formatting of entry)
     {} % before w/label (label = ``2'')
     {} % before w/o label
     {} % filler + page (leaders and page num)

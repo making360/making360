@@ -12,7 +12,7 @@ Pure white reflects 100\% of the light, while pure black reflects 0\% of the lig
 
 When correcting exposure of a camera in post production, figure out what happened in production. Was the shot overexposed? Was white balance set to auto? Exposure compensation adjusts brightness within the existing ISO Limit. If brightness has already reached the ISO Limit in a low light environment, increasing your exposure compensation will not have any effect.
 
-\imgA{1.5}{32/bad_ev}
+\imgA{1}{32/bad_ev}
 
 Correcting overexposed or underexposed footage with the Exposure plugin from AE or Premiere is not the way to go. Here is a good alternative to keep the bit depth of your colors at its highest.
 
@@ -21,7 +21,7 @@ Correcting overexposed or underexposed footage with the Exposure plugin from AE 
 
 {\large Read the RGB histogram. \par}
 
-\imgA{1.5}{32/histograms}
+\imgA{1}{32/histograms}
 
 Learn how to read and understand RGB histograms. R G B, red, green, blue, these 3 primary colors make up your image. Lows, mids and highs are color ranges that correspond to your low lights, also called shadows, mids and highlights. The histogram is a representation of the distribution of the colors (or pixels) in an image. 
 
@@ -35,19 +35,19 @@ Exposure compensation is a parameter you need to control during shooting and pro
 
 Since exposure compensation in AE or Premiere is a linear global function, it’s safe to use the gamma levels (left image below) along with its color histograms, as these are non-linear global functions compressing the dynamic range. 
 
-\imgB{.75}{32/usinglevels}{32/usingexposure}
+\imgB{.5}{32/usinglevels}{32/usingexposure}
 
 In AE, bring all the source footage into one composition and align them horizontally with 5-10\% overlap over each other. You can color match or exposure match all the overlapping areas or edges with this setup. When stitching, the overlapping areas will then blend much better. The pixel colors of the edges will be easier for Autopano’s algorithm to interpret. Additional control points can be found by adjusting the gamma on a shot that is over or under exposed.
 
-\imgA{1.5}{32/colormatching}
+\imgA{1}{32/colormatching}
 
 Apply the plugin “Levels” on each of your video layers and review the histogram for every layer. Take note of the spikes, which will help you understand how to accurately gamma correct.
 
-\imgA{1.5}{32/levels}
+\imgA{1}{32/levels}
 
 Adjust the gamma’s mid level, by .2 points up (to the right) or down (to the left). Try not to adjust the individual color channels, as this distorts colors too early in the post production workflow.
 
-\imgA{1.5}{32/colormatched}
+\imgA{1}{32/colormatched}
 
 Finally, render a lossless .mov file instead of compressing and rendering another mp4.
 

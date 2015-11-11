@@ -10,7 +10,7 @@
 
 To stitch a moving or static shot with moving objects or people, you will encounter magic you didn’t expect, such as people disappearing randomly, or getting shrinked as they cross cameras, or you may think you’re seeing double. Few causes can explain these surprises. Usually it is a sync-related issue. If one or more camera starts shooting with a slight delay, you need to resync in post.
 
-\imgA{1.5}{33/badstitch}
+\imgA{1}{33/badstitch}
 
 \solutions
 
@@ -22,7 +22,7 @@ After dragging your videos into AVP, find the Synchronization tab and open it. S
 
 AVP lets you select the range in seconds for the auto detection to happen, 20 seconds being the good average. Select “Use Audio to synchronize” option and click Apply.
 
-\imgA{1.5}{33/avp_sync}
+\imgA{1}{33/avp_sync}
 
 The second option “Use Motion to synchronize” will only work if you used a motion flash or speedlight during production. Select the nearest frame and a range for AVP to auto-detect the flash in each of your videos.
 
@@ -34,12 +34,12 @@ Adobe Premiere’s auto sync function for multiple cameras is similar to RedGian
 \clearpage
 Instead of creating a new sequence, find or drag all your videos in Premiere’s project section, right click and select Create Multi-Camera Source Sequence. Then choose “Audio” as a synchronize point and “All Cameras” for the audio sequence settings.
 
-\imgA{1.5}{33/audio_multicam}
+\imgA{1}{33/audio_multicam}
 
 
 Your videos will be processed and placed into a bin. Rename the created sequence based on your log notes. Right click and Open the Multicam sequence in the timeline to see how the video tracks have been synced.
 
-\imgA{1.5}{33/multicam_timelines}
+\imgA{1}{33/multicam_timelines}
 
 If you are editing your First Assembly with Premiere, it may be a good idea to update the files/folder names between your quick stitches and your source cameras. Add a shortcode such as SYNC, QS for Quickstitch, FS for Fine Stitch, CC for Color Corrected. Rename the “Processed Clips” folder to the shot name and include all needed and related assets in the bin folder.
 
@@ -54,30 +54,30 @@ Import all the cameras into AE and create a single composition with all the vide
 
 Press “L” after selecting all layers to show the audio levels, then click on the triangle to open the waveform, one layer after another. 
 
-\imgA{1.5}{33/audiolevels}
+\imgA{1}{33/audiolevels}
 
 You can minimize your video area to focus on audio sync.
 
 Find a peak in the waveform and place your cursor just before that peak. You can use any other reference, but peaks are easier to detect and align to.
 
-\imgA{1.5}{33/cursor}
+\imgA{1}{33/cursor}
 
 The red line below your cursor will help you see how to move the video stream to the left or right (forward or backward in the timeline). 
 
 After aligning the layers based on the audio peak in the waveform, zoom in to the timeline for accuracy.
 
-\imgA{1.5}{33/synced}
+\imgA{1}{33/synced}
 
 Now you have two options: trim the videos and render only the footage in sync, or record the sync offset of each video track. Let’s trim in this case and render the new video stream now synched and ready for stitch.
 
-\imgA{1.5}{33/trimcomp}
+\imgA{1}{33/trimcomp}
 
 \clearpage
 {\large Recording the offsets \par}
 
 The video track with the largest distance from frame 0 will be the origin. The offset for that video track is 0. The opposite and longest video track, usually untouched and start frame at 0, will need to be offsetted by the number of frames between its start frame and the start frame of the video track with largest offset. For this example, it is 305 frames.
 
-\imgA{1.5}{33/offsets}
+\imgA{1}{33/offsets}
 
 For all other video tracks, subtract the start frame of each video track by the largest offset. For example: 
 
