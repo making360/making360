@@ -17,9 +17,9 @@ FFmpeg is the leading multimedia framework, able to decode, encode, transcode, m
 
 {\large Install the right binary (Mac only) \par}
 
-FFmpeg has always been a very experimental and developer-driven project. New features are added constantly and after installing it on PC and Mac, I realized the main build of ffmpeg didn’t have the needed filter nor was able to endode videos using the h265 codec. 
+FFmpeg has always been a very experimental and developer-driven project. New features are added constantly and the default PC and Mac binaries may not have the needed filters or h265 codec enabled. 
 
-The right binary to install on Mac is the version 2.7.2 built by Helmut Tessarek. Unfortunately, it is compressed with 7-zip, so you may need to get a decompressor first. I used Keka (not open source, but free).
+For Mac users, the right binary to install is the version 2.7.2 built by Helmut Tessarek. Unfortunately, it is compressed with 7-zip, so you may need to get a decompressor first. Use Keka (not open source, but free).
 
 Once you unzip the binary with Keka, open your Terminal applications simply by using the search spotlight. In the terminal, you will first need to show all the hidden files and folders on your mac, enter this line and press return:
 
@@ -27,7 +27,7 @@ Once you unzip the binary with Keka, open your Terminal applications simply by u
 
 Use the force quit menu under the Apple icon to relaunch the Finder. The hidden files should now appear in your finder window. 
 
-You will need to place the unzipped FFmpeg binary, which should be a ~30mb file, into the shared among users folder containing all your other binaries. Using the finder, Go to the Computer folder (Macintosh HD unless it was renamed) or Command + Shift + C. The folder to place the FFmpeg binary should be located at usr/local/bin, and if the folder doesn’t exist, you can create it and it will work. You will be asked to authenticate by inputting your password. 
+You will need to place the unzipped FFmpeg binary, which should be a 30mb file, into the shared among users folder containing all your other binaries. Using the finder, Go to the Computer folder (Macintosh HD unless it was renamed) or Command + Shift + C. The folder to place the FFmpeg binary should be located at usr/local/bin, and if the folder doesn’t exist, create it. Authenticate by inputting your password. 
 
 Now, back to your terminal window, simply using the arrow up key will bring back the line to show all hidden folders, then replace YES with NO to hide them again. Relaunch the finder. In the terminal window, simply type ‘ffmpeg’ and you should now see the right version of the binary installed.
 
