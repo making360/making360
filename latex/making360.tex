@@ -23,7 +23,7 @@
 \documentclass[notoc, justified]{tufte-book}
 \usepackage[sfdefault]{roboto}
 \usepackage[T1]{fontenc}
-\usepackage[margin=0.625in, paperwidth=6in, paperheight=9in, textwidth=4.75in]{geometry}
+\usepackage[margin=0.625in, bottom=1in, paperwidth=6.125in, paperheight=9.25in, textwidth=4.75in]{geometry}
 \hypersetup{colorlinks}
 \usepackage{microtype} % Improves character and word spacing
 \usepackage{setspace} % for line spacing
@@ -35,19 +35,20 @@
 \usepackage{xspace}
 \usepackage{listings}
 \usepackage{CJKutf8}
+\usepackage{tocloft}
+\usepackage{ocr}
+\usepackage{ctable}
 \AtBeginDvi{\input{zhwinfonts}}
 \usepackage{fancyhdr}
 \graphicspath{ {./img/} }
 \usepackage[overlay,absolute]{textpos}
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
-\setcounter{tocdepth}{1} 
-\setcounter{secnumdepth}{-1}
-
 \fvset{fontsize=\tiny} % The font size of all verbatim text can be changed here
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio} % Improves figure scaling
 \newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\space\number\year} % A command to print the current month and year
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
+\newcommand*\varhrulefill[1][0.4pt]{\leavevmode\leaders\hrule height#1\hfill\kern0pt}
 \newcommand{\problem}{\textbf{\large Problem:}}
 \newcommand{\solution}{\textbf{\large Solution:}}
 \newcommand{\solutions}{\textbf{\large Solutions:}}
@@ -132,7 +133,29 @@ Fabien Soudiere}
 
 %----------------------------------------------------------------------------------------
 
-\tableofcontents % Print the table of contents
+\blankpage
+
+\makeatletter
+%\renewcommand\@tocrmarg{10em}
+\renewcommand\@pnumwidth{4em}
+%\renewcommand\@dotsep{2em}
+\makeatother
+\setcounter{tocdepth}{0} 
+\setcounter{secnumdepth}{-2}
+\renewcommand{\cftchapfont}{\hfill\normalsize\bfseries}
+\renewcommand{\cftchapleader}{}
+\renewcommand{\cftpartfont}{\large\ocrfamily}
+\renewcommand{\cftchappagefont}{\normalsize}
+\renewcommand{\cftpnumalign}{r}
+\addtocontents{toc}{\cftpagenumbersoff{part}}
+\renewcommand{\contentsname}{}
+\setlength{\cftbeforechapskip}{0.2ex}
+\newcommand{\cftpartafterpnum}{}
+\newcommand*{\SkipTocEntry}{\addtocontents{toc}{\gobblefour}}
+\setlength{\cftbeforetoctitleskip}{-4em}
+
+\tableofcontents
+
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
