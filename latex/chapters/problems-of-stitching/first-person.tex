@@ -43,13 +43,13 @@ Hanging the camera on a wire or fishing line results in very natural camera view
 
 {\bfseries Pre-rendered 3d Model}
 \\
-Kite & Lightning’s Insurgent VR pre-rendered a static headless, neck-down 3d man model and then composited him later on a live-rendered 360 video. This approach seem pretty complex to achieve but with the use of the DomeMaster in Maya and Blender built-in LatLong renderer, any 3d artists could quickly buy a 3d model, render its latlong mono or stereo to text the AE comping with your video. 
+Kite & Lightning’s Insurgent VR pre-rendered a static headless, neck-down 3d man model and then composited it later on a live-rendered 360 video. This approach seem pretty complex to achieve but with the use of Andrew Hazelden's DomeMaster in Maya or Blender's built-in LatLong renderer, any 3d artists could quickly buy a 3d model, render its latlong mono or stereo to comp in AE later. 
 
 \imgA{1}{44/kite}
 \clearpage
 {\bfseries Head Mounted Cameras}
 \\
-Experiment placing the 360 rig was on a chair with the subject’s head leaning backward or sideways if body was laying on a floor or table. In these cases, stitching can get tricky but you will see the actual body of the subject to embody.
+Experiment placing and stabilizing the 360 rig on a chair with the subject’s head leaning backward or sideways if body was laying on a floor or table. In these cases, stitching can get tricky but you will see the actual body of the subject to embody.
 
 \imgA{1}{44/body}
 
@@ -64,6 +64,14 @@ Looking at the seams and the control points already detected, start by cleaning 
 Click on the Optimize button when the clean up of the control points has been done. To improve the stitch as it probably won’t be fixed, you should adjust the optimization of the lens distortion since you are stitching a complex parallax problem. The sensor of the cameras is not perfectly aligned/centered with the lens and because of that each camera has its own lens distortion model. 
 
 Under the advanced optimization settings, at Scopes, try setting Distortion to Optimize 3rd order and scope to Image. Then Optimize. Stitching should be much better. Recreate the leftovers of bad blending, frame by frame, with Comping or Rotoscoping techniques, to attain perfection.
+
+{\large The Mirror trick. \par}
+
+It is possible to trick your viewer's eye by using mirrors and reflections. Imagine yourself in a bathroom looking straigth into a mirror. Without the need to have a body when looking down, your viewer will see another body straigth from the reflection. 
+
+The effect is a great hack for a simple embodiment. Plan your plates before shooting. You will need to shoot the scene in 360, and then place the rig at the position of your mirror or reflective surface. The actor or actress should be placed where the rig was previously, facing the mirror. The rig is now recording your subject. You will then comp this footage instead of the mirror or reflective area. Dont forget to shoot the moon to replace the tripod from the nadir area.
+
+\imgA{1}{44/mirror}
 
 \clearpage
 \end{fullwidth}
