@@ -27,13 +27,13 @@ Once you unzip the binary with Keka, open your Terminal applications simply by u
 
 Use the force quit menu under the Apple icon to relaunch the Finder. The hidden files should now appear in your finder window. 
 
-You will need to place the unzipped FFmpeg binary, which should be a 30mb file, into the shared among users folder containing all your other binaries. Using the finder, Go to the Computer folder (Macintosh HD unless it was renamed) or Command + Shift + C. The folder to place the FFmpeg binary should be located at usr/local/bin, and if the folder doesn’t exist, create it. Authenticate by inputting your password. 
+You will need to place the unzipped FFmpeg binary, which should be a 30 MB file, into the shared among users folder containing all your other binaries. Using the finder, Go to the Computer folder (Macintosh HD unless it was renamed) or Command + Shift + C. The folder to place the FFmpeg binary should be located at usr/local/bin, and if the folder doesn’t exist, create it. Authenticate by inputting your password. 
 
 Now, back to your terminal window, simply using the arrow up key will bring back the line to show all hidden folders, then replace YES with NO to hide them again. Relaunch the finder. In the terminal window, simply type ‘ffmpeg’ and you should now see the right version of the binary installed.
 
 {\large Convert Files \par}
 
-FFmpeg is the best tool to quickly convert video and audio files to almost any formats. For example, type this line in the terminal to convert an .mov file into an .mp4 file:
+FFmpeg is the best tool to quickly convert video and audio files to almost any formats. For example, type this line in the terminal to convert a .mov file into an .mp4 file:
 
 \code{ffmpeg -i video.mov video.mp4}
 
@@ -43,7 +43,7 @@ Now let’s convert a tiff sequence into an .mp4 file. You will first need to re
 
 {\large Concatenate Sequences \par}
 
-When recording video with the GoPro HERO4 Black, notice the files are cut off anytime after 3.8 GB. Depending on the video mode, this could be 8-11 minutes. The take will be split into chunks. This is because the microSD cards are formatted FAT32 which limits up to 4 GB. If you are using a 64 GB card, it will be formatted exFAT which normally allows larger file sizes. However, the GoPros will still limit the file size to 4GB. You can shoot a take as long as you want until the cards fill up or the battery dies. The individual segments will need to be concatenated into one file before stitching.
+When recording video with the GoPro HERO4 Black, notice the files are cut off anytime after 3.8 GB. Depending on the video mode, this could be 8-11 minutes. The take will be split into chunks. This is because the microSD cards are formatted FAT32 which limits up to 4 GB. If you are using a 64 GB card, it will be formatted exFAT which normally allows larger file sizes. However, the GoPros will still limit the file size to 4 GB. You can shoot a take as long as you want until the cards fill up or the battery dies. The individual segments will need to be concatenated into one file before stitching.
 
 Use FFmpeg to concatenate your sequences. It will be much faster than using a video software’s rendering engine, like importing into AE and exporting.
 

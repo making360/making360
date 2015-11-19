@@ -21,7 +21,7 @@ The lower your RMS value is, the better your stitch should be!
 
 \imgA{1}{35/rms}
 
-For the optimizer to calculate the rms while improving your stitch, it needs a curve model and the data, the matched control points coming from the detector. Some points are good points but never perfectly accurate, some are completely wrong. 
+For the optimizer to calculate the RMS while improving your stitch, it needs a curve model and the data, the matched control points coming from the detector. Some points are good points but never perfectly accurate, some are completely wrong. 
 
 The optimizer will then perform a series of steps to first fit at best all control points, add a threshold for cleaning bad points, re-estimating the model parameters and then computing the final RMS calculation. The final RMS value is the mean size of these error segments, but it is not the quality of the visually stitched panorama.
 
@@ -49,7 +49,7 @@ When stitching, my process is very mechanical regarding optimization: I detected
 
 One misconception is with the word “Optimizing”, hoping the engine will visually improve your stitch, when it fact it can make it worse.
 
-When cleaning bad points too much, you will end up removing points which may have been bad but helped balance the equation making the stitch visually better despite the rms value.
+When cleaning bad points too much, you will end up removing points which may have been bad but helped balance the equation making the stitch visually better despite the RMS value.
 
 
 \clearpage
