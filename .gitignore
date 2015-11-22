@@ -2,6 +2,7 @@
 *.aux
 *.log
 *.toc
+*.pdf
 
 # Latexmk
 *.fdb_latexmk
