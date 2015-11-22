@@ -16,7 +16,7 @@ To stitch a moving or static shot with moving objects or people, you will encoun
 
 {\large Use Autopano’s built in synchronization. \par}
 
-Synchronizing your videos is the first step before the footage is ready to stitch. After dragging your videos into AVP, use the built in synchronization. This feature only works if an audio or motion signal recorded at the start of the take during the shoot. Some situations there is no audio or visual signal for sync. For example, if you shot the camera angles at different times, the shooter forgot to Audio Slate, the audio on cameras got dropped, there was no speedlight for Motion Flash that day, etc. In these extreme cases, manually input the offsets of the videos needed to be stitched. Find a visual sync frame and use one camera as an anchor. Look for a frame with fast moving motion, such as leg’s running or hands clapping, and match the rest of the cameras.
+Synchronizing your videos is the first step before the footage is ready to stitch. After dragging your videos into AVP, use the built in synchronization. This feature only works if there was a Reference Signal, like an audio or motion signal recorded at the start of the take during the shoot. In some situations, there is no audio or visual signal for sync. For example, if you shot the camera angles at different times, the shooter forgot to audio slate, the audio on the cameras got dropped, or there was no speedlight for a motion flash that day, etc. In these extreme cases, manually input the offsets of the videos needed to be stitched. Find a visual sync frame and use one camera as an anchor. Look for a frame with fast moving motion, such as legs running or hands clapping, and match the rest of the cameras.
 
 After dragging your videos into AVP, find the Synchronization tab and open it. Select the closest frame in your timeline to a “clap” or any high peak in the audio signal. 
 
@@ -24,12 +24,12 @@ AVP lets you select the range in seconds for the auto detection to happen, 20 se
 
 \imgA{1}{33/avp_sync}
 
-The second option “Use Motion to synchronize” will only work if you used a motion flash or speedlight during production. Select the nearest frame and a range for AVP to auto-detect the flash in each of your videos.
+The second option “Use Motion to synchronize” will only work if you used motion or a speedlight flash during production. Select the nearest frame and a range for AVP to auto-detect the flash or motion in each of your videos.
 
 
 {\large Auto sync with Premiere’s multicam sequence. \par}
 
-Adobe Premiere’s auto sync function for multiple cameras is similar to RedGiant’s PluralEyes software, and very accurate. As opposed to AVP when Premiere can’t sync, it will warn you. Then you will know when you have to manually sync the videos.
+Adobe Premiere’s auto sync function for multiple cameras is similar to RedGiant’s PluralEyes software, and very accurate. As opposed to AVP, when Premiere can’t sync it will warn you. Then you will know when you have to manually sync the videos.
 
 \clearpage
 Instead of creating a new sequence, find or drag all your videos in Premiere’s project section, right click and select Create Multi-Camera Source Sequence. Then choose “Audio” as a synchronize point and “All Cameras” for the audio sequence settings.
@@ -68,14 +68,14 @@ After aligning the layers based on the audio peak in the waveform, zoom in to th
 
 \imgA{1}{33/synced}
 
-Now you have two options: trim the videos and render only the footage in sync, or record the sync offset of each video track. Let’s trim in this case and render the new video stream now synched and ready for stitch.
+Now you have two options: trim the videos and render only the footage in sync, or record the sync offset of each video track. Let’s trim in this case and render the new video stream now synched and ready for stitching.
 
 \imgA{1}{33/trimcomp}
 
 \clearpage
 {\large Recording the offsets \par}
 
-The video track with the largest distance from frame 0 will be the origin. The offset for that video track is 0. The opposite and longest video track, usually untouched and start frame at 0, will need to be offsetted by the number of frames between its start frame and the start frame of the video track with largest offset. For this example, it is 305 frames.
+The video track with the largest distance from frame 0 will be the origin. The offset for that video track is 0. The opposite and longest video track, usually untouched with start frame at 0, will need to be offsetted by the number of frames between its start frame and the start frame of the video track with largest offset. For this example, it is 305 frames.
 
 \imgA{1}{33/offsets}
 
