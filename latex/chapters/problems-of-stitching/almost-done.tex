@@ -19,7 +19,7 @@ Most phones cannot handle video files over 500 megabytes. Keep your video at the
 
 Currently, users are downloading every experience onto their internal and external phone disk space. For those who love taking photos and videos, there may not be enough space to store the 360 experiences on the same device. Find a solution to deliver the experience in a reasonable file size without completely degrading the quality.
 
-Check playback of every file on every device you will be releasing the experience on. Make sure to watch the video all the way through. For example, if you are testing a 7 minute video, it might playback smoothly in the beginning. However, the phone cannot handle playback 3 minutes in. There is no way to catch this unless you watched the video start to finish. Do multiple solid tests for sake of the amount of time and effort spent on the production.
+Check playback of every file on every device you will be releasing the experience on. Make sure to watch the video all the way through. For example, if you are testing a 7 minute video, it might playback smoothly in the beginning. However, the phone cannot handle playback 3 minutes in. There is no way to catch this unless you watched the video start to finish. Do multiple solid tests for the sake of the amount of time and effort spent on the production and for the viewer as well, since bad playback will cause a choppy video which may induce nausea. 
 
 \tip Your render may be jittery or not play back on the Gear VR or Google Cardboard if the resolution exceeds 4096x2048. Gear VR currently cannot handle more than 30 FPS as well.
 
@@ -33,7 +33,7 @@ Use this tool to preview which sections of your final file exceed the average bi
 
 With the bitrate viewer data, you can easily re-encode your final tiff sequence in sections. For example, using FFmpeg, compress sequences of frames around the average bitrate with the -crf option lower and a -maxrate capped at the average bitrate. For sequences of frames exceeding the average bitrate from the analysis, compress them with a higher -crf to lower the quality while keeping your max rate capped at the same average bitrate.
 
-The result will be multiple mp4s compressed with the best settings. Now all that is left is to concatenate the files. Analyze the bitrate of the very final mp4 to confirm the average bitrate remains the same.
+The result will be multiple mp4s compressed with the best settings. Now all that is left is to concatenate the files. Analyze the bitrate of the final mp4 to confirm the average bitrate remains the same.
 
 
 \clearpage

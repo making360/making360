@@ -19,25 +19,25 @@ FFmpeg is the leading multimedia framework, able to decode, encode, transcode, m
 
 FFmpeg has always been a very experimental and developer-driven project. New features are added constantly and the default PC and Mac binaries may not have the needed filters or H.265 codec enabled. 
 
-For Mac users, the right binary to install is the version 2.7.2 built by Helmut Tessarek. Unfortunately, it is compressed with 7-zip, so you may need to get a decompressor first. Use Keka (not open source, but free).
+For Mac users, the right binary to install is the version 2.7.2 built by Helmut Tessarek. It is compressed with 7-zip, so you may need to get a decompressor first. Use Keka (not open source, but free).
 
-Once you unzip the binary with Keka, open your Terminal applications simply by using the search spotlight. In the terminal, you will first need to show all the hidden files and folders on your Mac, enter this line and press return:
+Once you unzip the binary with Keka, open your Terminal applications by using the search spotlight. In the terminal, you will first need to show all the hidden files and folders on your Mac. Enter this line and press return:
 
 \code{defaults write com.apple.finder AppleShowAllFiles YES}
 
 Use the force quit menu under the Apple icon to relaunch the Finder. The hidden files should now appear in your finder window. 
 
-You will need to place the unzipped FFmpeg binary, which should be a 30 MB file, into the shared among users folder containing all your other binaries. Using the finder, Go to the Computer folder (Macintosh HD unless it was renamed) or Command + Shift + C. The folder to place the FFmpeg binary should be located at usr/local/bin, and if the folder doesn’t exist, create it. Authenticate by inputting your password. 
+Next place the unzipped FFmpeg binary, which should be a 30 MB file, into the shared user folder containing all your other binaries. Using the finder, Go to the Computer folder (Macintosh HD unless it was renamed) or Command + Shift + C. The folder to place the FFmpeg binary should be located at usr/local/bin, and if the folder doesn’t exist, create it. Authenticate by inputting your password. 
 
-Now, back to your terminal window, simply using the arrow up key will bring back the line to show all hidden folders, then replace YES with NO to hide them again. Relaunch the finder. In the terminal window, simply type ‘ffmpeg’ and you should now see the right version of the binary installed.
+Now, back in your terminal window, use the arrow up key to bring back the line to show all hidden folders and then replace YES with NO to hide them again. Relaunch the finder. In the terminal window, type ‘ffmpeg’ and you should now see the right version of the binary installed.
 
 {\large Convert Files \par}
 
-FFmpeg is the best tool to quickly convert video and audio files to almost any formats. For example, type this line in the terminal to convert a .mov file into an .mp4 file:
+FFmpeg is the best tool to quickly convert video and audio files to almost any format. For example, type this line in the terminal to convert a .mov file into an .mp4 file:
 
 \code{ffmpeg -i video.mov video.mp4}
 
-Now let’s convert a tiff sequence into an .mp4 file. You will first need to replace the logical order of your tiff numbers with \_05\%d instead of five zeros 00000. Then, an image sequence will require a frame rate to be converted into a movie file using the -r option. Try this on a tiff sequence:
+Now let’s convert a tiff sequence into an .mp4 file. First replace the logical order of your tiff numbers with \_05\%d instead of five zeros 00000. Then an image sequence will require a frame rate to be converted into a movie file using the -r option. Try this on a tiff sequence:
 
 \code{ffmpeg -i sequencename_05\%d.tiff -r 25 sequence.mp4}
 
@@ -61,7 +61,7 @@ Note that these can be either relative or absolute paths. Then you can stream co
 
 {\large Combine videos into Over/Under or Side/Side \par}
 
-If you need to combine your videos into an over under, left eye on top of the right eye, here’s the one line to enter in your Terminal after changing the filenames to match yours:
+If you need to combine your videos into an Over/Under, left eye on top of the right eye, here’s the one line to enter in your Terminal after changing the filenames to match yours:
 
 \code{ffmpeg -i left.mp4 -vf "[in] pad=iw:2*ih [left]; movie=right.mp4 [right];[left][right] overlay=0:main_h/2 [out]" output.mp4}
 
@@ -76,7 +76,7 @@ If your tiff sequence or video has no audio, you could use the default stream se
 
 \code{ffmpeg -i sequence_05\%d.tiff -i audio.mp3 -codec copy -shortest output.mp4}
 
-When you need to add multiple audio tracks to a video, for later use with head tracking for example, then you will need to understand the -map option.
+When you need to add multiple audio tracks to a video, for example, for later use with head tracking, then you will need to understand the -map option.
 
 \code{ffmpeg -i video.mp4 -i audio1.mp3 -i audio2.mp3 -map 0:v -map 1:a -map 2:a -codec copy output.mp4}
 
@@ -92,9 +92,9 @@ When you need to add multiple audio tracks to a video, for later use with head t
 
 {\large H.264 vs H.265 \par}
 
-Apple’s current preferred compression format, H.264, has been a huge success as being most flexible codec widely used for streaming videos. Capable of handling stereo 3D videos, 48-60 FPS and even 4K resolution. The problem with H.264, however, is that while it can handle these types of encodes, it can’t do so while simultaneously keeping file sizes low. A new standard is necessary to push file/stream sizes back down while driving next-generation adoption, and that’s where H.265 comes in. It’s designed to utilize substantially less bandwidth thanks to advanced encoding techniques and a more sophisticated encode/decode model.
+Apple’s current preferred compression format, H.264, has been a huge success as being the most flexible codec widely used for streaming videos, capable of handling stereo 3D videos, 48-60 FPS and even 4K resolution. The problem with H.264 however, is that while it can handle these types of encodes, it can’t do so while simultaneously keeping file sizes low. A new standard is necessary to push file/stream sizes back down while driving next-generation adoption, and that’s where H.265 comes in. It’s designed to utilize substantially less bandwidth thanks to advanced encoding techniques and a more sophisticated encode/decode model.
 
-In order to obtain a copy of ffmpeg with libx265 support, you need to build it yourself, adding the --enable-libx265 configuration flag, with x265 being installed on your system. Here’s how you would convert and compress a tiff sequence using H.265 enabled binary:
+In order to obtain a copy of FFmpeg with libx265 support, you need to build it yourself, adding the --enable-libx265 configuration flag, with x265 being installed on your system. Here’s how you would convert and compress a tiff sequence using H.265 enabled binary:
 
 H.264:
 
