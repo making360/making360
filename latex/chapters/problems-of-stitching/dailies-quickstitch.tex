@@ -14,7 +14,11 @@ You've just finished ingesting your source footage onto a hard disk after shooti
 
 {\large Organizing a project folder \par}
 
+<<<<<<< HEAD
 Each SD card corresponds to a certain camera angle. When you ingest video files from one SD card, you are uploading all the takes into one folder (ex. Camera 1, Camera 2). You will need to move the videos from each camera folder into a new take folder (ex. Take 1). Here's a snapshot of how it looks before and after.
+=======
+Each SD card corresponds to a certain camera angle. When you ingest video files from one SD card, you are uploading all the takes into one folder (ex. Camera 1, Camera 2). You will need to move the video from each camera folder into a new take folder (ex. Take 1). Here's a snapshot of how it looks before and after.
+>>>>>>> master
 
 \imgA{1}{30/folders}
 
@@ -63,6 +67,7 @@ Rendering is the last step in any workflow. Every software you use to edit the p
 
 Before you start rendering, double check that all your default preferences are correct. Consider the right FPS for the playback solution of your choosing. Even if you shot at 100 FPS or 60 FPS, you will want to output at an FPS that the headsets or video player can handle. 
 
+<<<<<<< HEAD
 For example, if you want to upload your 360 video to YouTube or Facebook, the current allowed FPS is 24, 25 or 30. For quick stitches, set the FPS to be same "as original video" under the Render settings. Setting the default preferences will make it easier to batch render.
 
 \imgB{.5}{30/fps25}{30/fpsoriginal}
@@ -70,6 +75,15 @@ For example, if you want to upload your 360 video to YouTube or Facebook, the cu
 When you are ready to hit the "render" icon, AVP will bring a pop up of some presets to choose from and show the maximum output size. The maximum output size is the resolution achieved from your 360 camera rig. Depending on the rig you chose, the final resolution after stitching can range from 4K to 8K. Presets are very valuable during stitching and you will want to get familiar with all the choices. When you want to render small files quickly to test and find seams to fix, you can output at a lower resolution such as 2K. Remember to change the settings back for your final render. You can always check at the bottom of the pop up window what resolution and frame rate the video will render as. For the Gear VR, render your videos at 3840x1920 or 4096x2048 when shooting 4K (1920x960 is SD).
 
 When rendering your fine stitch, it is highly recommended to render output type as frames, a sequence of uncompressed tiff images at 16 bit color depth. Rendering frames keeps the highest possible resolution of your panorama at the maximum size allowed. There are limitations when you render videos. The bit depth will be between 8 to 10 bit, including the AVI uncompressed option, and there are size limits (for example: H.264 mp4 maximum height at 2304px). Your footage will be running through many processes down the pipeline. From stitching to vfx to editing to color grading, pixels will get distorted down the line. Distortion occurs within the range of 10-16 bits. Starting with Autopano, you will want to work on the highest resolution files to minimize distortion of colored pixels and keep the full quality when rendering an 8-10 bit per channel video. Output tiff Frames at 16 bit and no compression in AVP.
+=======
+For example, if you want to upload your 360 video to YouTube or Facebook, the current allowed FPS is 24, 25 or 30. For quick stitches, I generally like to set my FPS to be same "as original video" under the Render settings. Setting the default preferences will make it easier to batch render.
+
+\imgB{.5}{30/fps25}{30/fpsoriginal}
+
+When you are ready to hit the "render" icon, AVP will bring a pop up some presets to choose from and show the maximum output size. The maximum output size is the resolution achieved from your 360 camera rig. Depending on the rig you chose, the final resolution after stitching can range from 4K to 8K. Presets are very valuable during stitching and you will want to get familiar with all the choices. When you want to render small files quickly to test and find seams to fix, you can output at a lower resolution such as 2K. Remember to change the settings back for your final render. You can always check at the bottom of the pop up window what resolution and frame rate the video will render as. For the Gear VR, render your videos at 3840x1920 or 4096x2048 when shooting 4K (1920x960 is SD).
+
+When rendering your fine stitch, it is highly recommended to render output type as frames, a sequence of uncompressed tiff images at 16 bit color depth. Rendering frames keeps the highest possible resolution of your panorama at the maximum size allowed. There are limitations when you render videos. The bit depth will be between 8 to 10 bit, including the AVI uncompressed option, and there are size limits (for example: H.264 mp4 maximum height at 2304px). Your footage will be running through many processes down the pipeline. From stitching to vfx to editing to color grading, pixels will get distorted down the line. Distortion occurs within the range of 10-16 bits. Starting with Autopano, you will want to work on the highest resolution files to minimize distortion of colored pixels and keep the full quality when rendering an 8-10 bit per channel video. Output tiff Frames at 16 bit, and no compression in AVP.
+>>>>>>> master
 
 \imgA{.65}{30/exportingtiffs}
 
