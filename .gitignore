@@ -1,7 +1,10 @@
+*making360.pdf
+
 # LaTeX temporary files
 *.aux
 *.log
 *.toc
+*.fls
 
 # Latexmk
 *.fdb_latexmk
