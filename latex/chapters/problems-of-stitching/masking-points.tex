@@ -15,11 +15,11 @@ After becoming familiar with how Control Points work, explore the other tools li
 
 {\large Understand the anti-ghost. \par}
 
-The masking tool allows you to select where the anti ghost acts on in an overlap region, deciding which of the two cameras has priority. The masking tool does not create content or pixels. Ghosts can only be eliminated in overlap regions.
+The masking tool allows you to select where the anti-ghost acts on in an overlap region, deciding which of the two cameras has priority. The masking tool does not create content or pixels. Ghosts can only be eliminated in overlap regions.
 
 \imgA{1}{41/markers}
 
-Anti-ghost is used in HDR high dynamic range photographs for combining multiple images of the same shot with different exposures. Anti-ghost paints over the areas you want to remove so there are not multiples such as two or three heads on a person. The remaining images are then composited into one HDR image by the blending algorithm.
+Anti-ghost is used in HDR high dynamic range photographs for combining multiple images of the same shot with different exposures. Anti-ghost paints over the areas you want to remove so there are not multiples, such as two or three heads on a person. The remaining images are then composited into one HDR image by the blending algorithm.
 
 The anti-ghost algorithm in Autopano is referred to as “cutting”. This is computed at all times even when you are not using the masking markers. When using the masks, the automatic anti-ghost blending is told which pixels to keep or remove. 
 
@@ -33,7 +33,7 @@ The algorithm analyses the differences between the images and calculates the bes
 
 Masking markers are most effective when cleaning up the overlap regions and seams. Adding markers in other areas will have no effect except for extending a seam by adding a green keep marker. 
 
-Before adding markers, examine and rewatch the clip to understand what is happening in the seam. Then place the markers keeping the algorithm in mind to achieve the desired effect. There are two overlapping images, one where the subject and his shadow are fully in, the other where the subject and shadow cut in half. Add a green marker on top of the subject in the first image and a red one on top of the half cut shadow in the second image. The subject and shadow will be kept in the first image and the half cut shadow will be completely removed. 
+Before adding markers, examine and rewatch the clip to understand what is happening in the seam. Then place the markers, keeping the algorithm in mind to achieve the desired effect. There are two overlapping images, one where the subject and his shadow are fully in, the other where the subject and shadow are cut in half. Add a green marker on top of the subject in the first image and a red one on top of the half cut shadow in the second image. The subject and shadow will be kept in the first image and the half cut shadow will be completely removed. 
 
 \imgB{.5}{41/without}{41/withmasks}
 
@@ -45,17 +45,17 @@ Head over to the masks editor.
 
 \imgA{1}{41/mask_panel}
 
-The masking markers can fix visible seams that Control points can’t. In the masks section, click the small icon that looks like a “Q” icon in the bottom left corner of the stitched image. This helps visualize how the anti-ghost algorithm is moving the seams.
+The masking markers can fix visible seams that control points can’t. In the masks section, click the small icon that looks like a “Q” icon in the bottom left corner of the stitched image. This helps visualize how the anti-ghost algorithm is moving the seams.
 
 \imgA{1}{41/visualization}
 
 The Masking tool decides which objects to keep (green markers) or to remove (red markers) on the panorama. Masking markers are used for moving subjects in the panorama.
 
-Select the green marker and move the mouse over the object to keep. Make sure the right camera is highlighted and click. To remove objects, apply the same steps with the red markers.
+Select the green marker and move the mouse over the object to keep. Make sure the correct camera is highlighted and click. To remove objects, apply the same steps with the red markers.
 
 \imgA{1}{41/highlighted}
 
-\tip if your cursor doesn’t let you highlight a camera, check or uncheck camera layers.
+\tip If your cursor doesn’t let you highlight a camera, check or uncheck camera layers.
 
 \imgA{1}{41/layers}
 
