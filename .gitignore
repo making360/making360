@@ -4,6 +4,7 @@
 *.aux
 *.log
 *.toc
+*.fls
 
 # Latexmk
 *.fdb_latexmk
