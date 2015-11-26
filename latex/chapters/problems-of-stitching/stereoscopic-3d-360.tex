@@ -7,12 +7,7 @@
 
 {\large Stitching in stereo mode, similar workflow squared. \par}
 
-<<<<<<< HEAD
 You decided to shoot your scene stereo either on an 8, 12 or maybe 14 camera rig. It will definitely impress viewers by adding depth to your 360 videos, maybe even compete with some computer generated experiences! Stereo 360 video experiences however, lose half of the potential resolution as you will need to render your left eye monoscopic video on top of your right eye monoscopic video, thus creating an Over Under, generally 2300 x 2300, for playback in a VR headset. You know how to stitch a mono panorama, but how do you approach stereo stitching with two videos? Is it a similar workflow?
-
-=======
-You decided to shoot your scene stereo either on an 8, 12 or maybe 14 camera rig. It will definitely impress viewers by adding depth to your 360 videos, maybe even compete with some computer generated experiences! Stereo 360 video experiences however loses half of the potential resolution as you will need to render your left eye monoscopic video on top of your right eye monoscopic video, thus creating an Over Under, generally 2300 x 2300, for playback in a VR headset. You know how to stitch a mono panorama, and wonder if stereo stitching is similar but with two videos?
->>>>>>> master
 
 \solution
 
@@ -27,16 +22,11 @@ Autopano has the ability to assign camera files to left or right eye. Therefore,
 
 Issues in stereo stitching include the cameras not in being in sync, the color not matching, and subjects being too close or crossing between cameras. These problems will all cause the seams to be very apparent and with subjects too close, the seams may even be unfixable. If your subjects are crossing at a farther distance from the camera, the seams are fixable but the depth isn’t as impressive, questioning the need for stereo. Before you even stitch anything, reduce all the risks involved with stitching in stereo. Synchronize and Color match all your cameras outside of Autopano.
 
-
 With all your cameras in one take folder, and file names reflecting Left eye (LE) or Right eye (RE) camera, Synchronize manually with After Effects. You will be able to sync based on the audio waveforms as well as any flash or motion signal. Trim all the cameras to only have the available footage in all cameras perfectly synced by the frame. At the same time you synchronize the cameras, adjust Color Matching in the same step. Correct the mid gamma level slightly on just the needed cameras, but never all of them since one is used as reference. Re-export all your cameras as mov lossless files or mp4s.
 
 \imgA{1}{42/sync}
 
-<<<<<<< HEAD
 You’ve reduced the risks of a bad stitch with these two steps. Import your videos to Autopano, with same length, same FPS, same format, synced, and color matched. First, check the stereo tab. Turn on the stereo mode and assign your cameras to whichever eye. This is why renaming your files with LE or RE as prefixes can be handy. Go to your stitch tab, input your lens and focal length. Now you are ready to stitch. 
-=======
-You’ve reduced the risks of a bad stitch with these 2 steps. Import your videos to Autopano, with same length, same FPS, same format, synced, color matched. First, check the stereo tab, turn on the stereo mode and assign your cameras to whichever eye. That’s why renaming your files with LE or RE as prefixes can be handy. Go to your stitch tab, input your lens and focal length, you are ready to stitch. 
->>>>>>> master
 
 \imgA{1}{42/assigneyes}
 
@@ -62,11 +52,7 @@ An Autopano stitch template holds a great amount of information except when the 
 \imgA{1}{42/le}
 \imgA{1}{42/re}
 
-<<<<<<< HEAD
 Lastly, A/B test different ways to fix a seam and to prioritize only the actions with the most amount of depth, usually in the foreground. Even as viewer, you may not notice a small seam in the background, but you will be impressed by an amazingly stitched 3D movement coming at you. Render a test with AVP by first selecting Over Under in the Stereo tab. This will allow you to get a 2160x2160 render. If you need a specific over under or side by side, you can use FFmpeg to combine 2 videos after rendering each eye from AVP separately.
-=======
-Last tips regarding stereo stitching are to A/B test different ways to fix a seam and to prioritize only the actions with the most amount of depth, usually in the foreground. Even as viewer, you may not notice a small seam in the background, but you will be impress by an amazingly stitched 3D movement coming at you. Render a test with AVP by first selecting Over Under at the Stereo tab. This will allow you to get a 2160x2160 rendering. If you need a specific over under or side by side, you can use ffmpeg to combine 2 videos after rendering each eye from AVP separately.
->>>>>>> master
 
 \imgA{1}{42/renderou}
 \clearpage
