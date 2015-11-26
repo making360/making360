@@ -1,6 +1,5 @@
-*making360.pdf
-
 # LaTeX temporary files
+*.pdf
 *.aux
 *.log
 *.toc
