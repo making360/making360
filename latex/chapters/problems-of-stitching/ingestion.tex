@@ -11,12 +11,40 @@ Whether you want to check the lighting on set with a quickstitch test or you are
 
 \solution
 
-{\large Weasfd \par}
+{\large Ingest Manually. \par}
 
-The 
+Each SD card corresponds to a certain camera angle. When you ingest video files from one SD card, you are uploading all the takes into one folder (ex. Camera 1, Camera 2). You will need to move the videos from each camera folder into a new take folder (ex. Take 1). Here's a snapshot of how it looks before and after.
+
+\imgA{1}{30/folders}
+
+\tip Before selecting the files to move to take folders, try batch renaming the files with the camera number as prefix. For example, select the letter G from Gopro, and rename all files with Cam1\_G. In the next camera folder, you just have to change Cam1\_G to Cam2\_G.
+
+To quickly find which video files should be placed into a new take folder, open all your camera folders using the dropdown arrow. Start by highlighting the first mp4 in each camera folder, then look at the file size of each one. If it's the same or close in size for all highlighted files, the files are all from the same take. Drag them all into the new take folder. If you are unsure, you can always open the videos and view them.
+
+Renaming source files later can be tricky so organize before stitching. Is your project stereoscopic or monoscopic? If you shot in stereo, you will have two of each camera angle, corresponding to left/right eye. Make sure to include if the video is Left eye or Right eye in the filename.
+
+The simple saying "for every minute spent organizing, an hour is earned" truly applies to 360 video editing. Remember you are editing the amount of take files times the number of cameras. Add a few prefixes to help you and your team down the line such as T01 for take number, HD or SD (4K/2K), C01 for camera number, LE or RE for Left Eye and Right Eye in the case of stereoscopic projects.
+
+For example,
+
+GOPR02355 would be T01\_HD\_C01\_GOPR02355.mp4 for a monoscopic project.
+\\
+GOPR01025 would be T07\_4K\_C03\_LE\_GOPR01025.mp4 for a stereoscopic project.
+
+\tip Mac Users can right click to use the “rename files” option after highlighting all the files in the take folder. For PC users you can also use a third party tool like Bulk Rename Utility.
+
+{\large Import all GoPros with AVP. \par}
+
+Since the recent release of AVP 2.3, ingesting files got a whole lot easier. You will need to get a couple Lexar Workflow multi-slot card readers. 
+
+The process is easy. When you are done shooting or if you need to do a quick on-site stitch, insert all your sd cards into the multi-slot readers. Use usb hub if shooting with a lot of cameras like with stereo or cylindrical rigs.
+
+Open AVP, and under File select Import all GoPros.
 
 
+{\large Using a Python script. \par}
 
+NEED CONTRIBUTORS
 
 \clearpage
 \end{fullwidth}
