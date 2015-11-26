@@ -1,4 +1,5 @@
 # LaTeX temporary files
+*.pdf
 *.aux
 *.log
 *.toc
