@@ -8,16 +8,16 @@
 {\large You can’t see what you are shooting. \par}
 
 
-Although happy accidents are sometimes welcome, in analog film they can result in beautiful emulsions. Shooting blind is not the most ideal in VR and can result in horrendous unfixable seams, dropped cameras, changed camera settings, etc. 
+Happy accidents are sometimes welcome, in analog film they can result in beautiful emulsions. In VR, shooting blind is not the most ideal and can result in horrendous unfixable seams, dropped cameras, changed camera settings, etc. 
 
 
 \solution
 
 {\large Create a realtime stitcher with TouchDesigner for live preview. \par}
 
-To create your own realtime preview, use \textbf{\href{https://www.derivative.ca/wiki088/index.php?title=Stitcher}{TouchDesigner’s 360 Stitcher Component}}. A powerful graphics card and video capture card is required. The nvidia GTX 980 is recommended. 
+To create your own realtime preview, use \textbf{\href{https://www.derivative.ca/wiki088/index.php?title=Stitcher}{TouchDesigner’s 360 Stitcher Component}}. A powerful graphics card and video capture card is required. The Nvidia GTX 980 is recommended. 
 
-To stitch a 360 video, each individual camera is warped and then the edges of the overlapping images are blended to create a seamless panorama. For example, if you have 4 fisheye cameras, a fisheye to spherical conversion is applied to each camera. Then the 4 warped images are then edge blended together to form an equirectangular image. This same process applies for realtime stitching where the camera inputs are warped and blended together live. The equirectangular video is then mapped and textured onto a virtual sphere. The headtracking information then drives the rotation of a virtual camera in the sphere. Check out Paul Bourke's blog here - http://paulbourke.net/dome/fish2/
+To stitch a 360 video, each individual camera is warped and then the edges of the overlapping images are blended to create a seamless panorama. For example, if you have 4 fisheye cameras, a fisheye to spherical conversion is applied to each camera. The 4 warped images are then edge blended together to form an equirectangular image. This same process applies for realtime stitching where the camera inputs are warped and blended together live. The equirectangular video is then mapped and textured onto a virtual sphere. The headtracking information from the HMD drives the rotation of a virtual camera inside the sphere. For an in depth read on fisheye warping, see Paul Bourke's blog post \textbf{\href{http://paulbourke.net/dome/fish2/}{Converting a fisheye image into a panoramic or perspective projection}}.
 
 The stitcher component will parse a PTGui Pro project file and create the amount of inputs needed and apply the warping. Similar to APG, take a snapshot of a frame from each of the cameras and create a calibration. Then instead of applying the calibration to render video frames, the warping and position will be performed on the video inputs in realtime. Save your .pts file and load it into the stitcher component. Connect an Oculus Rift component in TouchDesigner to output the live feed to a headset.
 

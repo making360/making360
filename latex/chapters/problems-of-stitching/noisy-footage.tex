@@ -5,15 +5,38 @@
 
 \problem
 
-{\large problem \par}
+{\large You shot a night scene and your GoPros are too noisy. \par}
 
-blabla
+Shooting with GoPros even when using Protune can not compare to the quality of a DSLR. Adjusting the ISO, Low Light and EV Comp options will not guarantee you better nightime shots. It will be took dark and introduce noise. It could be unstitchable and distracting in a headset. For optimal conditions for shooting with GoPros, check the \textbf{\nameref{chap:25}} chapter.
 
 \solutions
 
-{\large solution \par}
+{\large Denoise with Neat Video. \par}
 
-blabla
+Install the Neat Video plugin for AE or Premiere on PC or Mac. The home version will only denoise footage up to a resolution of 1920x1080 so you will need to install the Pro version. 
+
+Neat Video does a great job at denoising videos and applying Neat Video on your individual cameras before stitching will help find more control points and in some cases will permit you to even stitch at all. Below is an example of stitching 3 images by auto-detecting the points and geometries right from APG. With Neat Video, some noisy footage can actually be a problem for APG.
+
+\imgA{1}{55/img_stitch}
+\imgA{1}{55/img_stitch_neat}
+
+Import your individual cameras into AE and create multiple new compositions from files. Find the "Reduce Noise" plugin in AE effects and apply it to each of your clip layers. Make sure the AE preview is set to Full resolution and disable the Fast Preview for optimal performance. Click on "prepare" from the effect controls of Reduce Noise effect. Register your license of Neat if you haven't already. You will auto-create a noise profile by selecting Auto Profile and then refine the area by moving the blue box over an area which contains most of the noise and without difference in colors. For example, place or draw a green box on the noisy sky or ground of your video.  
+
+\imgA{1}{55/profile}
+
+The noise profile captured from the selected area will be applied to the whole frame and throughout the duration of your individual clips. Use the temporal filter to increase the number of frames before and after the selected frame. Neat will calculate the amount of reduction better for upcoming frames. Use the spatial filter rarely.
+
+\imgA{1}{55/filters}
+
+Render your videos separately as .mov files or as a tiff sequence that you can later convert to mp4. 
+
+After comparing noisy footage before and after using Neat Video in AVP, here are the results. AVP found more control points with default auto-detection and the noise has been greatly reduced.
+
+\imgA{1}{55/neat_ornot}
+
+\imgA{1}{55/diff}
+
+\tip Neat Video may be updating its software for recent versions of Adobe software. If you experience problems, try AE CC 2014 instead of 2015.
 
 \clearpage
 \end{fullwidth}

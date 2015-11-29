@@ -1,7 +1,9 @@
 # LaTeX temporary files
+*.pdf
 *.aux
 *.log
 *.toc
+*.fls
 
 # Latexmk
 *.fdb_latexmk
