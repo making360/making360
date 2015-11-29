@@ -9,23 +9,23 @@
 
 The best first person POVs can be experienced through few proven programs such as combat training for the military, flight simulations for the Air Force, virtual driving simulations for tank drivers and firemen, surgery simulations for medical personnel, etc... 
 
-First person experiences are truly powerful and will contribute to the future success of VR. Why recreate reality if you could make your audience dream on demand? or put themselves in a dangerous situation? in surrealism? What if our schools taught history by recreating the past in VR? What if you could talk to Napoleon? Hitler? Roosevelt? Einstein? Virtual Reality lets you make the impossible possible. “The only limit is your imagination”...and the treatment of looking down.
+First person experiences are truly powerful and will contribute to the future success of VR. Why recreate reality if you could make your audience dream on demand? or put themselves in the middle of an adrenaline inducing heist? in surreal landscapes? What if our schools taught history by recreating the past in VR? or science by submerging into microscopic worlds? Virtual Reality lets you make the impossible possible. “The only limit is your imagination”...and the treatment of looking down.
 
 \solution
 
 {\large The treatment of down. \par}
 
-Should you have a body in a first person experience? VR makers are all struggling with the concept of looking “down” in a 360 video. In VR games, this is less problematic since you can model a body and script interactions with body and arms in a game engine like Unity. In VR, disembodiment is one of the reasons viewers get the motion sickness you may have heard of or personally experienced. If you are considering making a first person experience, what can you possibly display where your viewers are looking down? 
+Should you have a body in a first person experience? VR makers are all struggling with the concept of looking “down” in a 360 video. In VR games, this is less problematic since you can model a body and script interactions with a body and arms in a game engine like Unity or Unreal Engine. In VR, disembodiment is one of the reasons viewers get the motion sickness you may have heard of or personally experienced. If you are considering making a first person experience, what can you possibly display where your viewers are looking down? 
 \clearpage
 {\bfseries Less is more}
 \\
-As explained in Patching Nadir, replacing your equipment or tripod by clone-stamping patterns in order to recreate a floor provides a great result, without distraction from the content. For moving shots like Dolly Shots, consider Shooting a Plate at the exact same speed as the recorded motion. For stereo experiences, shoot your plate in stereo, or the transition from stereo to mono floor may disturb your viewers, taking the focus away from your content. You can think of the tripod or nadir hole as a limit of technology or instead as a creative challenge! Think of unusual ways to treat the problem. For example, a way to embody your viewer in another body without anything when looking down, could be to composite a plate of your actor facing a mirror as an intro shot.
+As explained in \textbf{\nameref{chap:48}}, replacing your equipment or tripod by clone-stamping patterns in order to recreate a floor provides a great result, without distraction from the content. For \textbf{\nameref{chap:45}}, \textbf{\nameref{chap:13}} at the exact same speed as the recorded motion. For stereo experiences, shoot your plate in stereo, or the transition from stereo to mono floor may disturb your viewers, taking the focus away from your content. You can think of the tripod or nadir hole as a limit of technology or instead as a creative challenge! Think of unusual ways to treat the problem. For example, a way to embody your viewer in another body without anything when looking down, could be to composite a plate of your actor facing a mirror as an intro shot.
 
 \imgA{1}{44/notripod}
 
 {\bfseries Offset the Camera}
 \\
-The “selfie” generation is gonna love this one! Take your stick out (wink) or over a bridge and all your fans, scared of looking down, will be forced to look at you. The use of a monopod or selfie stick works especially for showing different world perspectives or impossible viewpoints. Both the bottom and top of your 360 recording are included. However, you may encounter problems removing the stick which will show in front of its holder. This technique is highly recommended for a Third Person experience.
+The “selfie” generation is gonna love this one! Take your stick out (wink) or over a bridge and all your fans, scared of looking down, will be forced to look at you. The use of a monopod or selfie stick works especially for showing different world perspectives or impossible viewpoints. Both the bottom and top of your 360 recording are included. However, you may encounter problems removing the stick which will show in front of its holder. This technique is highly recommended for a third person experience.
 
 \imgA{1}{44/offset}
 
@@ -43,7 +43,7 @@ Hanging the camera on a wire or fishing line results in very natural camera view
 
 {\bfseries Pre-rendered 3D Model}
 \\
-Kite & Lightning’s Insurgent VR utlized a pre-rendered static headless, neck-down 3d man model that was then composited later on a live-rendered 360 video. This approach seems pretty complex to achieve but with the use of Andrew Hazelden's DomeMaster in Maya or Blender's built-in LatLong renderer, any 3d artist can quickly buy a 3d model and render its latlong mono or stereo to comp in AE later. 
+Kite & Lightning’s Insurgent VR utlized a pre-rendered static headless, neck-down 3d man model that was then composited on a live-rendered 360 video. This approach seems pretty complex to achieve but with the use of Andrew Hazelden's DomeMaster in Maya or Blender's built-in LatLong renderer, any 3d artist can quickly buy a 3D model and render its LatLong mono or stereo to comp in AE later. 
 
 \imgA{1}{44/kite}
 \clearpage
@@ -57,19 +57,19 @@ Experiment placing and stabilizing the 360 rig on a chair with the subject’s h
 \clearpage
 {\large Foreground Stitching. \par}
 
-First you should find the frame with the most amount of body parts in the foreground, even if arms are just static on a chair. Edit the frame using a foreground approach.
+First you should find the frame with the most amount of body parts in the foreground, even if the arms are just static on a chair. Edit the frame using a foreground approach.
 
-Looking at the seams and the control points already detected, start by cleaning bad points then remove all points off the background. Once you removed the points on background, find new points on the body parts for each pair of camera.
+Looking at the seams and the control points already detected, start by cleaning bad points and then remove all points off the background. Once you have removed the points on the background, find new points on the body parts for each pair of camera.
 
-Click on the Optimize button when the clean up of the control points has been done. To improve the stitch as it probably won’t be fixed, you should adjust the optimization of the lens distortion since you are stitching a complex parallax problem. The sensor of the cameras is not perfectly aligned/centered with the lens and because of that each camera has its own lens distortion model. 
+Click on the Optimize button when the clean up of the control points has been done. To improve the stitch as it probably won’t be fixed, should adjust the optimization of the lens distortion since you are stitching a complex parallax problem. The sensor of the cameras is not perfectly aligned/centered with the lens and because of that each camera has its own lens distortion model. 
 
-Under the advanced optimization settings, at Scopes, try setting Distortion to Optimize 3rd order and scope to Image. Then Optimize. Stitching should be much better. Recreate the leftovers of bad blending, frame by frame, with Comping or Rotoscoping techniques, to attain perfection.
+Under the advanced optimization settings, at Scopes, try setting Distortion to Optimize 3rd order and scope to Image. Then Optimize. The stitching should be much better. Recreate the leftovers from bad blending, frame by frame, with \textbf{\nameref{chap:51}} or \textbf{\nameref{chap:50}} techniques, to attain perfection.
 
 {\large The Mirror trick. \par}
 
-It is possible to trick your viewer's eye by using mirrors and reflections. Imagine yourself in a bathroom looking straigth into a mirror. Without the need to have a body when looking down, your viewer will see another body straigth from the reflection. 
+It is possible to trick your viewer's eye by using mirrors and reflections. Imagine yourself in a bathroom looking straigth into a mirror. Without the need to have a body when looking down, your viewer will see another body straight from the reflection. 
 
-The effect is a great hack for a simple embodiment. Plan your plates before shooting. You will need to shoot the scene in 360, and then place the rig at the position of your mirror or reflective surface. The actor or actress should be placed where the rig was previously, facing the mirror. The rig is now recording your subject. You will then comp this footage instead of the mirror or reflective area. Dont forget to shoot the moon to replace the tripod from the nadir area.
+The effect is a great hack for a simple embodiment. Plan your plates before shooting. You will need to shoot the scene in 360 and then place the rig at the position of your mirror or reflective surface. The actor or actress should be placed where the rig was previously, facing the mirror. The rig is now recording your subject. You will then comp this footage instead of the mirror or reflective area. Don't forget to \textbf{\nameref{chap:13}} to replace the tripod from the nadir area.
 
 \imgA{1}{44/mirror}
 
