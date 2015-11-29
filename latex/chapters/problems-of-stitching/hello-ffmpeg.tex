@@ -59,7 +59,7 @@ Note that these can be either relative or absolute paths. Then you can stream co
 
 \code{ffmpeg -f concat -i mylist.txt -c copy output.mp4}
 
-{\large Combine videos into Over/Under or Side/Side \par}
+{\large Combine Videos into Over/Under or Side/Side \par}
 
 If you need to combine your videos into an Over/Under, left eye on top of the right eye, here’s the one line to enter in your Terminal after changing the filenames to match yours:
 
@@ -70,7 +70,7 @@ And for Side by Side:
 \code{ffmpeg -i left.mp4 -vf "[in] pad=2*iw:ih [left]; movie=right.mp4 [right];[left][right] overlay=main_w/2:0 [out]" output.mp4}
 
 
-{\large Map multiple Audio Tracks to a Video \par}
+{\large Map Multiple Audio Tracks to a Video \par}
 
 If your tiff sequence or video has no audio, you could use the default stream selection parameter -i, to add one audio track to your video: 
 
