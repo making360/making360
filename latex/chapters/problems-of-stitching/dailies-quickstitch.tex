@@ -114,8 +114,17 @@ Note the colons are required between each argument. Put all of this together int
 
 \code{ffmpeg -i video.mp4 -vf "drawtext=fontfile='/Library/Fonts/Arial.ttf':timecode='00\\:00\\:00;00':r=29.97:fontsize=32:fontcolor=white:x=(w)/2:y=(h)/2" video\_tc.mp4}
 
-
 Press RETURN after pasting this line into your Terminal and FFmpeg will render the video again with the timecode on it. Good Job!
+
+With FFmpeg on Linux the command is:
+
+\code{ffmpeg -i video.mp4 -vf "drawtext=fontfile='/usr/share/fonts/dejavu/DejaVuSans.ttf':timecode='00\\:00\\:00;00':r=29.97:fontsize=32:fontcolor=white:x=(w)/2:y=(h)/2" video\_tc.mp4}
+
+With FFmpeg on Windows the command is: 
+
+\code{ffmpeg -i video.mp4 -vf "drawtext=fontfile='C\\:\\\\Windows\\\\Fonts\\\\arial.ttf': timecode='00\\:00\\:00;00':r=29.97:fontsize=32:fontcolor=white:x=(w)/2:y=(h)/2" video\_tc.mp4}
+
+Note the fontfile path on Windows needs to have each of the directory slashes like \\ esscaped with a double slash \\\\, and the colon in the C\: drive letter needs to be escaped with a slash as well.
 
 
 \clearpage
