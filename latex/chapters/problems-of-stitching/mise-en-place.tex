@@ -13,17 +13,17 @@ After rendering your stitched panorama(s), there is still work to be done! You h
 
 {\large After Effects 16 bit Project. \par}
 
-Every step along the pipeline will process and distort your colors, decreasing the potential for highest quality picture. Your eyes may not be able to see, look at the changes in unique number of colors and rgb histograms via Gimp. They will be drastically affected depending on your setup and plugins for effects and color grading.
+Every step along the pipeline will process and distort your colors, decreasing the potential for the highest quality picture. Your eyes may not be able to see, so look at the changes in unique number of colors and RGB histograms via GIMP. They will be drastically affected depending on your setup and plugins for effects and color grading.
 
 \imgB{.5}{47/16bit}{47/8bit}
 
-Working with 16 bit tiffs in an 8 bit AE project will reduce the color information by half at render time, increasing the risks of introducing banding. Banding in a VR headset is more visible than any other medium. Unless you are exploring banding as an effect, setting your preferences of AE the correct way before working on final master files is highly recommended. 
+Working with 16 bit tiffs in an 8 bit AE project will reduce the color information by half at render time, increasing the risk of introducing banding. Banding in a VR headset is more visible than any other medium. Unless you are exploring banding as an effect, setting your preferences of AE the correct way before working on final master files is highly recommended. 
 
-Open AE and locate the Project Settings under File. Set the color bit depth to 16 bits per channel. Then under the Import Preferences, don't forget to change the default framerate (fps) to match the framerate or your source footage. To output a different framerate, set the desired fps under your composition settings, and perform a timeremap to match that new framerate.
+Open AE and locate the Project Settings under File. Set the color bit depth to 16 bits per channel. Then under the Import Preferences, don't forget to change the default framerate (FPS) to match the framerate or your source footage. To output a different framerate, set the desired FPS under your composition settings, and perform a timeremap to match that new framerate.
 
 \imgA{1}{47/aesettings}
 
-Import the tiff sequences rendered from Autopano and rename with the scene and take of the sequence. Create folders matching the names of your scenes and place the stitched tiffs into the corresponding folders. Keep the digital workspace clean and comprehensible, implementing a system with your team. Organize every project with folders separating the source files from output files. Add a working folder between any step that includes the work from a specific software. Separate renders from the work folders into the main Render folder. 
+Import the tiff sequences rendered from Autopano and rename them with the scene and take of the sequence. Create folders matching the names of your scenes and place the stitched tiffs into the corresponding folders. Keep the digital workspace clean and comprehensible, implementing a system with your team. Organize every project with folders separating the source files from output files. Add a working folder between any step that includes the work from a specific software. Separate renders from the work folders into the main Render folder. 
 
 \imgA{1}{47/import}
 \clearpage
@@ -31,7 +31,7 @@ Organize your AE or Premiere project with scene or take folders that include the
 
 \imgA{1}{47/organize}
 
-After you mask the tripod using the Patching Nadir method in Photoshop, import the psd file into AE. This allows you to edit and update any work in Photoshop back into AE. The same applies to Rotoscoping with Mocha and editing Audio using Audition. Keep all your work organized in the same take folder in AE.
+After you mask the tripod using the Patching Nadir method in Photoshop, import the psd file into AE. This allows you to edit and update any work in Photoshop back into AE. This also applies to Rotoscoping with Mocha and editing Audio using Audition. Keep all your work organized in the same take folder in AE.
 
 \imgA{1}{47/psd}
 \clearpage
@@ -39,7 +39,7 @@ After you mask the tripod using the Patching Nadir method in Photoshop, import t
 
 When preparing your master composition in AE for 360 editing, consider the potential adjustments that the client or creative director may ask you. To facilitate collaboration on the project, organize your project into steps, or “pre-compositions” for any future changes. 
 
-The stitched panoramas will render out of Autopano in equirectangular format. The center of the equirectangular stitch will be the starting orientation of the viewer in the headset. The director may want to change this position so the viewer enters the scene or experience facing a different angle. Instead of re-rendering your tiffs with a different panorama position, you can handle this right in AE. Precomp all your tiff sequences, matching their original dimensions and fps. Rename the first precomp as Take or Scene name and add \_Main as the step. This Main comp will become the finalized panorama that includes changes like Patching the nadir and fixing seams via Rotoscoping or Masking. 
+The stitched panoramas will render out of Autopano in equirectangular format. The center of the equirectangular stitch will be the starting orientation of the viewer in the headset. The director may want to change this position so the viewer enters the scene or experience facing a different angle. Instead of re-rendering your tiffs with a different panorama position, you can handle this right in AE. Precomp all your tiff sequences, matching their original dimensions and FPS. Rename the first precomp as Take or Scene name and add \_Main as the step. This Main comp will become the finalized panorama that includes changes like Patching the nadir and fixing seams via Rotoscoping or Masking. 
 
 \imgA{1}{47/main}
 \clearpage
@@ -53,7 +53,7 @@ Select the “Plate” precomp from the \_Main comp, using Command + D to duplic
 \clearpage
 \imgA{1}{47/move}
 
-You may need to precomp in AE a lot more to fix some seams, recreate elements in the background, or add green screen footage. All this work should be done under the “Plate” pre-comp. Sstart a new composition or copy the \_Main one and rename it the next step. For example, rename \_Main\_CC for Color Correction. Mute audio on all layers and handle the audio at end in the \_Final composition, so there is only one video comp and one audio comp. After the first assembly is approved, import the EDL or Premiere sequence into AE to reassemble with the take comps.
+You may need to precomp in AE a lot more to fix some seams, recreate elements in the background, or add green screen footage. All this work should be done under the “Plate” pre-comp. Start a new composition or copy the \_Main one and rename it the next step. For example, rename \_Main\_CC for Color Correction. Mute audio on all layers and handle the audio at end in the \_Final composition, so there is only one video comp and one audio comp. After the first assembly is approved, import the EDL or Premiere sequence into AE to reassemble with the take comps.
 
 \imgA{1}{47/final}
 \clearpage

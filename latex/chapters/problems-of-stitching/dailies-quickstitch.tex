@@ -8,41 +8,33 @@
 
 {\large You need to quickly stitch some source footage with burnt in timecode for a review session but don't know where to start. \par}
 
-You've just finished ingesting your source footage onto a hard disk after shooting multiple takes for many scenes. It's now time to sort and label your files into bins. As opposed to traditional post-production workflow, reviewing your dailies can't happen until your footage is stitched together. Stitching two or more videos together will first require you to organize your files properly.
+You've just finished ingesting your source footage onto a hard disk after shooting multiple takes for many scenes. It's now time to sort and label your files into bins. As opposed to the traditional post-production workflow, reviewing your dailies can't happen until your footage is stitched together. Stitching two or more videos together will first require you to organize your files properly.
 
 \solution
 
-{\large Organizing a project folder \par}
+{\large AVP + APG. \par}
 
-Each sd card corresponds to a certain camera angle. When you ingest video files from one sd card, you are uploading all the takes into one folder (ex. Camera 1, Camera 2). You will need to move the video from each camera folder into a new take folder (ex. Take 1). Here's a snapshot of how it looks before and after.
+Most video camera manufacturers are developing built-in functionality to ease the stitching/playback of 360 dailies. If you don't have a Realtime Preview solution, you will have to stitch the videos yourself before previewing dailies. Thanks to Autopano Video Pro (AVP) from Kolor, it's just a few clicks away.
 
-\imgA{1}{30/folders}
+Autopano Video Pro or AVP is the go-to video stitching software most of the companies in this new industry uses. It takes at least two videos and stitch them together. Since stitching videos is an intensive task for most of today’s gpus and cpus, AVP has a “sister” software. Autopano Giga or APG is the advanced stitching tool for turning multiple images into a panorama. 
 
-To quickly find which video files should be placed into a new take folder, open all your camera folders using the dropdown arrow. Start by highlighting the first mp4 in each camera folder, then look at the file size of each one. If it's the same or close in size for all highlighted files, the files are all from the same take. Drag them all into the new take folder. If you are unsure, you can always open the videos and view them.
+To stitch multiple videos into one panoramic video, AVP will extract a frame from each of your videos as a .jpg image. These images will be stitched together based on a selected calibration. You can select a different frame by moving the cursor on the timeline, and AVP will re-extract the newly selected frame from each video streams. After stitching the different images, your panoramic video will be stitched based on the stitch quality of the frame selected. 
 
-Renaming source files later can be tricky so organize before stitching. Is your project stereoscopic or monoscopic? If you shot in stereo, you will have two of each camera angle, corresponding to left/right eye. Make sure to include if the video is Left eye or Right eye in the filename.
+\imgA{1}{30/extraction}
 
-The simple saying "for every minute spent organizing, an hour is earned" truly applies to 360 video editing. Remember you are editing the amount of take files times the number of cameras. Add a few prefixes to help you and your team down the line such as T01 for take number, HD or SD (4K/2K), C01 for camera number, LE or RE for Left Eye and Right Eye in a case of stereoscopic projects.
+When the stitch quality is not perfect throughout the video, you will then use APG to edit the stitch manually with the use of Control Points or Masking Markers. In APG, you will have the option to auto-update your stitch in AVP by saving your stitch template. The template holds metadata that allows AVP to stitch your videos based on your adjustments in APG.
 
-For example,
-
-GOPR02355 would be T01\_HD\_C01\_GOPR02355.mp4 for a monoscopic project.
-\\
-GOPR01025 would be T07\_4K\_C03\_LE\_GOPR01025.mp4 for a stereoscopic project.
-
-{\large Quick stitching of takes \par}
-
-To combine the individual videos into a single high resolution seamless panoramic video, you will have to "stitch" them together. Most video camera manufacturers are developing built-in functionality to ease the stitching/playback of 360 dailies. If you don't have a real-time stitching solution, you will have to stitch the videos yourself before previewing dailies. Thanks to Autopano Video Pro (AVP) from Kolor, it's just a few clicks away.
-
-Open the "preferences" of AVP. Under Blend > set Blending Level to 0, Weighting to ISO Cutting, and under Render settings > set FPS as original video.
+\tip Before you start stitching it is best to check the preferences of AVP. Under Blend > set Blending Level to 0, Weighting to ISO Cutting, and under Render Settings > set FPS as original video. Later on, you may also want to add different presets for your renders, helping you speed your own workflow.
 
 \imgB{.5}{30/blend}{30/rendersettings}
 
-Drag your videos into AVP. All videos must have the same format (mp4 or mov) and same frames per second (fps). The accuracy of the visual sync between cameras may vary depending on the equipment used, or your \textbf{\nameref{chap:6}}. Ensure all cameras are perfectly synchronized before stitching (e.g. Apply "Use Audio to Synchronize" under Synchronization menu).
+{\large Synchronize. Calibrate. Stitch. \par}
+
+Drag your videos into AVP. All videos must have the same format (mp4 or mov) and same frames per second (FPS). The accuracy of the visual sync between cameras may vary depending on the equipment used, or your \textbf{\nameref{chap:6}}. Ensure all cameras are perfectly synchronized before stitching. Apply "Use Audio to Synchronize" under Synchronization menu, after selecting a frame of your timeline. 
 
 \imgA{1}{30/drag_videos}
 
-Before jumping onto the stitch tab (fourth icon in the AVP header bar), select a range of frames by trimming your timeline at beginning and end using the blue range selector. Then click on the exact frame you want for the calibration. Don't leave it on the beginning frames. You don't want to confuse AVP by trying to stitch the DP's fingers or face. Save that for later during the fine stitch. 
+Before jumping onto the stitch tab (fourth icon in the AVP header bar), select a range of frames by trimming your timeline at the beginning and end using the blue range selector. Use "I" for IN and "O" for OUT frame with AVP 2.3. Then click on the exact frame you want for the calibration. Don't leave it on the beginning frames. You don't want to confuse AVP by trying to stitch the DP's fingers or face. Save that for later during the fine stitch. 
 
 \imgA{1}{30/rangeselection}
 
@@ -50,37 +42,44 @@ Select a stitching preset using the dropdown. The default preset will auto stitc
 
 \imgB{.5}{30/lensmodel}{30/lens_model_inputs}
 
-When stitched together, your panoramic video may need to be adjusted or rotated. Hold your cursor on the preview area and drag until the horizon is aligned. Don't forget to apply your changes.
+Bravo, you have just completed your first quick stitch!
+
+%\clearpage
+{\large Re-Orient. Optimize. Render. \par}
+
+When stitched together, your panoramic video may need to be adjusted or rotated. Hold your cursor on the preview area and drag until the horizon is aligned. Don't forget to apply your changes. Press "A" to apply with AVP 2.3.
 
 \imgB{.5}{30/panotomove}{30/panomoved}
 
-Bravo, you have just completed your first quick stitch, now you are ready to render your work!
+Select the Blend icon to better optimize the blending of your videos. For static or landscape shots, try the SMART cutting and you may be impress how the quality of stitch will improve. For most shots, when the camera is moving or if you have moving subjects, ISO cutting is recommended.
 
-%\clearpage
-{\large Rendering your work \par}
+Last, rendering is the last step in the workflow. Every software you use to edit the video or audio of a file will let you export the changes by creating a new video or audio file with the render settings you selected.
 
-Rendering is the last step in any workflow. Every software you use to edit the picture or audio of a file will let you export the changes by creating a new video or audio file with the render settings you selected.
+Before you start rendering, double check that all your default preferences are correct. Consider the right FPS for the playback solution of your choosing. Even if you shot at 100 FPS or 60 FPS, you will want to output at an FPS that the headsets or video player can handle. 
 
-Before you start rendering, double check that all your default preferences are correct.  Consider the right fps for the playback solution of your choosing. Even if you shot at 100fps or 60fps, you will want to output at an FPS that the headsets or video player can handle. 
-
-For example, if you want to upload your 360 video to youtube or facebook, the current allowed fps is 24, 25 or 30. For quick stitches, I generally like to set my FPS to be same "as original video" under the Render settings. Setting the default preferences will make it easier to batch render.
+For example, if you want to upload your 360 video to YouTube or Facebook, the current allowed FPS is 24, 25 or 30. For quick stitches, set the FPS to be same "as original video" under the Render settings. Setting the default preferences will make it easier to batch render.
 
 \imgB{.5}{30/fps25}{30/fpsoriginal}
 
-When you are ready to hit the "render" icon, AVP will bring a pop up some presets to choose from and show the maximum output size. The maximum output size is the resolution achieved from your 360 camera rig. Depending on the rig you chose, the final resolution after stitching can range from 4k to 8k. Presets are very valuable during stitching and you will want to get familiar with all the choices. When you want to render small files quickly to test and find seams to fix, you can output at a lower resolution such as 2k. Remember to change the settings back for your final render. You can always check at the bottom of the pop up window what resolution and frame rate the video will render as. For the GearVR, render your videos at 3840x1920 or 4096x2048 when shooting 4k (1920x960 is SD).
+When you are ready to hit the "render" icon, AVP will bring a pop up of some presets to choose from and show the maximum output size. The maximum output size is the resolution achieved from your 360 camera rig. Depending on the rig you chose, the final resolution after stitching can range from 4K to 8K. Presets are very valuable during stitching and you will want to get familiar with all the choices. When you want to render small files quickly to test and find seams to fix, you can output at a lower resolution such as 2K. You can always check at the bottom of the pop up window what resolution and frame rate the video will render as. For the Gear VR, render your videos at 3840x1920 or 4096x2048 when shooting 4K (1920x960 is SD).
 
-When rendering your fine stitch, it is highly recommended to render output type as frames, a sequence of uncompressed tiff images at 16 bit color depth. Rendering frames keeps the highest possible resolution of your panorama at the maximum size allowed. There are limitations when you render videos. The bit depth will be between 8 to 10 bit, including the AVI uncompressed option, and there are size limits (for example: h264 mp4 maximum height at 2304px). Your footage will be running through many processes down the pipeline. From stitching to vfx to editing to color grading, pixels will get distorted down the line. Distortion occurs within the range of 10-16 bits. Starting with Autopano, you will want to work on the highest resolution files to minimize distortion of colored pixels and keep the full quality when rendering an 8-10bit video. Output tiff Frames at 16 bit, and no compression in AVP.
+{\large Fine Stitch Rendering. \par}
+
+When rendering your fine stitch, it is highly recommended to render output type as frames, a sequence of uncompressed tiff images at 16 bit color depth. Rendering frames keeps the highest possible resolution of your panorama at the maximum size allowed. There are limitations when you render videos. The bit depth will be between 8 to 10 bit, including the AVI uncompressed option, and there are size limits (for example: H.264 mp4 maximum height at 2304px). Your footage will be running through many processes down the pipeline.
+From stitching to vfx to editing to color grading, pixels will get distorted down the line. Distortion occurs within the range of 10-16 bits. 
+
+Starting with Autopano, you will want to work on the highest resolution files to minimize distortion of colored pixels and keep the full quality when rendering an 8-10 bit per channel video. Output tiff Frames at 16 bit and no compression in AVP.
 
 \imgA{.65}{30/exportingtiffs}
 
-\tip Removing alpha channel when exporting tiffs will reduce the size of each tiff. Recommended for large sequences.
+\tip Removing the alpha channel when exporting tiffs will reduce the size of each tiff. Recommended for large sequences.
 
-Every time you render, you are creating a new file. Stay organized so you know what version each render is. Add a prefix to every file. Use QS for Quickstitch, a version number \_v001 for your tests, and FS for Fine Stitch. When rendering frames, select an output folder with the suffix  \_tiff in the name.
+Every time you render, you are creating a new file. Stay organized so you know what version each render is. Add a prefix to every file. Use QS for Quickstitch, a version number \_v001 for your tests, and FS for Fine Stitch. When rendering frames, select an output folder with the suffix \_tiff in the name.
 
 \clearpage
 {\large Encoding a burnt-in timecode \par}
 
-You can use After Effects, Premiere or any video editing software to encode a timecode or you can do it...the "hard" way aka not really, just geeky but in reality faster way! \textbf{\nameref{chap:56}}! Don't let the terminal or command lines scare you!
+You can use After Effects, Premiere or any video editing software to encode a timecode or you can do it...the "hard" way aka not really, just the geeky but in reality faster way! \textbf{\nameref{chap:56}}! Don't let the terminal or command lines scare you!
 
 For Mac users, the "drawtext" filter of FFmpeg is only working with a specific FFmpeg binary. Refer to \textbf{\nameref{chap:56}} to install the right binary.
 
@@ -88,7 +87,7 @@ Open the Terminal app on Mac, Command Prompt on PC. Use the basic commands to ac
 
 \imgA{1}{30/terminal}
 
-\tip On Mac, If your Finder is opened with your video visible, drag the folder icon into the Terminal window AFTER typing "cd" (e.g. change directory). On PC, click the folder icon to reveal the path, and paste it in your Command prompt after "cd".
+\tip On Mac, if your Finder is opened with your video visible, drag the folder icon into the Terminal window AFTER typing "cd" (e.g. change directory). On PC, click the folder icon to reveal the path, and paste it in your Command prompt after "cd".
 
 Type the exact FFmpeg script for the action you want to perform on the video: embedding a timecode in center of video, at the same framerate as video.
 
@@ -108,7 +107,7 @@ Select a monospaced font file from your machine:
 
 \code{fontfile='/Library/Fonts/Arial.ttf':}
 
-Then add the format for the timecode including the framerate (matching same fps as video), font size, color, and position on the video:
+Then add the format for the timecode including the framerate (matching same FPS as video), font size, color, and position on the video:
 
 \code{timecode='00\\:00\\:00;00':r=29.97: fontsize=32: fontcolor=white: x=(w)/2:y=(h)/2}
 
@@ -117,7 +116,7 @@ Note the colons are required between each argument. Put all of this together int
 \code{ffmpeg -i video.mp4 -vf "drawtext=fontfile='/Library/Fonts/Arial.ttf':timecode='00\\:00\\:00;00':r=29.97:fontsize=32:fontcolor=white:x=(w)/2:y=(h)/2" video\_tc.mp4}
 
 
-Press RETURN after pasting this line into your Terminal and  FFmpeg will render the video again with the timecode on it. Good Job!
+Press RETURN after pasting this line into your Terminal and FFmpeg will render the video again with the timecode on it. Good Job!
 
 
 \clearpage

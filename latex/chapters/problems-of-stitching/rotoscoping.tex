@@ -7,7 +7,7 @@
 
 {\large Your moving subject or object has complex seams and you’ve tried everything to fix it in Autopano. \par}
 
-Sometimes Control Points and Masking Points aren’t enough, and you need an alternative to deliver a perfectly stitched panorama. If you are not familiar with Mocha and Rotoscoping, now is the time. Rotoscoping is a technique where a subject — either live or animated — is traced over, frame by frame, to create a matte so it may be composited over a different background or environment. Good news, all versions of AE come with a free version of Mocha, the tool for rotoscoping! 
+Sometimes Control Points and Masking Points aren’t enough, and you need an alternative to deliver a perfectly stitched panorama. If you are not familiar with Mocha and Rotoscoping, now is the time! Rotoscoping is a technique where a subject — either live or animated — is traced over, frame by frame, to create a matte so it may be composited over a different background or environment. Good news, all versions of AE come with a free version of Mocha, the tool for rotoscoping! 
 
 \imgA{1}{50/closesubject}
 \clearpage
@@ -19,11 +19,11 @@ The process for rotoscoping over a stitched panorama starts with rendering a few
 
 \imgA{1}{50/base}
 
-Then render only one camera using the same stitch template but without any blending. In APG, uncheck all layers/cameras, turn blending off, and check the one with the subject/object to roto. Render it at the same size as an mp4 and as tiff sequence.
+Then render only one camera using the same stitch template but without any blending. In APG, uncheck all layers/cameras, turn blending off, and check the one with the subject/object to roto. Render it at the same size as an mp4 and as a tiff sequence.
 
 \imgA{1}{50/cam3pano}
 
-In AE, import both sequences under their take folder and create a new composition from the base tiff sequence, using the same fps and dimensions. In the same composition, add the mp4 that contains only the object to roto on top of the base layer. Under Animation menu, choose Track in Mocha AE. Save your new project to the take folder location to easily access it later. 
+In AE, import both sequences under their take folder and create a new composition from the base tiff sequence, using the same FPS and dimensions. In the same composition, add the mp4 that contains only the object to roto on top of the base layer. Under Animation menu, choose Track in Mocha AE. Save your new project to the take folder location to easily access it later. 
 
 \imgA{1}{50/trackinmocha}
 
@@ -41,7 +41,7 @@ After the tracking is done, rename this roto layer under the Layer controls (lef
 \clearpage
 \imgA{1}{50/linktrack}
 
-This is the bare minimum to understand how tracking and rotoscoping with Mocha works. When rotoscoping a moving subject with multiple movements happening simultaneously such as head rotation, arms bouncing around, or legs walking, consider all movements separately. Following the same steps, create a quick mask with X-splines, track backward, adjust your points, track forward, and then create your detailed mask to later link to the tracked layer. The more points the more time Mocha will take to track.
+This is the bare minimum to understand how tracking and rotoscoping with Mocha works. When rotoscoping a moving subject with multiple movements happening simultaneously such as head rotation, arms bouncing around, or legs walking, consider all movements separately. Following the same steps, create a quick mask with X-splines, track backward, adjust your points, track forward, and then create your detailed mask to later link to the tracked layer. The more points, the more time Mocha will take to track.
 
 \imgA{1}{50/complex}
 
