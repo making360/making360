@@ -20,9 +20,9 @@ Autopano has the ability to assign camera files to left or right eye. Therefore,
 
 \imgA{1}{42/folders}
 
-Issues in stereo stitching include the cameras not in being in sync, the color not matching, and subjects being too close or crossing between cameras. These problems will all cause the seams to be very apparent and with subjects too close, the seams may even be unfixable. If your subjects are crossing at a farther distance from the camera, the seams are fixable but the depth isn’t as impressive, questioning the need for stereo. Before you even stitch anything, reduce all the risks involved with stitching in stereo. Synchronize and Color match all your cameras outside of Autopano.
+Issues in stereo stitching include the cameras not in being in sync, the color not matching, and subjects being too close or crossing between cameras. These problems will all cause the seams to be very apparent and with subjects too close, the seams may even be unfixable. If your subjects are crossing at a farther distance from the camera, the seams are fixable but the depth isn’t as impressive, questioning the need for stereo. Before you even stitch anything, reduce all the risks involved with stitching in stereo. Perform \textbf{\nameref{chap:33}} and \textbf{\nameref{chap:32}} on all your cameras outside of Autopano.
 
-With all your cameras in one take folder, and file names reflecting Left eye (LE) or Right eye (RE) camera, Synchronize manually with After Effects. You will be able to sync based on the audio waveforms as well as any flash or motion signal. Trim all the cameras to only have the available footage in all cameras perfectly synced by the frame. At the same time you synchronize the cameras, adjust Color Matching in the same step. Correct the mid gamma level slightly on just the needed cameras, but never all of them since one is used as reference. Re-export all your cameras as mov lossless files or mp4s.
+With all your cameras in one take folder, and file names reflecting Left eye (LE) or Right eye (RE) camera, synchronize manually with After Effects. You will be able to sync based on the audio waveforms as well as any flash or motion signal. Trim all the cameras to only have the available footage in all cameras perfectly synced by the frame. At the same time you synchronize the cameras, adjust Color Matching in the same step. Correct the mid gamma level slightly on just the needed cameras, but never all of them since one is used as reference. Re-export all your cameras as mov lossless files or mp4s.
 
 \imgA{1}{42/sync}
 
@@ -34,7 +34,7 @@ In Autopano, start by creating a new group layer located at the lower area of AP
 
 \imgA{1}{42/layers}
 
-Next step. Circular Crop Factor. Handle this tool with caution. When the calibration isn't right, it may be due to your lenses, in particular fisheye lenses, and not a control points issue. Edit the circular crop of each of your camera by first choosing a radius amount and apply to all images. 
+Next step. \textbf{\nameref{chap:43}}. Handle this tool with caution. When the calibration isn't right, it may be due to your lenses, in particular fisheye lenses, and not a control points issue. Edit the circular crop of each of your camera by first choosing a radius amount and apply to all images. 
 
 \imgA{1}{42/radius}
 
@@ -52,7 +52,7 @@ An Autopano stitch template holds a great amount of information except when the 
 \imgA{1}{42/le}
 \imgA{1}{42/re}
 
-Lastly, A/B test different ways to fix a seam and to prioritize only the actions with the most amount of depth, usually in the foreground. Even as viewer, you may not notice a small seam in the background, but you will be impressed by an amazingly stitched 3D movement coming at you. Render a test with AVP by first selecting Over Under in the Stereo tab. This will allow you to get a 2160x2160 render. If you need a specific over under or side by side, you can use FFmpeg to combine 2 videos after rendering each eye from AVP separately.
+Lastly, do some \textbf{\nameref{chap:46}} of different ways to fix a seam and to prioritize only the actions with the most amount of depth, usually in the foreground. Even as viewer, you may not notice a small seam in the background, but you will be impressed by an amazingly stitched 3D movement coming at you. Render a test with AVP by first selecting Over Under in the Stereo tab. This will allow you to get a 2160x2160 render. If you need a specific over under or side by side, you can use FFmpeg to combine 2 videos after rendering each eye from AVP separately.
 
 \imgA{1}{42/renderou}
 \clearpage

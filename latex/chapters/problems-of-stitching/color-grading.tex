@@ -3,58 +3,63 @@
 \label{chap:54}
 \begin{fullwidth}
 
+{\itshape\bfseries “ Colour is the keyboard, the eyes are the hammers, the soul is the piano with many strings. The artist is the hand which plays, touching one key or another, to cause vibrations in the soul.”}
+
+Wassily Kandinsky, Concerning the Spiritual in Art
+\vspace{\baselineskip}
+
 \problem
 
-{\large After coloring the blacks, you get more banding. After sharpening, a cable appears at 180 degree. \par}
+{\large After coloring the blacks, you get more banding. After sharpening, a cable appears at 180 degrees. \par}
 
-Color grading 360x180 latlong is not like coloring any other flat videos. How can you color grade, sharpen and blur as you normally would? Coloring the lows, mids and highs can introduce unwanted banding, how should you color grade?
+Color grading a 360x180 LatLong is not like coloring any other flat video. Coloring the lows, mids and highs can introduce unwanted banding. How do you color grade, sharpen and blur as you normally would? 
 
 \solution
 
 {\large The ultimate sophistication. DaVinci Resolve. \par}
 
-Resolve is a color grading platform first and foremost. Designed to allow the colorist the ability to quickly correct hundreds of shots while keeping track of all the grades, Resolve is a great solution to color grade after fine stitching your footage but also color matching your individual cameras before stitching. The RGB histogram is much larger than AE or Premiere and it helps a lot for color matching cameras.
+Resolve is a color grading platform first and foremost. Designed to allow the colorist the ability to quickly correct hundreds of shots while keeping track of all the grades, Resolve is a great solution to color grade after fine stitching your footage but also for color matching your individual cameras before stitching. The RGB histogram is much larger than in AE or Premiere, easing the process for color matching cameras.
 
 \imgA{1}{54/wheels}
 
-You've stitched and edited all your shots nicely with AVP and AE or Premiere. Now it is time to color grade using the industry standard Resolve! When working with many softwares, bringing footage in to one then another, also known as "roundtripping" method, you need to be well organized. Keep your source footage in source, and separate all your work from different softwares into folders named by software. For example, you would set an Autopano folder where all of your stitching work is happened, then a Premiere folder for your edits and xml files, then a Resolve folder for the color grading and maybe even Maya if you plan to add 3d assets to your project. Most of the work will be data that shouldn't be moved around and rendering should always target a folder named "Output". 
+You've stitched and edited all your shots nicely with AVP, AE and Premiere. Now it is time to color grade using the industry standard, Resolve! When working with many softwares, bringing footage in to one and then another, also known as the "roundtripping" method, you need to be well organized. Keep your source footage in the source folder and separate all your work from different softwares into folders named specifically by software. For example, you would set an Autopano folder where all of your stitching work happens, a Premiere folder for your edits and xml files, a Resolve folder for color grading, and maybe even a Maya folder if you plan to add 3D assets to your project. Most of the work will be data that shouldn't be moved around and rendering should always target a folder named "Output". 
 
 \imgA{1}{54/folder}
 
-To quickly color grade your GoPros before and/or after stitching, you will want to use LUT or Look Up Tables. An LUT is a color transform, a set of numbers that simply change the colors of an image. There are used to correct log exposure, emulate 35mm films and for applying looks. LUTS can be applied in many applications including DaVinci Resolve, AE, Premiere, Final Cut Pro, etc.. LUT will save you time for converting your camera footage to the right color space. You will need to make sure to use LUTs based on the camera used in production. You can easily find GoPro LUTs via a google search.
+To quickly color grade your GoPros before and/or after stitching, you will want to use a LUT or Look Up Table. A LUT is a color transform, a set of numbers that change the colors of an image. They are used to correct log exposure and for applying looks, such as emulating a 35mm analog film look. LUTs can be applied in many applications including DaVinci Resolve, AE, Premiere, Final Cut Pro, etc.. LUTs will save you time for converting your camera footage to the right color space. Make sure to use LUTs based on the camera used in production. You can easily find GoPro and other camera LUTs via a google search.
 
-From your Premiere project, export your edits as "Final Cut Pro XML" and in DaVinci Resolve, import the same xml. Now you are ready to color grade your shots. Go to the Color section of Resovle.
+From your Premiere project, export your edits as "Final Cut Pro XML" and in DaVinci Resolve, import the same xml. Now you are ready to color grade your shots. Go to the Color section of Resolve.
 
 \imgA{1}{54/export}
 \imgA{1}{54/import}
 \imgA{1}{54/color}
 
-Since you shot with Protune on, your individual cameras or stitched panorama will probably be flat. First, to convert the log footage to Rec.709 space, select Nodes and right click on your clip to add a 3D LUT. 
+Since you shot with Protune on, your individual cameras or stitched panoramas will be flat. First, to convert the log footage to Rec.709 space, select Nodes and right click on your clip to add a 3D LUT. 
 
 \imgA{1}{54/nodelut}
 
-When coloring 360 videos, some LUTs may correct curves too much. This means more banding can be introduced. While it is a traditional problem in grading flat videos; in 360 videos, banding is an even bigger problem. A/B test your grades before deciding on the final color grade. In a VR headset, banding as well as colored shadows or blacks are very distracting and can reveal the trick of feeling present. An important Mise en Place is necessary to avoid banding. Working in a 16 bit color mode is considered sufficient to render frames in Rec.709 or sRGB.
+When coloring 360 videos, some LUTs may correct curves too much. This means more banding can be introduced. While it is a normal problem in grading flat videos, in 360 videos, banding is an even bigger problem. A/B test your grades before deciding on the final color grade. In a VR headset, banding and colored shadows or blacks are very noticeable and distract from the reality of the experience. An important \textbf{\nameref{chap:47}} is necessary to avoid banding. Working in a 16 bit color mode is considered sufficient to render frames in Rec.709 or sRGB.
 
 \imgA{1}{54/banding}
 
-Apply the first 3D LUT to convert from log to Rec.709, then add a new node (alt + S) to color grade further or apply a 2nd LUT to emulate a film look. When the offset is adjusted too much and blacks are colored on the 2nd pass, you can test different transparency of  this LUT look by adjusting the intensity under the Lumetri Color plugin in Premiere or the opacity of your LUT adjustment layer in AE.
+Apply the first 3D LUT to convert from log to Rec.709 and then add a new node (alt + S) to color grade further or apply a 2nd LUT to emulate a film look. When the offset is adjusted too much and blacks are colored on the 2nd pass, you can test different transparencies of the LUT look by adjusting the intensity under the Lumetri Color plugin in Premiere or the opacity of your LUT adjustment layer in AE.
 
 \imgA{1}{54/2ndpass}
 \imgA{1}{54/opacitylut}
 
-\tip Some great LUTs to correct log exposure or emulate film looks can be downloaded from GroundControl, Neumann Films or OSIRIS. To import them in Resolve, under your Project Settings you can Open LUT folder in Color Management tab, then copy all your downloaded LUTs here and Update Lists.  
+\tip Some great LUTs to correct log exposure or emulate film looks can be downloaded from GroundControl, Neumann Films or OSIRIS. To import them into Resolve, under your Project Settings open LUT folder in Color Management tab and then copy all your downloaded LUTs here and press Update Lists.  
 
-Converting your individual cameras to Rec.709 will also help AVP auto-detect control points and perform a better stitch overall, and you could apply your 2nd color grade after the stitched panorama is rendered.
+Converting your individual cameras to Rec.709 will also help AVP auto-detect control points and perform a better overall stitch. You can then apply your 2nd color grade after the stitched panorama is rendered.
 
 {\large What's that cable? \par}
 
-When you sharpen or blur your 360 panoramic videos, a transparent or black cable will appear behind you when viewing in a VR headset. The reason is that sharpening or blurring images will most likely utilize the edges of your equirectangular video to distort colors or pixels. Even if you are sharpening in SkyBox and able to preview all around the 360 space. Rendering your video with a layer sharpening or blurring your base panorama will generate a line caused by the remapping of the video onto a sphere.
+When you sharpen or blur your 360 panoramic videos, a transparent or black cable will appear behind you when viewing in a VR headset. The cable is caused by sharpening or blurring your images and the effects utilize the edges of your equirectangular video to distort colors or pixels. Even if you are sharpening in SkyBox and able to preview all around the 360 space, rendering your video with a layer sharpening or blurring your base panorama will generate a line caused by the remapping of the video onto a sphere.
 
 \imgA{1}{54/cable}
 
-Since the left and right edge of your video have to match perfectly in order to create a seamless 360 video, you will need only sharpen certain areas of the equirectanglar video.
+Since the left and right edge of your video have to match perfectly in order to create a seamless 360 video, you will need to only sharpen certain areas of the equirectanglar video.
 
-To avoid the transparent cable visible at 180 degrees from the center of the video, you are best to use masks and feather the egdes to the mask area. In DaVinci, use the rectangle window and soften the edges of the rectangle area, then sharpen inside the area.
+To avoid the visible transparent cable from appearing at 180 degrees from the center of the video, use masks and feather the edges of the masked areas. In DaVinci, use the rectangle window and soften the edges of the rectangle area andthen sharpen inside the area.
 
 \imgA{1}{54/mask}
 
