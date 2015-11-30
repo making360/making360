@@ -37,15 +37,15 @@ GOPR01025 would be T07\_4K\_C03\_LE\_GOPR01025.mp4 for a stereoscopic project.
 
 {\large Import all GoPros with AVP. \par}
 
-Since the recent release of AVP 2.3, ingesting files got a whole lot easier. You will need to purchase a couple of Lexar Workflow multi-slot card readers. MTP is not supported.
+With the recent release of AVP 2.3, ingesting files got a whole lot easier. You will need to purchase a couple of Lexar Workflow multi-slot card readers. MTP is not supported.
 
-The process is easy. When you are done shooting or if you need to do a quick on-site stitch, insert all your SD cards into the multi-slot readers. Use a USB hub if shooting with a lot of cameras like the stereo or cylindrical rigs.
+The process is simple. When you are done shooting or if you need to do a quick on-site stitch, insert all your SD cards into the multi-slot readers. Use a USB hub if shooting with a lot of cameras like the stereo or cylindrical rigs.
 
 Open AVP and under File, select Import all GoPros.
 
 \imgA{1}{29/bycam}
 
-One of the major pains is the splitting of longer takes from the GoPros. When files reach the 4GB limit, and the recording continues, the take will be split into multiple files that need to be to concatenated. With AVP 2.3, concatenating files is handled internally during ingestion. You will see small dropdown arrows for all large sub-sequences that AVP detects.
+One of the major pains is the splitting of longer takes from the GoPros. When files reach the 4 GB limit, and the recording continues, the take will be split into multiple files that need to be to concatenated. With AVP 2.3, concatenating files is handled internally during ingestion. You will see small dropdown arrows for all large sub-sequences that AVP detects.
 
 \imgA{1}{29/merge}
 
@@ -53,9 +53,9 @@ At the top of the ingester, display your files by sequence. Then check "merge su
 
 \imgA{1}{29/byseq}
 
-Your files will be merged and renamed with minimum organization. You may want to batch rename the files in each take folder and add additional prefixes such as LE, RE for stereo footage or ShotN\_SceneN\_TakeN.
+Your files will be merged and renamed with minimum manual organization needed. You may want to batch rename the files in each take folder and add additional prefixes such as LE, RE for stereo footage or ShotN\_SceneN\_TakeN.
 
-\tip When ingesting using AVP, make sure you have the exact number of takes in each of your SD cards and all \textbf{\nameref{chap:20}} have been deleted. You may encounter problems with this way of ingesting if you didn't reset the clocks on your GoPros. This ingestion method is still in beta, so double-check everything before transferring the files.
+\tip When ingesting using AVP, make sure you have the exact number of takes in each of your SD cards and all \textbf{\nameref{chap:20}} have been deleted. You may encounter problems with this way of ingesting if you didn't reset the \textbf{\nameref{chap:05}} on your GoPros. This ingestion method is still in beta, so double-check everything before transferring the files.
 
 {\large Using a Python script. \par}
 
