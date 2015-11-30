@@ -39,7 +39,7 @@ artists, pioneers, adventurers, astronauts, cowboys and cowgirls; basically anyo
 HipChat Room
 =============================
 
-This chat room is dedicated to questions/answers regarding the making of 360 content, feel free to use this chat room to give and receive advice from each other. This is not a chat room for self-promotion, thank you!
+This chat room is dedicated to questions/answers regarding the making of 360 content. Feel free to use this chat room to give advice and receive from each other. This is not a chat room for self-promotion, thank you!
 
 https://www.hipchat.com/gzlQY96Oc
 
@@ -47,9 +47,9 @@ https://www.hipchat.com/gzlQY96Oc
 Contributors resources
 =============================
 
-To quickly contribute to this open source guide, create a <a href="https://github.com/join">github account</a> and select the chapter you would like to edit. For example: making360 > latex > problems-of-stitching > <a href="https://github.com/making360/making360/blob/master/latex/chapters/problems-of-stitching/dailies-quickstitch.tex">dailies-quickstitch.tex</a>. Select "Edit this file" and start editing. Select preview changes to visually confirm your changes before committing them. Below the preview changes, name your commit with just couple words, and <b>create a NEW BRANCH</b> before proposing the file change. Do NOT commit to the master branch.
+To quickly contribute to this open source guide, create a <a href="https://github.com/join">github account</a> and select the chapter you would like to edit. For example: making360 > latex > problems-of-stitching > <a href="https://github.com/making360/making360/blob/master/latex/chapters/problems-of-stitching/dailies-quickstitch.tex">dailies-quickstitch.tex</a>. Select "Edit this file" and start editing. Select preview changes to visually confirm your changes before committing them. Below the preview changes, name your commit with just a couple words, and <b>create a NEW BRANCH</b> before proposing the file change. Do NOT commit to the master branch.
 
-For advanced contributors who would like to join us in improving the knowledge shared in this guide, it's not required to know LaTex nor how to code. You will only need to download these recommended tools and watch the video to show you how to set it up on Mac.
+For advanced contributors who would like to join us in growing the knowledge shared in this guide, it's not required to know LaTex or how to code. You will only need to download these recommended tools and watch the video to show you how to set up on Mac.
 
 Watch the Video: <a href="http://bit.ly/1NIGW3q">How to Setup LaTex/Github + Compile making360</a>
 
