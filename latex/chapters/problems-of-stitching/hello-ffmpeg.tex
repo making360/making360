@@ -35,23 +35,33 @@ Now, back in your terminal window, use the arrow up key to bring back the line t
 
 On Windows the current version of FFmpeg is 2.8.2. It supports both the H.264 and H.265 video codecs, and the drawtext command which is used for creating timecode overlays.
 
-When you download FFmpeg, you should install it in the "Program Files" folder:
+When you download FFmpeg, you should install it in the "Program Files" folder.
 
-C:\\Program Files\\ffmpeg\\
+Then to make it easier to run ffmpeg.exe from the command prompt you need to add the FFmpeg "bin" folder to your system's environment PATH variable.
 
+<<<<<<< HEAD
 Then to make it easier to run ffmpeg.exe from the command prompt you need to add the FFmpeg "bin" folder to your system's environment PATH variable. This is done by opening the System Control Panel using the Windows + Pause/Break keys. Then in the System Control Panel, select the Advanced System Settings option. A System Properties dialog will appear. Select the Environment Variables... button.
 
 \imgA{1}{56/system-properties}
+=======
+This is done by opening the System Control Panel which can be done using the Windows + Pause/Break keys. Then in the System Control Panel, select the Advanced System Settings option. A System Properties dialog will appear. Select the Environment Variables... button.
+>>>>>>> master
 
 Now in the lower part of the Environment Variables dialog, there is a System Variables section. Select the "Path" entry and click the Edit... button. This will open up the Edit System Variable dialog.
 
+\imgA{1}{56/system-properties}
+
 Add the following text to the end of the Path variable and then click the OK button to accept the changes:
 
-;C\:\\Program Files\\ffmpeg\\bin
+\code{;C\:\\Program Files\\ffmpeg\\bin}
 
 \imgA{1}{56/edit-system-path-variable}
 
+<<<<<<< HEAD
 Since the FFmpeg bin folder has been added to the system's Environment PATH variable, you will now be able to run FFmpeg just by typing in "ffmpeg" or "ffmpeg.exe" in a new Command Prompt window.
+=======
+Since the FFmpeg bin folder has been added to the environment PATH variable, you will now be able to run FFmpeg just by typing in "ffmpeg" or "ffmpeg.exe" in a new Command Prompt window.
+>>>>>>> master
 
 {\large Convert Files \par}
 
