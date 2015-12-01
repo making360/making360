@@ -47,7 +47,9 @@ https://www.hipchat.com/gzlQY96Oc
 Contributors resources
 =============================
 
-To quickly contribute to this open source guide, create a <a href="https://github.com/join">github account</a> and select the chapter you would like to edit. For example: making360 > latex > problems-of-stitching > <a href="https://github.com/making360/making360/blob/master/latex/chapters/problems-of-stitching/dailies-quickstitch.tex">dailies-quickstitch.tex</a>. Select "Edit this file" and start editing. Select preview changes to visually confirm your changes before committing them. Below the preview changes, name your commit with just a couple words, and <b>create a NEW BRANCH</b> before proposing the file change. Do NOT commit to the master branch.
+To quickly contribute to this open source guide, create a <a href="https://github.com/join">github account</a> and select the chapter you would like to edit. For example: making360 > latex > problems-of-stitching > <a href="https://github.com/making360/making360/blob/master/latex/chapters/problems-of-stitching/dailies-quickstitch.tex">dailies-quickstitch.tex</a>. Select "Edit this file" and start editing. Select preview changes to visually confirm your changes before committing them. Below the preview changes, name your commit with just a couple words, propose the file change from your forked repository and create a pull request.
+
+Watch the Video: <a href=" https://youtu.be/-sD3Nr-St4g">Quick Contribution to making360</a>
 
 For advanced contributors who would like to join us in growing the knowledge shared in this guide, it's not required to know LaTex or how to code. You will only need to download these recommended tools and watch the video to show you how to set up on Mac.
 
