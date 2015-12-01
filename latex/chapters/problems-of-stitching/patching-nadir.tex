@@ -17,30 +17,29 @@ Flip the panorama vertically to edit the desired area. Then convert your 2:1 Equ
 
 First, install Andrew Hazelden's Domemaster Actions for Photoshop.
 
-\imgA{1}{48/saveas}
-\clearpage
-
 After importing the image sequence into After Effects, create a new composition with it and save the first frame as a photoshop layer. Render the file, and open it in Photoshop.
 
-\imgB{.5}{48/zenith_area}{48/nadir_area}
+\imgA{1}{48/saveas}
 
 First rotate your image 180 degrees if you are editing the nadir or zenith. Flatten the layer before applying any domemaster actions.
 
-\imgB{.5}{48/domemaster}{48/nadir_2}
+\imgB{.5}{48/zenith_area}{48/nadir_area}
 
 In the Actions list, select 2:1 equirectangular to angular fisheye or 180 domemaster. The panorama format is now converted to a planetarium view. Edit the tripod here using the stamp tool.
 
-\tip The stamp tool icon is located in the tool box. Press S on the keyboard to access it, then ‘alt’ to select area to clone. Click on the area with the tripod and apply the clone.
+\imgA{1}{48/domemaster}
 
-\imgA{1}{48/nadir_stamped}
+\tip The stamp tool icon is located in the tool box. Press S on the keyboard to access it, then ‘alt’ to select area to clone. Click on the area with the tripod and apply the clone.
 
 Afterwards, flatten your layers and apply the reverse domemaster actions, angular fisheye or 180 degree domemaster to 2:1 equirectangular. Then rotate the panorama 180 degrees if needed. 
 
+\imgA{1}{48/nadir_stamped}
+
 Back in AE, import the Photoshop layer and place the layer on top of your existing image sequence. The frame with the tripod removed will be used for the entire image sequence. Change the dimensions of the photoshop layer to 50\% smaller if needed.
 
-\imgA{1}{48/ae_mask}
-
 Using the pen tool, hide the layer and create a tight mask around the tripod from the original sequence. Show the hidden layer you created a mask with and adjust the feather to blend the edges of your mask with the original image.
+
+\imgA{1}{48/ae_mask}
 
 \clearpage
 \end{fullwidth}
