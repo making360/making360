@@ -88,9 +88,9 @@ Open the Terminal app on Mac, Command Prompt on PC. Use the basic commands to ac
 
 \tip On Mac, if your Finder is opened with your video visible, drag the folder icon into the Terminal window AFTER typing "cd" (e.g. change directory). On PC, click the folder icon to reveal the path, and paste it in your Command prompt after "cd".
 
-Type the exact FFmpeg script for the action you want to perform on the video: embedding a timecode in center of video, at the same framerate as video.
+Type the exact FFmpeg script for the action you want to perform on the video: embedding a timecode in center of video, at the same frame rate as video.
 
-Run FFmpeg by simply the typing "ffmpeg" in the terminal. FFmpeg takes a video in and creates a new video out. Let's tell ffmpeg where and which video you want as input. Just type "-i" and the path/name of your file.
+Run FFmpeg by simply typing "ffmpeg" in the terminal. FFmpeg takes a video in and creates a new video out. Let's tell ffmpeg where and which video you want as input. Just type "-i" and the path/name of your file.
 
 \code{ffmpeg -i video.mp4}
 
@@ -106,7 +106,7 @@ Select a monospaced font file from your machine:
 
 \code{fontfile='/Library/Fonts/Arial.ttf':}
 
-Then add the format for the timecode including the framerate (matching same FPS as video), font size, color, and position on the video:
+Then add the format for the timecode including the frame rate (matching same FPS as video), font size, color, and position on the video:
 
 \code{timecode='00\\:00\\:00;00':r=29.97: fontsize=32: fontcolor=white: x=(w)/2:y=(h)/2}
 
