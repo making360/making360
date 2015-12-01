@@ -65,7 +65,7 @@ When you are ready to hit the "render" icon, AVP will bring a pop up of some pre
 
 {\large Fine Stitch Rendering. \par}
 
-When rendering your fine stitch, it is highly recommended to render output type as frames, a sequence of uncompressed tiff images at 16 bit color depth. Rendering frames keeps the highest possible resolution of your panorama at the maximum size allowed. There are limitations when you render videos. The bit depth will be between 8 to 10 bit, including the AVI uncompressed option, and there are size limits (for example: H.264 mp4 maximum height at 2304px). Your footage will be running through many processes down the pipeline. From stitching to vfx to editing to color grading, pixels will get distorted down the line. Distortion occurs within the range of 10-16 bits. 
+When rendering your fine stitch, it is highly recommended to render output type as frames, a sequence of uncompressed tiff images at 16 bit color depth. Rendering frames keeps the highest possible resolution of your panorama at the maximum size allowed. There are limitations when you render videos. The bit depth will be between 8 to 10 bit, including the AVI uncompressed option, and there are size limits (for example: H.264 mp4 maximum height at 2304px). Your footage will be running through many processes down the pipeline. From stitching to VFX to editing to color grading, pixels will get distorted down the line. Distortion occurs within the range of 10-16 bits. 
 
 Starting with Autopano, you will want to work on the highest resolution files to minimize distortion of colored pixels and keep the full quality when rendering an 8-10 bit per channel video. Output tiff Frames at 16 bit and no compression in AVP.
 
@@ -88,9 +88,9 @@ Open the Terminal app on Mac, Command Prompt on PC. Use the basic commands to ac
 
 \tip On Mac, if your Finder is opened with your video visible, drag the folder icon into the Terminal window AFTER typing "cd" (e.g. change directory). On PC, click the folder icon to reveal the path, and paste it in your Command prompt after "cd".
 
-Type the exact FFmpeg script for the action you want to perform on the video: embedding a timecode in center of video, at the same framerate as video.
+Type the exact FFmpeg script for the action you want to perform on the video: embedding a timecode in center of video, at the same frame rate as video.
 
-Run FFmpeg by simply the typing "ffmpeg" in the terminal. FFmpeg takes a video in and creates a new video out. Let's tell ffmpeg where and which video you want as input. Just type "-i" and the path/name of your file.
+Run FFmpeg by simply typing "ffmpeg" in the terminal. FFmpeg takes a video in and creates a new video out. Let's tell ffmpeg where and which video you want as input. Just type "-i" and the path/name of your file.
 
 \code{ffmpeg -i video.mp4}
 
@@ -106,7 +106,7 @@ Select a monospaced font file from your machine:
 
 \code{fontfile='/Library/Fonts/Arial.ttf':}
 
-Then add the format for the timecode including the framerate (matching same FPS as video), font size, color, and position on the video:
+Then add the format for the timecode including the frame rate (matching same FPS as video), font size, color, and position on the video:
 
 \code{timecode='00\\:00\\:00;00':r=29.97: fontsize=32: fontcolor=white: x=(w)/2:y=(h)/2}
 
