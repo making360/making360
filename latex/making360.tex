@@ -59,6 +59,13 @@
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, left]{#2}\end{subfigure}
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, right]{#3}\end{subfigure}}
 
+\newcommand{\group}[1]{ \begin{textblock}{0.75}(0,0)  \textblockcolour{#1}
+  \textcolor{white}{ { \bfseries \small \rotatebox{90}{} }
+  \vspace{70mm} }\end{textblock} }
+
+\newcommand{\grouppage}[2]{
+\begin{textblock}{12}[0.5,0.5](7.5,20.5)\textblockcolour{#1}\textcolor{white}{\textbf{\LARGE  #2}}\end{textblock} }
+
 %----------------------------------------------------------------------------------------
 %	BOOK META-INFORMATION
 %----------------------------------------------------------------------------------------

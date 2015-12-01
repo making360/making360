@@ -389,7 +389,6 @@
 \setlength\labelsep      {.5pc}
 \setlength\labelwidth    {\leftmargini}
 \addtolength\labelwidth{-\labelsep}
-
 %%
 % \RaggedRight allows hyphenation
 
