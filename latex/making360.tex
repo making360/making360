@@ -33,6 +33,7 @@
 \usepackage{subcaption}
 \usepackage{fancyvrb} % Allows customization of verbatim environments
 \usepackage{xspace}
+\usepackage{xcolor}
 \usepackage{listings}
 \usepackage{CJKutf8}
 \usepackage{tocloft}
@@ -59,12 +60,32 @@
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, left]{#2}\end{subfigure}
 \begin{subfigure}{#1\textwidth}\includegraphics[width=1\linewidth, right]{#3}\end{subfigure}}
 
+\definecolor{equip}{HTML}{FF0000}
+\definecolor{setup}{HTML}{00FFFF}
+\definecolor{plan}{HTML}{FFFF66}
+\definecolor{shoot}{HTML}{FF0066}
+\definecolor{import}{HTML}{00FFCC}
+\definecolor{stitch}{HTML}{CC33FF}
+\definecolor{edit}{HTML}{00CCFF}
+\definecolor{render}{HTML}{33FF66}
+
 \newcommand{\group}[1]{ \begin{textblock}{0.75}(0,0)  \textblockcolour{#1}
-  \textcolor{white}{ { \bfseries \small \rotatebox{90}{} }
+  \textcolor{black}{ { \bfseries \small \rotatebox{90}{} }
   \vspace{70mm} }\end{textblock} }
 
-\newcommand{\grouppage}[2]{
-\begin{textblock}{12}[0.5,0.5](7.5,20.5)\textblockcolour{#1}\textcolor{white}{\textbf{\LARGE  #2}}\end{textblock} }
+
+\newcommand{\chapters}[1]{
+\newpage\hbox{}
+\pagecolor{#1}
+\begin{textblock}{12}[0.5,0.5](7.5,19)
+\textblockcolour{#1}
+\textcolor{black}{ \textbf{ \LARGE  
+\chapter{#1}
+\addtocontents{toc}{\textcolor{#1}{\rule{12.5cm}{0.2cm}}}
+%\addtocontents{toc}{\vspace{2\baselineskip}}
+\label{#2}}}
+\end{textblock} 
+\newpage}
 
 %----------------------------------------------------------------------------------------
 %	BOOK META-INFORMATION
@@ -83,21 +104,6 @@
 \setlength{\parskip}{12pt}
 \setlength{\parindent}{0pt}
 \let\cleardoublepage\clearpage
-
-\makeatletter
-\def\@makechapterhead#1{%
-  {\parindent \z@ \raggedright \normalfont
-    \ifnum \c@secnumdepth >\m@ne
-        \huge\bfseries \@chapapp\space \thechapter
-        \par\nobreak
-        \vskip 20\p@
-    \fi
-    \interlinepenalty\@M
-    \Huge \bfseries #1\par\nobreak
-    \vskip 20\p@
-  }}
-\makeatother
-
 
 \frontmatter
 
@@ -131,10 +137,6 @@ Fabien Soudiere}
 \\
 Jason Fletcher, Andrew Hazelden}
 
-\par{Edited by:
-\\
-Krystin Gilstrap}
-
 \par{Design and Illustrations by: 
 \\
 Fabien Soudiere}
@@ -147,43 +149,48 @@ Fabien Soudiere}
 
 \par\textit{First Edition, \monthyear}
 \end{fullwidth}
-
-%----------------------------------------------------------------------------------------
-
-\blankpage
-
-\makeatletter
-%\renewcommand\@tocrmarg{10em}
-\renewcommand\@pnumwidth{4em}
-%\renewcommand\@dotsep{2em}
-\makeatother
-\setcounter{tocdepth}{0} 
-\setcounter{secnumdepth}{-2}
-\renewcommand{\cftchapfont}{\hfill\normalsize\bfseries}
-\renewcommand{\cftchapleader}{}
-\renewcommand{\cftpartfont}{\large\ocrfamily}
-\renewcommand{\cftchappagefont}{\normalsize}
-\renewcommand{\cftpnumalign}{r}
-\addtocontents{toc}{\cftpagenumbersoff{part}}
-\renewcommand{\contentsname}{}
-\setlength{\cftbeforechapskip}{0.2ex}
-\newcommand{\cftpartafterpnum}{}
-\newcommand*{\SkipTocEntry}{\addtocontents{toc}{\gobblefour}}
-\setlength{\cftbeforetoctitleskip}{-4em}
-
-\tableofcontents
-
+\clearpage
 %----------------------------------------------------------------------------------------
 %   PREFACE
 %----------------------------------------------------------------------------------------
 
 \input{./chapters/preface}
 %----------------------------------------------------------------------------------------
-%	INTRODUCTION
+% INTRODUCTION
 %----------------------------------------------------------------------------------------
 
 
 \input{./chapters/introduction}
+
+%----------------------------------------------------------------------------------------
+
+
+
+\makeatletter
+%\renewcommand\@tocrmarg{10em}
+\renewcommand\@pnumwidth{4em}
+%\renewcommand\@dotsep{2em}
+\makeatother
+\setcounter{tocdepth}{2} 
+\setcounter{secnumdepth}{-2}
+\renewcommand{\cftchapfont}{\hfill\normalsize\bfseries}
+\renewcommand{\cftchapleader}{}
+\renewcommand{\cftpartfont}{\large\ocrfamily}
+\renewcommand{\cftchapfont}{\large\ocrfamily}
+\renewcommand{\cftchappagefont}{\normalsize}
+\renewcommand{\cftpnumalign}{r}
+\addtocontents{toc}{\cftpagenumbersoff{part}}
+\addtocontents{toc}{\cftpagenumbersoff{chapter}}
+\renewcommand{\contentsname}{}
+\setlength{\cftbeforechapskip}{2ex}
+\newcommand{\cftpartafterpnum}{}
+\newcommand*{\SkipTocEntry}{\addtocontents{toc}{\gobblefour}}
+\setlength{\cftbeforetoctitleskip}{-4em}
+
+\tableofcontents
+
+\clearpage
+
 %----------------------------------------------------------------------------------------
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
@@ -197,6 +204,5 @@ Fabien Soudiere}
 \input{./chapters/problems-of-stitching}
 
 %----------------------------------------------------------------------------------------
-
 
 \end{document}

@@ -5,7 +5,7 @@
 \cleardoublepage
 \pagecolor{black}
 
-\addtocontents{toc}{\protect\newpage}
+%\addtocontents{toc}{\protect\newpage}
 
 \begin{textblock}{12}[0.5,0.5](7.5,19)
 	\textblockcolour{black}
@@ -20,11 +20,15 @@
 \end{frame}
 %------------------------------------------------
 
+\chapters{import}
+
+\input{./chapters/problems-of-stitching/dymaxion-chronofile} %chap27
+
 \input{./chapters/problems-of-stitching/ingestion} %chap29
 
-\input{./chapters/problems-of-stitching/dailies-quickstitch} %chap30
+\chapters{stitch}
 
-\input{./chapters/problems-of-stitching/first-assembly} %chap31
+\input{./chapters/problems-of-stitching/dailies-quickstitch} %chap30
 
 \input{./chapters/problems-of-stitching/color-matching} %chap32
 
@@ -54,25 +58,31 @@
 
 \input{./chapters/problems-of-stitching/moving-shots} %chap45
 
-\input{./chapters/problems-of-stitching/ab-testing} %chap46
-
-\input{./chapters/problems-of-stitching/mise-en-place} %chap47
-
 \input{./chapters/problems-of-stitching/patching-nadir} %chap48
 
 \input{./chapters/problems-of-stitching/stitch-anything} %chap49
+
+\input{./chapters/problems-of-stitching/stitch-to-defish} %chap52
+
+\input{./chapters/problems-of-stitching/noisy-footage} %chap55
+
+\chapters{edit}
+
+\input{./chapters/problems-of-stitching/first-assembly} %chap31
+
+\input{./chapters/problems-of-stitching/mise-en-place} %chap47
 
 \input{./chapters/problems-of-stitching/rotoscoping} %chap50
 
 \input{./chapters/problems-of-stitching/ae-comping} %chap51
 
-\input{./chapters/problems-of-stitching/stitch-to-defish} %chap52
-
 \input{./chapters/problems-of-stitching/chroma-keying} %chap53
 
 \input{./chapters/problems-of-stitching/color-grading} %chap54
 
-\input{./chapters/problems-of-stitching/noisy-footage} %chap55
+\chapters{render}
+
+\input{./chapters/problems-of-stitching/ab-testing} %chap46
 
 \input{./chapters/problems-of-stitching/hello-ffmpeg} %chap56
 

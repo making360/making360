@@ -1515,18 +1515,17 @@
   {}% before the title body
   []% after the title body
 
-\titleformat{\chapter}%
+\titleformat{\section}%
   [display]% shape
   {\relax\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\begin{fullwidth}}{}}% format applied to label+text
-  {\huge\thechapter}% label
+  {}% label
   {0pt}% horizontal separation between label and title body
   {\huge\sffamily\bfseries}% before the title body
   [\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\end{fullwidth}}{}]% after the title body
 
-\titleformat{\section}%
-  [hang]% shape
-  {\sffamily\Large\mdseries}% format applied to label+text
-  {\thesection}% label
+\titleformat{\chapter}%
+  {\sffamily\LARGE\bfseries\justifyheading}% format applied to label+text
+  {}% label
   {0em}% horizontal separation between label and title body
   {}% before the title body
   []% after the title body
@@ -1586,7 +1585,7 @@
 
   \titlecontents{chapter}%
     [0em] % distance from left margin
-    {\vspace{0\baselineskip}\begin{fullwidth}\large} % above (global formatting of entry)
+    {\vspace{0\baselineskip}\begin{fullwidth}\LARGE} % above (global formatting of entry)
     {} % before w/label (label = ``2'')
     {} % before w/o label
     {} % filler + page (leaders and page num)
@@ -1594,7 +1593,7 @@
 
   \titlecontents{section}% FIXME
     [0em] % distance from left margin
-    {\vspace{0\baselineskip}\begin{fullwidth}\Large\rmfamily\itshape} % above (global formatting of entry)
+    {\vspace{0\baselineskip}\begin{fullwidth}\huge\rmfamily\itshape} % above (global formatting of entry)
     {\hspace*{2em}\contentslabel{2em}} % before w/label (label = ``2.6'')
     {\hspace*{2em}} % before w/o label
     {\rmfamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
