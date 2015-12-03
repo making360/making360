@@ -37,6 +37,7 @@
 \usepackage{listings}
 \usepackage{CJKutf8}
 \usepackage{tocloft}
+\usepackage{titlesec}
 \usepackage{ocr}
 \usepackage{ctable}
 \AtBeginDvi{\input{zhwinfonts}}
@@ -73,8 +74,7 @@
   \textcolor{black}{ { \bfseries \small \rotatebox{90}{} }
   \vspace{70mm} }\end{textblock} }
 
-
-\newcommand{\chapters}[1]{
+\newcommand{\sectiongroup}[1]{
 \newpage\hbox{}
 \pagecolor{#1}
 \begin{textblock}{12}[0.5,0.5](7.5,19)
@@ -82,8 +82,7 @@
 \textcolor{black}{ \textbf{ \LARGE  
 \chapter{#1}
 \addtocontents{toc}{\textcolor{#1}{\rule{12.5cm}{0.2cm}}}
-%\addtocontents{toc}{\vspace{2\baselineskip}}
-\label{#2}}}
+}}
 \end{textblock} 
 \newpage}
 
@@ -105,8 +104,8 @@
 \setlength{\parindent}{0pt}
 \let\cleardoublepage\clearpage
 
-\frontmatter
 
+\frontmatter
 
 %----------------------------------------------------------------------------------------
 
@@ -183,7 +182,6 @@ Fabien Soudiere}
 \addtocontents{toc}{\cftpagenumbersoff{chapter}}
 \renewcommand{\contentsname}{}
 \setlength{\cftbeforechapskip}{2ex}
-\newcommand{\cftpartafterpnum}{}
 \newcommand*{\SkipTocEntry}{\addtocontents{toc}{\gobblefour}}
 \setlength{\cftbeforetoctitleskip}{-4em}
 

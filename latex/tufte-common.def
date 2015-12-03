@@ -322,9 +322,9 @@
   \hypersetup{%
     pdfborder = {0 0 0},
     bookmarksdepth = section,
-    citecolor = false,
-    linkcolor = false,
-    urlcolor = false,
+    citecolor = black,
+    linkcolor = black,
+    urlcolor = black,
   }%
 }
 
@@ -1516,12 +1516,11 @@
   []% after the title body
 
 \titleformat{\section}%
-  [display]% shape
-  {\relax\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\begin{fullwidth}}{}}% format applied to label+text
+  {\sffamily\huge\bfseries}% format applied to label+text
   {}% label
-  {0pt}% horizontal separation between label and title body
-  {\huge\sffamily\bfseries}% before the title body
-  [\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\end{fullwidth}}{}]% after the title body
+  {0em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
 
 \titleformat{\chapter}%
   {\sffamily\LARGE\bfseries\justifyheading}% format applied to label+text
@@ -1545,8 +1544,7 @@
   {}% before the title body
   []% after the title body
 
-\titlespacing*{\chapter}{0pt}{0pt}{0pt}
-\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing{\section}{0pt}{0pt}{12pt}
 \titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus.2ex}
   
 % Subsubsection and following section headings shouldn't be used.
