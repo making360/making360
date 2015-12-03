@@ -40,11 +40,11 @@ When you download FFmpeg, you should install it in the "Program Files" folder.
 
 Then to make it easier to run ffmpeg.exe from the command prompt you need to add the FFmpeg "bin" folder to your system's environment PATH variable.
 
-This is done by opening the System Control Panel which can be done using the Windows + Pause/Break keys. Then in the System Control Panel, select the Advanced System Settings option. A System Properties dialog will appear. Select the Environment Variables... button.
+ This is done by opening the System Control Panel using the Windows + Pause/Break keys. Then in the System Control Panel, select the Advanced System Settings option. A System Properties dialog will appear. Select the Environment Variables button.
 
 Now in the lower part of the Environment Variables dialog, there is a System Variables section. Select the "Path" entry and click the Edit... button. This will open up the Edit System Variable dialog.
 
-\imgA{1}{56/system-properties}
+\imgA{.6}{56/system-properties}
 
 Add the following text to the end of the Path variable and then click the OK button to accept the changes:
 
@@ -52,7 +52,7 @@ Add the following text to the end of the Path variable and then click the OK but
 
 \imgA{1}{56/edit-system-path-variable}
 
-Since the FFmpeg bin folder has been added to the environment PATH variable, you will now be able to run FFmpeg just by typing in "ffmpeg" or "ffmpeg.exe" in a new Command Prompt window.
+Since the FFmpeg bin folder has been added to the system's Environment PATH variable, you will now be able to run FFmpeg just by typing in "ffmpeg" or "ffmpeg.exe" in a new Command Prompt window.
 
 {\large Convert Files \par}
 
@@ -112,7 +112,7 @@ When you need to add multiple audio tracks to a video, for example, for later us
 -codec copy will stream copy (re-mux) instead of encode. If you need a specific audio codec, you should specify -c:v copy (to keep the video) and then, for example, -c:a libmp3lame to re-encode the audio stream to MP3.
 
 -shortest will end the output when the shortest input ends.
-
+\clearpage
 {\large H.264 vs H.265 \par}
 
 Apple’s current preferred compression format, H.264, has been a huge success as being the most flexible codec widely used for streaming videos, capable of handling stereo 3D videos, 48-60 FPS and even 4K resolution. The problem with H.264 however, is that while it can handle these types of encodes, it can’t do so while simultaneously keeping file sizes low. A new standard is necessary to push file/stream sizes back down while driving next-generation adoption, and that’s where H.265 comes in. It’s designed to utilize substantially less bandwidth thanks to advanced encoding techniques and a more sophisticated encode/decode model.
