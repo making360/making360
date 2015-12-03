@@ -64,13 +64,17 @@
 \definecolor{equip}{HTML}{FF0000}
 \definecolor{setup}{HTML}{00FFFF}
 \definecolor{plan}{HTML}{FFFF66}
-\definecolor{shoot}{HTML}{FF0066}
+\definecolor{shoot}{HTML}{FF3385}
 \definecolor{import}{HTML}{00FFCC}
 \definecolor{stitch}{HTML}{CC33FF}
-\definecolor{edit}{HTML}{00CCFF}
+\definecolor{edit}{HTML}{45A3FB}
 \definecolor{render}{HTML}{33FF66}
 
-\newcommand{\group}[1]{ \begin{textblock}{0.75}(0,0)  \textblockcolour{#1}
+\newcommand{\groupL}[1]{ \begin{textblock}{1}(0,0)  \textblockcolour{#1}
+  \textcolor{black}{ { \bfseries \small \rotatebox{90}{} }
+  \vspace{70mm} }\end{textblock} }
+
+\newcommand{\groupR}[1]{ \begin{textblock}{0.75}(0,0)  \textblockcolour{#1}
   \textcolor{black}{ { \bfseries \small \rotatebox{90}{} }
   \vspace{70mm} }\end{textblock} }
 
@@ -81,6 +85,7 @@
 \textblockcolour{#1}
 \textcolor{black}{ \textbf{ \LARGE  
 \chapter{#1}
+\thispagestyle{empty}
 \addtocontents{toc}{\textcolor{#1}{\rule{12.5cm}{0.2cm}}}
 }}
 \end{textblock} 
@@ -181,7 +186,7 @@ Fabien Soudiere}
 \addtocontents{toc}{\cftpagenumbersoff{part}}
 \addtocontents{toc}{\cftpagenumbersoff{chapter}}
 \renewcommand{\contentsname}{}
-\setlength{\cftbeforechapskip}{2ex}
+\setlength{\cftbeforechapskip}{1ex}
 \newcommand*{\SkipTocEntry}{\addtocontents{toc}{\gobblefour}}
 \setlength{\cftbeforetoctitleskip}{-4em}
 
@@ -202,5 +207,22 @@ Fabien Soudiere}
 \input{./chapters/problems-of-stitching}
 
 %----------------------------------------------------------------------------------------
+
+\clearpage 
+\pagecolor{white}
+\begin{textblock}{12}[0.5,0.5](7.85,11.5)
+\textblockcolour{white}
+
+\centering
+\textbf{\large Now put down this book and go shoot some 360 video!}
+\large{Have a tip that isn't already in this book? Contribute, it's an open-source project.}
+
+{\textbf{\href{http://making360.com}{making360.com}}
+
+\thispagestyle{empty}
+}}
+\end{textblock} 
+
+
 
 \end{document}
