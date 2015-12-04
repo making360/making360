@@ -26,38 +26,25 @@ AVP lets you select the range in seconds for the auto detection to happen, 20 se
 
 The second option “Use Motion to synchronize” will only work if you used motion or a speedlight flash during production. Select the nearest frame and a range for AVP to auto-detect the flash or motion in each of your videos.
 
-{\large Auto sync with Premiere for frame offset. \par}
-
-First, import the videos, right click on your last video, select new sequence from clip. Then put them on the timeline in order; Camera 1 on top, then Camera 2, etc.
-
-Make the Audio files visible by making their tracks larger. You do this by holding down shift and dragging the horizontal lines between the audio tracks on the left side of the timeline (near A1, A2, mute and solo).
-
-If you look at the picture below, in the top left corner where the number "10925" is, that is the current frame, the default setting is for time, but if you right click on this, there is an option to change it to frames. This is an important step, so don't skip it!
-
-git add Premiere for blog.png
-git commit -m 'add png file'
-git remote add origin https://www.dropbox.com/s/v84uq3uk7skxemr/Premiere%20for%20blog.PNG?dl=0
-git push -u origin master
-
-You can then sync the videos by selecting all files, right click, synchronize. Under the synchronize options, choose audio and mix down. Then lock the audio files, but not the video files. Finally, drag all the video files to the last clip on the time line and it will tell you the offset by frames. See picture above for reference.
-
+\clearpage
 {\large Auto sync with Premiere’s multicam sequence. \par}
 
-Adobe Premiere’s auto sync function for multiple cameras is similar to RedGiant’s PluralEyes software, and very accurate. As opposed to AVP, when Premiere can’t sync it will warn you. Then you will know when you have to manually sync the videos.
-
+Adobe Premiere’s auto sync function for multiple cameras is similar to RedGiant’s PluralEyes software, and very accurate.
 
 Instead of creating a new sequence, find or drag all your videos in Premiere’s project section, right click and select Create Multi-Camera Source Sequence. Then choose “Audio” as a synchronize point and “All Cameras” for the audio sequence settings.
 
 \imgA{1}{33/audio_multicam}
 
-
-Your videos will be processed and placed into a bin. Rename the created sequence based on your log notes. Right click and Open the Multicam sequence in the timeline to see how the video tracks have been synced.
+Your videos will be processed and placed into a bin. Optionally, you can rename the created sequence based on your log notes, if you need to sync multiple takes. Right click and Open the Multicam sequence in the timeline to see how the video tracks have been synced.
 
 \imgA{1}{33/multicam_timelines}
 
-If you are editing your \textbf{\nameref{chap:31}} with Premiere, it may be a good idea to update the files/folder names between your quickstitches and your source cameras. Add a shortcode such as SYNC, QS for Quickstitch, FS for Fine Stitch, CC for Color Corrected. Rename the “Processed Clips” folder to the shot name and include all needed and related assets in the bin folder.
+The quickest way to record the sync offsets is to lock the audio files only, not the video files. Finally, drag all the video files to the last clip on the time line and Premiere will display the offset by frames. See picture below for reference.
 
-\clearpage
+\imgA{1}{33/premiere-offset}
+
+\tip If you are editing your \textbf{\nameref{chap:31}} with Premiere, it may be a good idea to update the files/folder names between your quickstitches and your source cameras. Add a shortcode such as SYNC, QS for Quickstitch, FS for Fine Stitch, CC for Color Corrected. Rename the “Processed Clips” folder to the shot name and include all needed and related assets in the bin folder.
+
 {\large Manually sync in After Effects. \par}
 
 Bring the videos into AE and use the cursor line on the timeline to sync the audio streams of the different cameras.
@@ -86,8 +73,7 @@ Now you have two options: trim the videos and render only the footage in sync, o
 
 \imgA{1}{33/trimcomp}
 
-\clearpage
-{\large Recording the offsets \par}
+{\large Recording the offsets in AE. \par}
 
 The video track with the largest distance from frame 0 will be the origin. The offset for that video track is 0. The opposite and longest video track, usually untouched with start frame at 0, will need to be offsetted by the number of frames between its start frame and the start frame of the video track with largest offset. For this example, it is 305 frames.
 
