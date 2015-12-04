@@ -26,6 +26,20 @@ AVP lets you select the range in seconds for the auto detection to happen, 20 se
 
 The second option “Use Motion to synchronize” will only work if you used motion or a speedlight flash during production. Select the nearest frame and a range for AVP to auto-detect the flash or motion in each of your videos.
 
+{\large Auto sync with Premiere for frame offset. \par}
+
+First, import the videos, right click on your last video, select new sequence from clip. Then put them on the timeline in order; Camera 1 on top, then Camera 2, etc.
+
+Make the Audio files visible by making their tracks larger. You do this by holding down shift and dragging the horizontal lines between the audio tracks on the left side of the timeline (near A1, A2, mute and solo).
+
+If you look at the picture below, in the top left corner where the number "10925" is, that is the current frame, the default setting is for time, but if you right click on this, there is an option to change it to frames. This is an important step, so don't skip it!
+
+git add Premiere for blog.png
+git commit -m 'add png file'
+git remote add origin https://www.dropbox.com/s/v84uq3uk7skxemr/Premiere%20for%20blog.PNG?dl=0
+git push -u origin master
+
+You can then sync the videos by selecting all files, right click, synchronize. Under the synchronize options, choose audio and mix down. Then lock the audio files, but not the video files. Finally, drag all the video files to the last clip on the time line and it will tell you the offset by frames. See picture above for reference.
 
 {\large Auto sync with Premiere’s multicam sequence. \par}
 
