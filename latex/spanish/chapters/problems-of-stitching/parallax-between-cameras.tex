@@ -1,0 +1,62 @@
+\section{Parallax between Cameras}
+\pagecolor{white}
+\label{chap:37}
+\begin{fullwidth}
+\groupL{stitch}
+
+\problem
+
+{\large A person or object is moving between two cameras. The subject distorts when crossing the seam even when there is enough overlap. \par}
+
+When you look at an object from two different points of view, nearby objects appear to shift more than distant ones. This is called parallax and is a concept that has been used to measure astronomical distances since 1672.
+
+\imgA{.8}{37/parallax}
+
+Two eyes are better than one because they give you two different views of the world. By combining these two views, your brain can estimate distances to nearby objects. Try pointing your finger in front of an object. With your left eye open, align your finger with the reference object in the distant background. Now open your left eye and close the right one. Your finger is not aligned anymore with your reference object. This is the infamous finger experiment to explain parallax. How do you fix parallax issues in Autopano?
+
+\solutions
+
+Parallax creates stitching errors but also creates stitching opportunities, fixing overlapping areas where an object needs to be kept or removed using \textbf{\nameref{chap:41}}, instead of the \textbf{\nameref{chap:48}} method. Parallax also creates stitching tricks and advantages such as hiding a monopod in the parallax zone with the \textbf{\nameref{chap:12}} technique.
+
+{\large Blame the 360 rig! \par}
+
+There is no simple solution to the parallax problem. Parallax is currently more a hardware and physics issue and there is no way around it. 360 rigs can't shoot with a perfect entrance pupil because of their construction. The camera sensors will never be from the same nodal center. There’s no way to pack multiple cameras with their optical sensors overlapping exactly because of the physical size of the cameras. As a consequence, all cameras in a rig are slightly rotated a distance from the center. Even the slightest distance from each other causes a huge difference. To avoid parallax induced stitching errors, the distance between the optical centers for all neighboring cameras should be the smallest possible. Then the overlapping zones can be stitched cleanly. 
+
+Until the perfect spherical camera rig is invented, consider how your subjects are using the space and the distance they can cross between cameras. For now, compromise and adapt your script to save time during post. As the hardware evolves, more experimentation can happen. Warning: don’t place the lead actor in between two cameras or your stitcher will end up quitting on you! Avoid creating stitching nightmares so you can focus on the content!
+
+The more cameras in the rig, the less distorted the overlap regions will get. Cylindrical rigs may be used for specific shots, but are a considerable investment in time and money. Stitching time, rendering and disk space are multiplied. \textbf{\nameref{chap:26}} lens are a handy option. Only two cameras modified with a 185 fisheye lenses are needed to fully cover a 360 degree shot.
+
+{\large Switch masks on time! \par}
+
+Something you are probably very familiar with in AE, Premiere or other video softwares is editing masks with keyframing. Use keyframing on masks to fix issues from a subject crossing a seamline. 
+
+In AVP, play back the subject crossing from one camera to the next and find the exact frame before the seam is visible. 
+
+To the right of the timelines are your cursors, one arrow and one razor icon. The razor icon is the cutting cursor. Use the cutting cursor to create a keyframe or cut in the “Mask” timeline at the exact frame you selected. Make sure your cursor is in the section where State is highlighted and select Edit.
+
+\imgA{1}{37/state1}
+
+In APG, select a green “keep” marker under masking markers. What do you want the marker to keep? The person’s body? From which camera? Do you have enough overlap? Add a keep marker on the camera that contains most of the person’s body before it crosses. Click on the small preview icon, at the bottom left of the panorama, to use the seam’s visualization. Position the marker at the right place. The less amount of markers, the better.
+
+\imgA{1}{37/mask1}
+
+Head back to AVP and select a frame a few frames after the previous one, then click Edit again. 
+
+\imgA{1}{37/state2}
+
+In APG, repeat the previous actions but add a “keep” marker on the other camera. Remove the previously placed marker. Don’t forget to always apply your changes with the green check icon, and save your stitch template for each edited keyframe.
+
+\imgA{1}{37/mask2}
+
+Preview the masking marker changes in AVP. The masks should have solved the parallax issue of the subject crossing between one camera to the other.
+
+This technique works in many cases but not all. You will experience some strange popping in the background, which is the consequence of forcing the blending with markers. The transition will be a straight cut in the timeline. The popping can be reduced by moving the keyframe to the right frame on your timeline. Finding the right timing is key for this technique. 
+
+\tip You may be able to smooth the popping by extending your transition from state 1 to state 2 and by adding one of the curve transitions.
+
+\imgA{1}{37/edit}
+
+For cases where the subject crossed between cameras at too close a distance, the masking markers may not help and the popping will be too obvious. The parallax is even more obvious when the subject is close to the rig and crosses between two cameras. The chromatic aberration towards the edges of the lens is also greater, so try to keep the subjects in \textbf{\nameref{chap:23}} and stay within a camera view.
+
+\clearpage
+\end{fullwidth}
