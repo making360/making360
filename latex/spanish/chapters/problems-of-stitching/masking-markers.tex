@@ -1,0 +1,73 @@
+\section{Masking Markers}
+\pagecolor{white}
+\label{chap:41}
+\begin{fullwidth}
+\groupL{stitch}
+
+\problem
+
+{\large You used the masking tool but after previewing changes, the objects or people are still there. \par}
+
+After becoming familiar with how \textbf{\nameref{chap:36}} work, explore the other tools like the masking markers to improve the stitch. Use the red or green markers to either remove or keep an area on a camera. 
+
+
+\solutions
+
+{\large Understand the anti-ghost. \par}
+
+The masking tool allows you to select where the anti-ghost acts on in an overlap region, deciding which of the two cameras has priority. The masking tool does not create content or pixels. Ghosts can only be eliminated in overlap regions.
+
+\imgA{1}{41/markers}
+
+Anti-ghost is used in HDR high dynamic range photographs for combining multiple images of the same shot with different exposures. Anti-ghost paints over the areas you want to remove so there are not multiples, such as two or three heads on a person. The remaining images are then composited into one HDR image by the blending algorithm.
+
+The anti-ghost algorithm in Autopano is referred to as “cutting”. This is computed at all times even when you are not using the masking markers. When using the masks, the automatic anti-ghost blending is told which pixels to keep or remove. 
+
+Anti-ghost is the smart image cutting algorithm designed to look at the images to avoid blending pixels that do not match. Choosing the placement of a marker is the “smart” part of the algorithm and improves the stitch. APG has a real time visualization of the computation that you can view by clicking the “preview” icon under the Masks panel.
+
+The algorithm analyses the differences between the images and calculates the best cutting path. Anti-ghost will look for a cutting path in areas where the images are alike. 
+
+\tip Color match your videos if there are differences in exposure and/or white balance to increase the accuracy of the algorithm.
+
+{\large Smart placement of masks. \par}
+
+Masking markers are most effective when cleaning up the overlap regions and seams. Adding markers in other areas will have no effect except for extending a seam by adding a green keep marker. 
+
+Before adding markers, examine and rewatch the clip to understand what is happening in the seam. Then place the markers, keeping the algorithm in mind to achieve the desired effect. There are two overlapping images, one where the subject and his shadow are fully in, the other where the subject and shadow are cut in half. Add a green marker on top of the subject in the first image and a red one on top of the half cut shadow in the second image. The subject and shadow will be kept in the first image and the half cut shadow will be completely removed. 
+
+\imgB{.5}{41/without}{41/withmasks}
+
+A common mistake is to use the markers like a brush, covering the entire subject and image with green or red markers. Anti-ghost is a smart, complex algorithm that detects paths in the image. Only a few markers are needed. If the desired effect is not accomplished, try moving the markers to a more relevant place. 
+
+\imgB{.5}{41/do}{41/dont}
+
+Head over to the masks editor.
+
+\imgA{1}{41/mask_panel}
+
+The masking markers can fix visible seams that control points can’t. In the masks section, click the small icon that looks like a “Q” icon in the bottom left corner of the stitched image. This helps visualize how the anti-ghost algorithm is moving the seams.
+
+\imgA{1}{41/visualization}
+
+The Masking tool decides which objects to keep (green markers) or to remove (red markers) on the panorama. Masking markers are used for moving subjects in the panorama.
+
+Select the green marker and move the mouse over the object to keep. Make sure the correct camera is highlighted and click. To remove objects, apply the same steps with the red markers.
+
+\imgA{1}{41/highlighted}
+
+\tip If your cursor doesn’t let you highlight a camera, check or uncheck camera layers.
+
+\imgA{1}{41/layers}
+
+The seams will update in real time according to the smart placements of the masking markers. Click “Preview” and apply or remove markers until the preview looks seamless.
+
+\imgA{1}{41/masking}
+
+\imgA{1}{41/masking2}
+
+In the “Preview” section, you can also test out the alternative blending options - Smart or ISO cutting. Save your pano file, go to your preview of AVP and play back from the IN Frame to see the improvements made.
+
+\imgA{1}{41/cutting}
+
+\clearpage
+\end{fullwidth}

@@ -1,0 +1,62 @@
+\section{Background vs Foreground}
+\pagecolor{white}
+\label{chap:34}
+\begin{fullwidth}
+\groupL{stitch}
+
+\problem
+
+{\large While trying to fix the stitch, you broke the background by adding control points on subjects close to the camera. \par}
+
+Most of the time, you will not be able to fix all the seams with only one stitch template. 
+
+Autopano automatically extracts a frame from each camera, allowing you to edit the stitch calibration of the specific frame chosen. When you update the calibration for one frame, it will update and apply changes to the entire video. After previewing the video, a seam is still seen by a person crossing through it. Should you fix the person crossing or the seam in the background?
+
+\imgA{1}{34/bg}
+
+\clearpage
+\solutions
+
+Depending on the rig you chose, parallax can be increased or reduced. When both foreground and background contain essential objects or subjects, it is necessary to split your work into two stitching phases. Stitch the background first. Render. Stitch the foreground second. Render. Comp them together.
+
+{\large Background approach. \par}
+
+Subjects that are too close can’t be fixed when stitching the background. Focus on the distant background. Select the frame with the most seams. If it’s a static shot, any frame will do. If it’s a moving shot, preview the quickstitch to help select a frame. 
+
+Leave the close objects or subjects distorted and focus on the distant seams. In the advanced settings of the control points editor, move the slider for Distortion and Offset scopes to Image and select Optimize to 2nd Order from the Distortion dropdown. 
+
+\imgA{1}{34/bgstitch}
+\clearpage
+In each set of images, remove the auto-detected control points on close objects and subjects. Don’t forget to “Quick Optimize” the calibration. 
+
+\imgA{1}{34/onbg}
+
+Save your project and add a version number, for example, T001\_BG\_1.kava. Keep different stitch templates in your take folder to help you stay organized and save time for future adjustments. Render your work.
+
+\imgA{1}{34/version}
+
+{\large Foreground approach. \par}
+
+There are many creative ways for stitching the foreground, from 3rd order calibration to ignoring 2 out of 4 cameras. When many actions are happening in different angles, you may even render all cameras separately, without any blending, to comp over your background later. Foreground stitching is mostly used for comping purposes. Fixing people or objects that are closer to the camera rarely renders a good stitch for the background.
+
+\clearpage
+
+Following the background approach, prioritize your foreground stitch based on where people are standing and moving in your shot. Select a frame where the person is standing or walking relatively close to the camera. In the advanced settings of the control points editor, select Optimize Distortion to 3nd Order.
+
+\imgA{1}{34/3rdorder2}
+
+After changing the settings, remove all control points on the background from each set of images. Auto-detect control points on the foreground objects or subjects and Quick optimize. Auto-detect more points on the foreground. Quick Optimize again. When your RMS value is lower than 4, check the clean “bad points” from the steps tab and perform a full optimization.
+
+\imgA{1}{34/onfg2}
+
+\clearpage
+
+The background will break, as the distortion was adjusted to stitch your foreground. Save your stitch template and add a version number. Preview with AVP and fix this template until satisfied. Render your foreground work. You may need to render in sections with a stitch template per section fixed. Bring the background and foreground renders into AE to perform \textbf{\nameref{chap:51}}. Done!
+
+\imgA{1}{34/fgstitch}
+
+\tip By moving \textbf{\nameref{chap:41}}, you may be able to move visible seams away from the close object or subject, without the need to change your optimizer settings or your control points on the background.
+
+
+\clearpage
+\end{fullwidth}
