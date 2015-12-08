@@ -1,0 +1,66 @@
+\section{Control Points}
+\pagecolor{white}
+\label{chap:36}
+\begin{fullwidth}
+\groupR{stitch}
+
+\problem
+
+{\large The control points editor has manual and 
+\\ 
+auto-detection. Which should you use and how will the RMS be affected? \par}
+
+You may be overwhelmed when launching the control points editor, especially if you are stitching with more than 10 cameras. Control points, links, RMS, what does all of this mean? Understand that in order to stitch multiple videos or images together, there needs to have an overlapping area. 
+
+Refer to the \textbf{\nameref{chap:35}} to understand the RMS value. Videos are stitched or linked together through the use of points that can be added manually or auto-detected. The points are then cleaned up with Autopano’s optimizer engine. Should you add points manually or auto-detect them?
+
+\solutions
+
+{\large Simple, fast auto-detection of points. \par}
+
+After importing your videos in, AVP will stitch them based on a lens preset or a custom focal length and distortion for your lens. AVP will then do an auto calibration and position the cameras in a 360x180 LatLong format. AVP stitches the cameras together by auto detecting and generating control points, the matching pixels between 2 images.
+
+After the initial calibration, you will then be able to edit the stitch template in APG. Note that APG will auto extract the frame your timeline cursor is on as a JPG for each of the cameras and then operate its stitching process on these images. The changes you make to the panorama of this still is the template that AVP applies to the rest of the frames of the videos. AVP handles the synchronization of videos and applies the APG stitch calibration of the selected frame to the rest of the video. AVP then spits out the frames of each camera and renders the applied template to the selected in and out region. 
+
+The first window of the control points editor will let you adjust the optimization settings and display visualizations of your camera images as a network of links. Each link has its own RMS value.
+
+\imgA{1}{36/ctrlpoints}
+
+To auto-detect more points, go to the “Cntrl Points Editor” in APG. In the left area, apply a first optimization by clicking on the “Quick Optimize” icon. Check the “Advanced” box to adjust the advanced Optimization Settings. Under Steps, check “Bad Points” and then the Full Optimize icon.
+
+\imgA{1}{36/quickoptimize}
+
+The number in the green boxes is the RMS value for every 2 cameras linked, visually represented with interconnecting yellow lines. RMS is a measure of error between a point and the current estimation, NOT the ground truth which is unknown. Below this number is the number of matching control points between the 2 cameras.
+
+\imgA{1}{36/apg}
+
+First, edit the control points between the two cameras where there is a clear visible seam. Select the green box linking the two cameras and a window will popup to let you auto-detect or remove points.
+
+In the CP Editor window, you will see the two cameras and the control points connecting them together. Use your mouse cursor to draw a rectangle, selecting the overlap region on one of the frames. Then draw a rectangle selecting the corresponding region on the other frame. APG will automatically detect control points in the shared rectangular area. 
+
+\imgA{1}{36/auto}
+\clearpage
+Use the Quick Optimize icon at top of the window. Repeat this step as necessary. When satisfied, check clean “Bad Points” and Fully Optimize. The RMS will get updated. Repeat these steps for each relevant link between 2 cameras. Use the PREVIEW area to check the improvements and continue cleaning points in the CP editor until the stitch is improved.
+
+Stitching using only auto detection of control points will be less time consuming and save time to explore other tools, such as the \textbf{\nameref{chap:41}}. However, you should still understand how to manually add/remove control points. 
+
+{\large Manually adding control points. \par}
+
+Autopano’s control point detection algorithm is smart but can be mislead by recurring patterns in different angles of a shot. 
+
+In this case, Autopano will not understand how to even position the cameras. Position the cameras manually by using the move tool. 
+
+\imgA{1}{36/move}
+
+After repositioning the cameras, remove all links, and relink at least two cameras to each other by right clicking one and selecting the second camera shown in the dropdown. Open up the second window by clicking on the green box from the two cameras and start by adding control points manually or auto detecting more control points. 
+
+\imgA{1}{36/addpoints}
+\imgA{1}{36/manual}
+
+In the left area of the window, select another set of two images and draw a rectangle selecting the overlap regions to auto detect and add new control points. This will automatically link two new cameras together. Repeat these steps until all the cameras are linked. Don’t forget to optimize the manual adjustments just made.
+
+\imgA{1}{36/auto_pano2}
+
+
+\clearpage
+\end{fullwidth}

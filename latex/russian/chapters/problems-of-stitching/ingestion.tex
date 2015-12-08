@@ -1,0 +1,62 @@
+\section{Ingestion}
+\pagecolor{white}
+\label{chap:29}
+\begin{fullwidth}
+\groupL{import}
+
+\problem
+
+{\large You want to see how your footage came out but need to transfer all the data before quickstitching. \par}
+
+Whether you want to check the lighting on set with a quickstitch test or you are ready to head into post production, copying all the data files is required before stitching. If you have a \textbf{\nameref{chap:11}}, record the input with a capture box for a rough \textbf{\nameref{chap:30}}. Otherwise, there is no method for viewing the takes without ingesting the footage and quickstitching. 
+
+\solution
+
+{\large Ingest Manually. \par}
+
+Each SD card corresponds to a certain camera angle. When you ingest video files from one SD card, you are uploading all the takes into one folder (ex. Camera 1, Camera 2). You will need to move the videos from each camera folder into a new take folder (ex. Take 1). Here's a snapshot of how it looks before and after.
+
+\imgA{1}{29/folders}
+
+\clearpage
+\tip Before selecting the files to move to take folders, batch rename the files with the camera number as a prefix. For example, select the letter G from Gopro, and rename all files with Cam1\_G. In the next camera folder, you just have to change Cam1\_G to Cam2\_G.
+
+\imgA{1}{29/rename}
+
+To quickly find which video files should be placed into a new take folder, open all your camera folders using the dropdown arrow. Start by highlighting the first mp4 in each camera folder, then look at the file size of each one. If it's the same or close in size for all highlighted files, the files are all from the same take. Drag them all into the new take folder. If you are unsure, you can always open the videos and view them.
+
+Renaming source files later can be tricky, so organize before stitching. Is your project stereoscopic or monoscopic? If you shot in stereo, you will have two of each camera angle, corresponding to left/right eyes. Make sure to include if the video is Left eye or Right eye in the filename.
+
+The simple saying "for every minute spent organizing, an hour is earned" truly applies to 360 video editing. Remember you are editing the amount of take files times the number of cameras. Add a few prefixes to help you and your team down the line such as T01 for take number, HD or SD (4K/2K), C01 for camera number, LE or RE for Left Eye and Right Eye in the case of stereoscopic projects.
+
+\clearpage
+GOPR02355 would be T01\_HD\_C01\_GOPR02355.mp4 for a monoscopic project.
+\\
+GOPR01025 would be T07\_4K\_C03\_LE\_GOPR01025.mp4 for a stereoscopic project.
+
+\tip Mac Users can right click to use the “rename files” option after highlighting all the files in the take folder. For PC users, you can use a third party tool like Bulk Rename Utility.
+
+{\large Import all GoPros with AVP. \par}
+
+With the recent release of AVP 2.3, ingesting files got a whole lot easier. You will need to purchase a couple of Lexar Workflow multi-slot card readers. MTP is not supported.
+
+The process is simple. When you are done shooting or if you need to do a quick on-site stitch, insert all your SD cards into the multi-slot readers. Use a USB hub if shooting with a lot of cameras like the stereo or cylindrical rigs.
+
+Open AVP and under File, select Import all GoPros.
+
+\imgA{1}{29/bycam}
+
+One of the major pains is the splitting of longer takes from the GoPros. When files reach the 4 GB limit and the recording continues, the take will be split into multiple files that need to be to concatenated. With AVP 2.3, concatenating files is handled internally during ingestion. You will see small dropdown arrows for all large sub-sequences that AVP detects.
+
+\imgA{1}{29/merge}
+
+At the top of the ingester, display your files by sequence. Then check "merge successive chapters" and "create subdirectories" at the bottom. Now you are ready to ingest. Enter the path location of your source folder instead of the desktop. For example LACIE/ProjectName/Source/Video/. Then "Transfer Selection" and let AVP concatenate and ingest all of your sequences, also called take folders.
+
+\imgA{1}{29/byseq}
+
+Your files will be merged and renamed with minimum manual organization needed. You may want to batch rename the files in each take folder and add additional prefixes such as LE, RE for stereo footage or ShotN\_SceneN\_TakeN.
+
+\tip When ingesting using AVP, make sure you have the exact number of takes in each of your SD cards and all \textbf{\nameref{chap:20}} have been deleted. You may encounter problems with this way of ingesting if you didn't reset the \textbf{\nameref{chap:5}} on your GoPros. This ingestion method is still in beta, so double-check everything before transferring the files.
+
+\clearpage
+\end{fullwidth}
