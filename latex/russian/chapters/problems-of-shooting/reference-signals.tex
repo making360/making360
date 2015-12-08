@@ -1,0 +1,40 @@
+\section{Reference Signals}
+\pagecolor{white}
+\label{chap:22}
+\begin{fullwidth}
+\groupL{shoot}
+
+\problem
+
+{\large You need to synchronize the cameras to each other. \par}
+
+There is no genlock sync on the cameras yet so videos will have to be synced manually in post. Give yourself or the stitcher as many ways possible to find a sync point. 
+
+\solution
+
+{\large Audio Slate \par}
+
+The old fashioned slate. 3 loud claps of your hands. Or any noise with a fast sharp attack will be easier to sync in post. 
+
+{\large Motion Flash \par}
+
+If you have the time and materials, do a motion flash sync in addition to audio. The speed of light is faster than sound so a flash sync will be 900,000 times more accurate than audio sync. 
+
+Some people like to twist the camera rig for motion detection but this shakes the individual cameras in the custom rigs and is not accurate down to the exact frame. 
+Use an umbrella over the rig and give it a flash with a speedlight. In post, you can find the exact moment where the white from the flash emerges, down to the exact frames. 
+\clearpage
+Here is a test with a speedlight at 60 FPS. 
+
+\imgA{1}{22/motionflash}
+
+Even at a high FPS, you can see that the cameras are still fractions out of sync from each other. This is a problem until there is true genlock/frame sync. Notice the GoPro rolling shutter effect. 
+
+{\large DIY Genlock \par}
+
+MewPro is currently working on a genlock dongle that will allow true genlock syncing for multiple GoPros. The dongle allows frame sync (VSYNC) as well as scan line sync (HSYNC) but are only available for the Hero 3+ Black currently. MewPro Genlock Dongle uses Arduino Pro Mini 328 3.3V 8MHz.
+
+Learn more about the \textbf{\href{http://mewpro.cc/2015/03/20/how-to-use-mewpro-genlock-dongle/}{MewPro Genlock Dongle by Orangkucing Lab.}}
+
+
+\clearpage
+\end{fullwidth}
